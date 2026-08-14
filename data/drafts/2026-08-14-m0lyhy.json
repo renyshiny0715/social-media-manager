@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-m0lyhy",
+  "createdAt": "2026-08-14T17:15:21.456Z",
+  "topic": "AI in dev workflows (stop the skepticism)",
+  "angle": "AI is a power tool—safe wins come from scoping, not faith.",
+  "sourceTitle": "Stop being skeptical about AI for development with Charity Majors",
+  "sourceUrl": "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for",
+  "linkedinPost": "If AI hasn’t sped up your engineering, you’re probably aiming it at the wrong tasks.\n\nThe Pragmatic Engineer’s conversation with Charity Majors argues that 2026 is past the point of rational skepticism. I agree—with a caveat. AI is a power tool, not a colleague. Aim it where variance is low and context is local.\n\nFrom my FDE seat, the safest wins are mundane: log triage summaries, test scaffolds, query builders, diff explainers, migration scripts. Where we’ve burned time: letting models invent config, refactor across service boundaries, or “fix” flaky tests without a repro.\n\nWhat works in practice:\n- Freeze API/contracts, have AI generate inside the lines.\n- Pair with linters/compilers and require zero-warnings builds.\n- Keep prompt libraries in repo; review prompts like code.\n- Track two metrics: review time saved and defect escape rate.\n\nA recent piece from The Pragmatic Engineer captures the momentum. The discipline is choosing scope. On one customer rollout, limiting AI to test generation and SQL templating cut cycle time 24% with no bump in defects. That’s the bar.\n\nWhere has AI been a net positive in your dev loop—exactly which task? #FDE #AIEngineering #Zendesk #ForwardDeployedEngineer",
+  "xPost": "AI is a power tool, not a colleague. Aim it at low‑variance tasks: tests, SQL templates, log summaries, diff explainers. Freeze contracts, lint hard, review prompts. Net: faster cycles without mess. Which task worked for you? #AIEngineering",
+  "imagePrompt": "Visual metaphor: a workbench with precisely labeled jigs and templates, and a single bright power tool locked into a guide rail—showing AI used within safe boundaries. Art direction: cinematic macro photo of a miniature scene. Composition: single centered hero tool with rails framing it, generous negative space. Color palette: charcoal surface, neon lime accents, steel grays. Lighting and mood: warm golden-hour glow with sharp highlights for craftsmanship. no text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "Point AI At The Right Jobs",
+  "cardSubtitle": "Power tools shine with guides and jigs.",
+  "imageType": "ai",
+  "published": {}
+}
