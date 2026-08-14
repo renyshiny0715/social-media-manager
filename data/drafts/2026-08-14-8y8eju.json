@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-8y8eju",
+  "createdAt": "2026-08-14T17:20:19.760Z",
+  "topic": "AI use vs. revenue per employee",
+  "angle": "Usage without redesigning work doesn’t move the P&L; value shows up when processes, KPIs, and incentives change.",
+  "sourceTitle": "Buried in OpenAI’s latest research: No correlation between AI use and revenue per employee—yet",
+  "sourceUrl": "https://fortune.com/2026/08/13/buried-in-openais-latest-research-no-correlation-between-ai-use-and-revenue-per-employee/",
+  "linkedinPost": "Tough but necessary data point: more AI use isn’t showing up as more revenue per employee—yet.\n\nFortune highlighted research suggesting no clear link between corporate AI usage and revenue per headcount right now. That’s a wake-up call for anyone equating “seat licenses” with outcomes.\n\nMy take from the front lines: AI only moves the P&L when you redesign the work around it. If you add an assistant but keep the same processes, SLAs, and incentives, you’ve just created a shinier status quo.\n\nWhere value starts to appear:\n- Process surgery: remove steps, not just accelerate them.\n- KPI rewiring: measure cycle time, first-contact resolution, and deflection you trust—then tie bonuses to them.\n- Decision rights: let frontline teams use AI outputs to close loops without escalation.\n- Decommissioning: turn off legacy reports and queues AI replaces.\n\nIf you’re not willing to change how work is measured and governed, more usage data won’t rescue ROI. AI is a tool; operating model change is the lever.\n\nHow have you changed incentives or processes to make AI show up in financials? #AIAdoption #EnterpriseAI #AIStrategy #AITransformation",
+  "xPost": "AI “usage” ≠ ROI. Value shows up when you redesign work: cut steps, rewire KPIs, push decision rights down, and decommission what AI replaces. No ops change, no P&L change. #EnterpriseAI #AIAdoption",
+  "imagePrompt": "Visual metaphor: a factory assembly line where a high-tech robotic arm places a golden “value” bolt, but the conveyor belts still loop in circles, sending products back to start. Flat editorial illustration with oversized geometric shapes, bird’s-eye perspective. Color palette: charcoal background with neon lime and warm amber accents. Lighting: soft studio shading with crisp highlights. Mood: pragmatic and slightly ironic. Single centered hero scene, generous negative space. no text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "AI Use Without Impact",
+  "cardSubtitle": "Usage rises, but value needs ops change.",
+  "imageType": "ai",
+  "published": {}
+}
