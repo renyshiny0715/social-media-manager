@@ -1,6 +1,6 @@
 // ============================================================
-// CONTENT SOURCES — RSS feeds from well-known companies,
-// universities, and respected AI practitioners.
+// CONTENT SOURCES — business-leaning mix: consulting firms,
+// business schools, and major AI companies/media.
 // Add/remove feeds freely; failures are tolerated per-feed.
 // ============================================================
 
@@ -10,21 +10,17 @@ export interface Source {
 }
 
 export const sources: Source[] = [
-  // Universities & research labs
-  { name: "MIT News (AI)", url: "https://news.mit.edu/rss/topic/artificial-intelligence2" },
-  { name: "Knowledge at Wharton", url: "https://knowledge.wharton.upenn.edu/feed/" },
-  { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
-  { name: "Microsoft Research", url: "https://www.microsoft.com/en-us/research/feed/" },
-  // Consulting
+  // Consulting & business schools (AI transformation, enterprise value)
   { name: "McKinsey Insights", url: "https://www.mckinsey.com/insights/rss" },
-  // AI companies & media
-  { name: "OpenAI News", url: "https://openai.com/news/rss.xml" },
-  { name: "Google AI Blog", url: "https://blog.google/technology/ai/rss/" },
+  { name: "MIT Sloan Management Review", url: "https://sloanreview.mit.edu/feed/" },
+  { name: "Knowledge at Wharton", url: "https://knowledge.wharton.upenn.edu/feed/" },
+  { name: "Fortune (AI)", url: "https://fortune.com/feed/fortune-feeds/?id=3230629" },
+  // Universities & research (kept for credibility; selection favors business angles)
+  { name: "MIT News (AI)", url: "https://news.mit.edu/rss/topic/artificial-intelligence2" },
   { name: "MIT Technology Review (AI)", url: "https://www.technologyreview.com/topic/artificial-intelligence/feed" },
-  { name: "Berkeley BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
-  { name: "Simon Willison", url: "https://simonwillison.net/atom/everything/" },
-  { name: "Latent Space", url: "https://www.latent.space/feed" },
-  { name: "The Pragmatic Engineer", url: "https://newsletter.pragmaticengineer.com/feed" },
+  // AI companies & industry media
+  { name: "OpenAI News", url: "https://openai.com/news/rss.xml" },
+  { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
   { name: "VentureBeat AI", url: "https://venturebeat.com/category/ai/feed/" },
   { name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/" },
 ];

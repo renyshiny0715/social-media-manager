@@ -60,9 +60,12 @@ export async function generateDrafts(articles: FeedItem[]): Promise<GeneratedDra
 ${articleList}
 
 Task: write ${config.draftsPerRun} distinct social media post drafts.
-- Each draft covers a DIFFERENT topic/article. Pick the articles most relevant to AI careers,
-  forward deployed engineering, enterprise AI deployment, LLM engineering practice, or the
-  changing nature of software work. Skip pure funding/gossip news unless there is a real lesson in it.
+- Each draft covers a DIFFERENT topic/article. Pick the articles most relevant to ENTERPRISE
+  AI VALUE: AI transformation and adoption, ROI of AI investments, AI in customer experience,
+  workforce and organizational change, AI strategy for business leaders. Prefer consulting/
+  business-school sources (McKinsey, MIT Sloan, Wharton, Fortune) when available. Skip deeply
+  technical research, model releases, and funding/gossip news unless there is a clear lesson
+  for business leaders in it.
 - If there are no suitable fresh articles (or fewer than needed), fill the remainder using these
   evergreen angles instead (mark source_title as "evergreen", source_url as ""):
 ${evergreenTopics.map((t) => `  - ${t}`).join("\n")}
