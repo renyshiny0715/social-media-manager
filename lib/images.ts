@@ -14,9 +14,13 @@ export async function generateAiImage(prompt: string): Promise<Buffer | null> {
       },
       body: JSON.stringify({
         model: "gpt-image-1",
-        prompt: `${prompt}. Editorial illustration style, clean modern tech aesthetic, no text, no words, no letters.`,
+        prompt: `${prompt}
+
+Render as a premium, scroll-stopping editorial illustration for a professional social feed:
+polished and gallery-quality, sharp focus, high contrast, rich color depth, subtle texture
+and depth of field. Absolutely no text, letters, numbers, watermarks, or logos anywhere.`,
         size: "1536x1024",
-        quality: "medium",
+        quality: "high",
         n: 1,
       }),
     });

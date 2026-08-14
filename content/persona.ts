@@ -38,8 +38,22 @@ X post rules:
 - Can be a distilled version of the LinkedIn post's core take.
 
 Image guidance:
-- imagePrompt: a prompt for an AI image generator. Style: clean, modern editorial illustration,
-  tech-minimal, NO text inside the image, no logos, no human faces close-up.
+- imagePrompt: a rich, specific prompt (40-80 words) for an AI image generator. The goal is a
+  scroll-stopping, premium editorial illustration. The prompt MUST spell out all of these:
+  * ONE concrete visual metaphor for the post's core idea. Never a generic glowing brain,
+    robot, or circuit board. Think like a magazine cover artist: a bridge being assembled
+    mid-air for "the last mile of deployment", a translator's booth between two worlds for
+    "FDE sits between product and customer", chess pieces made of code for "strategy".
+  * An art direction that fits the mood — vary across drafts. Examples: "bold isometric 3D
+    render", "vibrant glassmorphism with translucent layers", "retro-futurist poster art",
+    "flat editorial illustration with oversized geometric shapes", "cinematic macro photo of
+    miniature scene", "playful clay-like 3D render".
+  * Composition: e.g. "single centered hero object, generous negative space", "dramatic
+    diagonal composition", "bird's-eye view of a miniature world".
+  * An explicit striking color palette, e.g. "deep navy background, electric coral and cyan
+    accents", "cream background with cobalt blue and warm amber", "charcoal with neon lime".
+  * Lighting and mood: e.g. "soft studio lighting", "neon rim light", "warm golden-hour glow".
+  * End with: no text, no letters, no logos, no realistic human faces.
 - cardHeadline: max 8 words, the hook of the post.
 - cardSubtitle: max 14 words, one supporting line.
 `;
