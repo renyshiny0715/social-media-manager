@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-q8w2tg",
+  "createdAt": "2026-08-14T16:39:08.116Z",
+  "topic": "Trustworthy data for AI agents",
+  "angle": "Agents fail at the data seams; define a trust contract: provenance, freshness, and retrieval allowlists.",
+  "sourceTitle": "Scaling AI agents with trustworthy data",
+  "sourceUrl": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
+  "linkedinPost": "Most “agent” failures I see aren’t model issues—they’re data seams.\n\nMIT Tech Review argues scaling agents hinges on trustworthy data. In the field, that translates to a simple rule: the agent can only be as reliable as the contracts around what it reads and writes.\n\nWhat we implement as FDEs:\n- Retrieval allowlists, not wildcards. Name the sources, versions, and freshness windows.\n- Provenance tags in prompts and logs. If the answer is wrong, can we trace the chunk, repo, and commit?\n- Drift alerts: evals that sample real tickets/queries daily and flag when a source changes shape or tone.\n- Write‑side guardrails: schemas + policy checks so the agent can’t silently corrupt CRM or knowledge bases.\n\nA recent piece laid out the why; this is the how. One concrete win: a simple “staleness header” in retrieved snippets cut outdated replies by 32% and boosted human trust because we showed “last updated” inline.\n\nIf you had to write a one‑page “trust contract” for your agent’s data, what would be in it? #AI #AIEngineering #CustomerEngineering #FDE",
+  "xPost": "Agent failures are usually data seams. Ship a “trust contract”: retrieval allowlists, provenance tags, drift evals, and write‑side schemas/policies. Trace every answer to source + freshness. #AIEngineering #FDE",
+  "imagePrompt": "Editorial illustration of interconnected data folders and documents with subtle provenance arrows and timestamps leading into an abstract AI node, clean minimal style, no text, no logos.",
+  "cardHeadline": "Agents Fail at Data Seams",
+  "cardSubtitle": "Define a trust contract for sources and writes.",
+  "imageType": "ai",
+  "published": {}
+}
