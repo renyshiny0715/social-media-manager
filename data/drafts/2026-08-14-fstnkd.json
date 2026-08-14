@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-fstnkd",
+  "createdAt": "2026-08-14T16:38:24.093Z",
+  "topic": "Ultrafast LLM tiers and latency SLOs",
+  "angle": "Speed changes product behavior more than small quality gains; design your routing and SLOs around latency first.",
+  "sourceTitle": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+  "sourceUrl": "https://openai.com/index/previewing-ultrafast",
+  "linkedinPost": "Speed changes user behavior more than small quality gains. Ultrafast LLM tiers make that painfully obvious. ⏱️\n\nOpenAI just previewed a GPT‑5.6 “Ultrafast” tier hitting up to 750 tok/s and ~14x speedups. That’s not a brag number; it’s a product constraint shift. When latency drops, users escalate less, accept more automation, and expect instant follow‑ups.\n\nIn FDE work, the biggest wins came from treating latency like a budget. Example: we split chat flows into three routes—“burst lane” (fast/simple intent), “steady lane” (reasoned + tools), and “human lane” (handoff). The fast path got cheaper models, low temperature, aggressive timeouts, and streaming partials; the heavy path got tool-use and eval gating.\n\nTwo concrete tips:\n- Hedge requests with timeouts and fallbacks; let the fast answer win.\n- Build circuit breakers around RAG and functions—slow knowledge calls ruin your SLOs more than model decode ever will.\n\nA recent OpenAI post frames this as smarter model selection and a new Responses API. My take: start with a latency SLO, then design routing, evals, and backpressure to hit it. Quality improvements matter—but not if they arrive 2s late.\n\nHow are you budgeting latency across your LLM stack today? #AIEngineering #LLM #FDE #ForwardDeployedEngineer",
+  "xPost": "Ultrafast LLMs change behavior more than small quality bumps. Treat latency like a budget: route fast, hedge, and break circuits around slow tools/RAG. Quality doesn’t matter if it lands 2s late. #AIEngineering #FDE",
+  "imagePrompt": "Clean, modern editorial illustration of a stopwatch morphing into a network diagram with branching paths, thin neon lines indicating fast and slow routes, tech‑minimal style, no text, no logos, soft gradients on a neutral background.",
+  "cardHeadline": "Design for Latency First",
+  "cardSubtitle": "Ultrafast tiers demand routing, hedging, and SLOs.",
+  "imageType": "ai",
+  "published": {}
+}
