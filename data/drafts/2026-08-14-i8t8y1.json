@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-i8t8y1",
+  "createdAt": "2026-08-14T17:21:58.520Z",
+  "topic": "Brand love, churn, and AI-powered CX",
+  "angle": "Use AI to earn ‘brand love’ by fixing journeys that actually drive churn—and prove it with hard metrics.",
+  "sourceTitle": "AT&T’s CMO tied ‘brand love’ to the numbers CEOs care about. Customers are 3 times less likely to leave and much cheaper to acquire",
+  "sourceUrl": "https://fortune.com/article/att-cmo-tied-brand-love-customer-churn-marketing-cmo-revenue-growth/",
+  "linkedinPost": "“Brand love” only matters if it moves the numbers CEOs care about.\n\nFortune reports AT&T customers who love the brand are 3x less likely to leave, 50% more likely to buy a second product, and cheaper to acquire. That’s not squishy—it’s a retention and CAC story.\n\nMy take: AI should be pointed at the parts of the journey that create or destroy that love—billing confusion, slow support, opaque offers—not at vanity experiences.\n\nHow to make it real:\n- Map top 5 churn drivers, then deploy AI to prevent them (proactive outreach, next-best-action, clearer language).\n- Measure lift with hard metrics: voluntary churn, save rate, time-to-resolution, and incremental products per customer.\n- Close the loop: when AI resolves the issue, ask for a micro-review or NPS—tie signals back to churn cohorts.\n\nIf your AI roadmap can’t show a line from a specific journey fix to reduced churn or higher attach, it’s not CX—it’s theater.\n\nWhere have you used AI to cut a measurable point of churn? #CustomerExperience #EnterpriseAI #AIAdoption",
+  "xPost": "Aim AI at churn drivers, not vanity CX. Fix billing confusion, slow support, opaque offers—then measure save rate, voluntary churn, and attach. If it doesn’t hit those, it’s theater. #CustomerExperience #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a leaky bucket labeled with holes named “billing,” “support,” and “offers,” being sealed with precise golden plugs fired by a smart nail gun. Flat editorial illustration with oversized geometric shapes, single centered hero object, generous negative space. Palette: cream background, cobalt blue bucket, warm amber plugs. Lighting: warm golden-hour glow. Mood: optimistic and practical. no text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "Make Brand Love Measurable",
+  "cardSubtitle": "Point AI at churn drivers and prove it.",
+  "imageType": "ai",
+  "published": {}
+}
