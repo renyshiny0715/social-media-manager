@@ -82,7 +82,10 @@ ${postGuidelines}`;
         { role: "system", content: persona },
         { role: "user", content: userPrompt },
       ],
-      max_completion_tokens: 8000,
+      // GPT-5 is a reasoning model: the cap covers hidden reasoning + output,
+      // so keep it generous and the reasoning effort low for this writing task.
+      max_completion_tokens: 20000,
+      reasoning_effort: "low",
       response_format: {
         type: "json_schema",
         json_schema: { name: "post_drafts", strict: true, schema: draftSchema },
@@ -95,7 +98,11 @@ ${postGuidelines}`;
   const json = await res.json();
   const message = json?.choices?.[0]?.message;
   if (message?.refusal) throw new Error(`OpenAI refused: ${message.refusal}`);
-  if (!message?.content) throw new Error("No content in OpenAI response");
+  if (!message?.content) {
+    throw new Error(
+      `No content in OpenAI response (finish_reason: ${json?.choices?.[0]?.finish_reason ?? "unknown"})`,
+    );
+  }
 
   const parsed = JSON.parse(message.content) as { drafts: GeneratedDraft[] };
   return parsed.drafts.slice(0, config.draftsPerRun);
