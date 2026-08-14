@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-y2gll5",
+  "createdAt": "2026-08-14T16:38:47.379Z",
+  "topic": "GPUs for agentic workflows (Kog)",
+  "angle": "The bottleneck in agent systems is orchestration and I/O, not GPUs; design for concurrency and batching.",
+  "sourceTitle": "Kog is going deeper to squeeze more inference out of GPUs",
+  "sourceUrl": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
+  "linkedinPost": "“GPUs are bad for agents” is mostly a coordination problem disguised as hardware criticism.\n\nTechCrunch covered Kog’s claim that GPUs can handle agentic workflows if you architect right. From the FDE trenches, I agree: the real enemy is tiny, chatty steps with network I/O between them. Your GPU sits idle while your agent waits on tools.\n\nWhat’s worked in production:\n- Batch across steps: accumulate small tool calls and decode bursts together; don’t launch kernels for 8 tokens.\n- Keep state on-device: reuse KV caches across tool-use turns where possible to avoid re‑encoding the world.\n- Overlap I/O and compute: async function calls while the model plans the next move; stop serializing everything.\n- Use a “planner” small model and a “doer” bigger model on the same card; pin routes by cost/latency.\n\nIn one customer flow, 70% of wall time was network waits, not tokens. We cut median latency 40% by reducing cross‑service hops and adopting adaptive batching—no hardware change.\n\nThe Kog piece is a good nudge: fix orchestration before shopping for more GPUs. Where’s your agent spending its wall time? #AIEngineering #LLM #FDE",
+  "xPost": "Agents don’t stall because “GPUs are bad.” They stall on orchestration and I/O. Batch tiny steps, reuse KV, overlap tool calls with decode, and route planner/doer models smartly. Optimize wall time before buying GPUs. #AIEngineering #FDE",
+  "imagePrompt": "Modern editorial illustration of a GPU card connected to a flowchart of parallel tasks and overlapping timelines, with glowing paths indicating concurrency and batching, tech‑minimal style, no text, no logos.",
+  "cardHeadline": "Your GPU Isn’t The Bottleneck",
+  "cardSubtitle": "Fix orchestration, batching, and I/O first.",
+  "imageType": "ai",
+  "published": {}
+}
