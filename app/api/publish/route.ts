@@ -3,18 +3,22 @@ import { loadDraft, saveDraft } from "@/lib/github";
 import { verify } from "@/lib/sign";
 import { publishToX } from "@/lib/publish/x";
 import { publishToLinkedIn } from "@/lib/publish/linkedin";
+import { nextLondonPublishTime } from "@/lib/schedule";
 
 export const maxDuration = 60;
 export const dynamic = "force-dynamic";
 
 // POST from the review page form. Publishing is POST-only so that email
 // link scanners (which prefetch GETs) can never trigger a publish.
+// mode = "now"     -> publish immediately
+// mode = "tonight" -> queue for 10pm UK time (published by /api/cron/publish-due)
 
 export async function POST(req: NextRequest) {
   const form = await req.formData();
   const id = String(form.get("id") ?? "");
   const sig = String(form.get("sig") ?? "");
   const platform = String(form.get("platform") ?? "");
+  const mode = String(form.get("mode") ?? "now");
   const text = String(form.get("text") ?? "").trim();
 
   const back = (query: string) =>
@@ -32,14 +36,25 @@ export async function POST(req: NextRequest) {
   if (!draft) return NextResponse.json({ error: "draft not found" }, { status: 404 });
 
   try {
+    // Persist any last-minute text edits in both modes.
+    if (platform === "x") draft.xPost = text;
+    else draft.linkedinPost = text;
+
+    if (mode === "tonight") {
+      const when = nextLondonPublishTime().toISOString();
+      draft.scheduled = { ...draft.scheduled, [platform]: when };
+      await saveDraft(draft);
+      return back(`scheduled=${platform}`);
+    }
+
     if (platform === "x") {
       const { postId } = await publishToX(draft, text);
-      draft.xPost = text;
       draft.published.x = { at: new Date().toISOString(), postId };
+      if (draft.scheduled?.x) delete draft.scheduled.x;
     } else {
       const { postId } = await publishToLinkedIn(draft, text);
-      draft.linkedinPost = text;
       draft.published.linkedin = { at: new Date().toISOString(), postId };
+      if (draft.scheduled?.linkedin) delete draft.scheduled.linkedin;
     }
     await saveDraft(draft);
     return back(`done=${platform}`);

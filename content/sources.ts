@@ -10,6 +10,14 @@ export interface Source {
 }
 
 export const sources: Source[] = [
+  // Universities & research labs
+  { name: "MIT News (AI)", url: "https://news.mit.edu/rss/topic/artificial-intelligence2" },
+  { name: "Knowledge at Wharton", url: "https://knowledge.wharton.upenn.edu/feed/" },
+  { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
+  { name: "Microsoft Research", url: "https://www.microsoft.com/en-us/research/feed/" },
+  // Consulting
+  { name: "McKinsey Insights", url: "https://www.mckinsey.com/insights/rss" },
+  // AI companies & media
   { name: "OpenAI News", url: "https://openai.com/news/rss.xml" },
   { name: "Google AI Blog", url: "https://blog.google/technology/ai/rss/" },
   { name: "MIT Technology Review (AI)", url: "https://www.technologyreview.com/topic/artificial-intelligence/feed" },

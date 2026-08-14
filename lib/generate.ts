@@ -1,4 +1,3 @@
-import Anthropic from "@anthropic-ai/sdk";
 import { persona, postGuidelines, evergreenTopics } from "@/content/persona";
 import { config } from "./config";
 import type { Draft, FeedItem } from "./types";
@@ -46,8 +45,6 @@ export interface GeneratedDraft {
 }
 
 export async function generateDrafts(articles: FeedItem[]): Promise<GeneratedDraft[]> {
-  const client = new Anthropic({ apiKey: config.anthropicApiKey });
-
   const articleList =
     articles.length > 0
       ? articles
@@ -73,21 +70,34 @@ ${evergreenTopics.map((t) => `  - ${t}`).join("\n")}
 
 ${postGuidelines}`;
 
-  const response = await client.messages.create({
-    model: "claude-opus-5",
-    max_tokens: 16000,
-    system: persona,
-    output_config: { format: { type: "json_schema", schema: draftSchema } },
-    messages: [{ role: "user", content: userPrompt }],
+  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${config.openaiApiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model: config.openaiModel,
+      messages: [
+        { role: "system", content: persona },
+        { role: "user", content: userPrompt },
+      ],
+      max_completion_tokens: 8000,
+      response_format: {
+        type: "json_schema",
+        json_schema: { name: "post_drafts", strict: true, schema: draftSchema },
+      },
+    }),
   });
-
-  if (response.stop_reason === "refusal") {
-    throw new Error("Claude declined to generate drafts for this input.");
+  if (!res.ok) {
+    throw new Error(`OpenAI draft generation failed: ${res.status} ${await res.text()}`);
   }
+  const json = await res.json();
+  const message = json?.choices?.[0]?.message;
+  if (message?.refusal) throw new Error(`OpenAI refused: ${message.refusal}`);
+  if (!message?.content) throw new Error("No content in OpenAI response");
 
-  const text = response.content.find((b) => b.type === "text")?.text;
-  if (!text) throw new Error("No text in Claude response");
-  const parsed = JSON.parse(text) as { drafts: GeneratedDraft[] };
+  const parsed = JSON.parse(message.content) as { drafts: GeneratedDraft[] };
   return parsed.drafts.slice(0, config.draftsPerRun);
 }
 

@@ -1,0 +1,20 @@
+# Fires the scheduled-publish check every 10 minutes.
+# GitHub Actions is used instead of a Vercel cron because Hobby-plan crons are
+# limited to once per day — too coarse for a "10pm UK time" schedule across
+# GMT/BST changes. The endpoint is idempotent and cheap when nothing is due.
+
+name: publish-due
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call publish-due endpoint
+        run: |
+          curl -sf --max-time 150 \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "https://social-media-manager-five-tau.vercel.app/api/cron/publish-due"

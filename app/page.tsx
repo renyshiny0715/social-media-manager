@@ -50,9 +50,17 @@ export default async function Dashboard() {
             style={{ width: "100%", maxWidth: 420, borderRadius: 8 }}
           />
           <div style={{ marginTop: 10, fontSize: 13, color: "#333" }}>
-            {d.published.linkedin ? "✅ LinkedIn published" : "◻️ LinkedIn pending"}
+            {d.published.linkedin
+              ? "✅ LinkedIn published"
+              : d.scheduled?.linkedin
+                ? "🕙 LinkedIn scheduled"
+                : "◻️ LinkedIn pending"}
             {" · "}
-            {d.published.x ? "✅ X published" : "◻️ X pending"}
+            {d.published.x
+              ? "✅ X published"
+              : d.scheduled?.x
+                ? "🕙 X scheduled"
+                : "◻️ X pending"}
           </div>
         </div>
       ))}

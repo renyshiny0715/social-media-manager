@@ -1,11 +1,13 @@
 import { loadDraft } from "@/lib/github";
 import { verify } from "@/lib/sign";
 import { imageUrlForDraft } from "@/lib/images";
+import { formatLondon } from "@/lib/schedule";
 
 export const dynamic = "force-dynamic";
 
 // Review-and-publish page. The email links here with an HMAC signature; publishing
 // itself is a POST (so email scanners that prefetch GET links can never publish).
+// Each platform offers "publish now" or "schedule for 10pm UK time".
 
 export default async function PublishPage({
   params,
@@ -32,9 +34,13 @@ export default async function PublishPage({
       ? "✅ Published to LinkedIn!"
       : sp.done === "x"
         ? "✅ Published to X!"
-        : sp.error
-          ? `❌ ${decodeURIComponent(sp.error)}`
-          : null;
+        : sp.scheduled === "linkedin"
+          ? "🕙 Scheduled for LinkedIn at 10pm UK time."
+          : sp.scheduled === "x"
+            ? "🕙 Scheduled for X at 10pm UK time."
+            : sp.error
+              ? `❌ ${decodeURIComponent(sp.error)}`
+              : null;
 
   return (
     <Shell>
@@ -46,7 +52,13 @@ export default async function PublishPage({
         </p>
       )}
       {notice && (
-        <p style={{ background: notice.startsWith("✅") ? "#d4edda" : "#f8d7da", padding: 12, borderRadius: 8 }}>
+        <p
+          style={{
+            background: notice.startsWith("❌") ? "#f8d7da" : "#d4edda",
+            padding: 12,
+            borderRadius: 8,
+          }}
+        >
           {notice}
         </p>
       )}
@@ -65,6 +77,7 @@ export default async function PublishPage({
         sig={sig}
         text={draft.linkedinPost}
         published={Boolean(draft.published.linkedin)}
+        scheduledAt={draft.scheduled?.linkedin}
       />
       <PlatformForm
         platform="x"
@@ -74,6 +87,7 @@ export default async function PublishPage({
         sig={sig}
         text={draft.xPost}
         published={Boolean(draft.published.x)}
+        scheduledAt={draft.scheduled?.x}
       />
     </Shell>
   );
@@ -87,6 +101,7 @@ function PlatformForm({
   sig,
   text,
   published,
+  scheduledAt,
 }: {
   platform: "linkedin" | "x";
   label: string;
@@ -95,6 +110,7 @@ function PlatformForm({
   sig: string;
   text: string;
   published: boolean;
+  scheduledAt?: string;
 }) {
   return (
     <form
@@ -111,6 +127,19 @@ function PlatformForm({
       <div style={{ fontWeight: "bold", color, marginBottom: 8 }}>
         {label} {published && "· ✅ already published"}
       </div>
+      {scheduledAt && !published && (
+        <div
+          style={{
+            background: "#fff8e1",
+            padding: "8px 12px",
+            borderRadius: 8,
+            fontSize: 13,
+            marginBottom: 8,
+          }}
+        >
+          🕙 Scheduled: {formatLondon(scheduledAt)} — publishing now or re-scheduling replaces this.
+        </div>
+      )}
       <input type="hidden" name="id" value={id} />
       <input type="hidden" name="sig" value={sig} />
       <input type="hidden" name="platform" value={platform} />
@@ -129,22 +158,42 @@ function PlatformForm({
           border: "1px solid #ccc",
         }}
       />
-      <button
-        type="submit"
-        style={{
-          marginTop: 10,
-          background: color,
-          color: "#fff",
-          border: "none",
-          padding: "12px 22px",
-          borderRadius: 8,
-          fontWeight: "bold",
-          fontSize: 15,
-          cursor: "pointer",
-        }}
-      >
-        {published ? `Publish again to ${label}` : `Publish to ${label}`}
-      </button>
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 10 }}>
+        <button
+          type="submit"
+          name="mode"
+          value="now"
+          style={{
+            background: color,
+            color: "#fff",
+            border: "none",
+            padding: "12px 22px",
+            borderRadius: 8,
+            fontWeight: "bold",
+            fontSize: 15,
+            cursor: "pointer",
+          }}
+        >
+          Publish now
+        </button>
+        <button
+          type="submit"
+          name="mode"
+          value="tonight"
+          style={{
+            background: "#fff",
+            color,
+            border: `2px solid ${color}`,
+            padding: "10px 20px",
+            borderRadius: 8,
+            fontWeight: "bold",
+            fontSize: 15,
+            cursor: "pointer",
+          }}
+        >
+          🕙 Tonight 10pm (UK)
+        </button>
+      </div>
     </form>
   );
 }

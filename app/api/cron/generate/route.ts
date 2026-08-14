@@ -22,7 +22,7 @@ export async function GET(req: NextRequest) {
   if (!ok) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
 
   const missing = assertConfigured([
-    "anthropicApiKey",
+    "openaiApiKey",
     "githubToken",
     "githubRepo",
     "gmailUser",

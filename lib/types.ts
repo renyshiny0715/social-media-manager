@@ -16,6 +16,11 @@ export interface Draft {
     linkedin?: { at: string; postId?: string };
     x?: { at: string; postId?: string };
   };
+  // Pending scheduled publishes: ISO UTC time per platform.
+  scheduled?: {
+    linkedin?: string;
+    x?: string;
+  };
 }
 
 export interface State {

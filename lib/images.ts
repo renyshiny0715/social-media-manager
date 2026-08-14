@@ -4,7 +4,7 @@
 import { config } from "./config";
 
 export async function generateAiImage(prompt: string): Promise<Buffer | null> {
-  if (!config.openaiApiKey) return null;
+  if (!config.openaiApiKey || !config.openaiImages) return null;
   try {
     const res = await fetch("https://api.openai.com/v1/images/generations", {
       method: "POST",

@@ -4,11 +4,11 @@ An automated social media assistant for building a personal brand around **AI an
 
 Every **Monday / Wednesday / Friday** it:
 
-1. 📡 Pulls fresh articles from reputable AI sources (OpenAI, Google AI, MIT Tech Review, Berkeley BAIR, Simon Willison, Latent Space, and more — see [content/sources.ts](content/sources.ts))
-2. ✍️ Uses **Claude Opus** to draft 3 candidate posts in your voice — each with a LinkedIn version, an X version, and your personal take baked in (voice defined in [content/persona.ts](content/persona.ts))
-3. 🎨 Generates a post image — AI-generated (OpenAI, optional) with a branded template card as fallback
+1. 📡 Pulls fresh articles from reputable sources — MIT, Wharton, DeepMind, Microsoft Research, McKinsey, OpenAI, MIT Tech Review, Simon Willison, Latent Space, and more (see [content/sources.ts](content/sources.ts))
+2. ✍️ Uses **GPT-5** to draft 3 candidate posts in your voice — each with a LinkedIn version, an X version, and your personal take baked in (voice defined in [content/persona.ts](content/persona.ts))
+3. 🎨 Generates a post image — AI-generated (gpt-image-1) with a branded template card as fallback
 4. 📧 Emails the drafts to your Gmail
-5. 🚀 One click in the email → review page → **publish directly to LinkedIn and/or X** (with optional last-minute text edits)
+5. 🚀 One click in the email → review page → **publish now** or **schedule for 10pm UK time**, to LinkedIn and/or X (with optional last-minute text edits)
 
 Drafts, images, and state are stored **in this GitHub repo itself** (`data/` directory) — no database needed.
 
@@ -49,7 +49,7 @@ Then set the environment variables from [.env.example](.env.example) in **Vercel
 
 | Variable | Where to get it |
 |---|---|
-| `ANTHROPIC_API_KEY` | [platform.claude.com](https://platform.claude.com) → API Keys |
+| `OPENAI_API_KEY` | [platform.openai.com](https://platform.openai.com/api-keys) — one key covers both drafting (GPT-5) and images (gpt-image-1) |
 | `GITHUB_TOKEN` | GitHub → Settings → Developer settings → Fine-grained token with **Contents: Read and write** on this repo |
 | `GITHUB_REPO` | `yourname/social-media-manager` |
 | `GMAIL_APP_PASSWORD` | Google Account → Security → 2-Step Verification → **App passwords** |
@@ -81,9 +81,18 @@ You should get an email with 3 drafts within a minute. (Publish buttons will rep
 
 > ⚠️ LinkedIn tokens expire after ~60 days. When LinkedIn publishing fails with a 401, repeat step 5.
 
-### 6. Optional: AI images
+### 6. Images
 
-Set `OPENAI_API_KEY` to get AI-generated illustrations (~$0.04/image at medium quality). Without it, posts use the built-in branded template card — also a solid look.
+AI illustrations (~$0.04/image) are generated with the same OpenAI key. Set `OPENAI_IMAGES=off` to skip them and always use the built-in branded template card instead.
+
+## Scheduled publishing
+
+On the review page each platform has two buttons:
+
+- **Publish now** — posts immediately
+- **🕙 Tonight 10pm (UK)** — queues the post for the next 22:00 Europe/London (GMT/BST handled automatically)
+
+Queued posts are published by a GitHub Actions workflow ([.github/workflows/publish-due.yml](.github/workflows/publish-due.yml)) that pings `/api/cron/publish-due` every 10 minutes. It needs one repo secret: `CRON_SECRET` (same value as the Vercel env var). A failed scheduled publish is retried on the next tick and the error is visible in the Vercel function logs.
 
 ## Customizing
 

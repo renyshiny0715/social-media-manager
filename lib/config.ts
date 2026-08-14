@@ -3,11 +3,11 @@
 // so the app can be deployed first and wired up key-by-key.
 
 export const config = {
-  // Claude — drafts the posts
-  anthropicApiKey: process.env.ANTHROPIC_API_KEY ?? "",
-
-  // OpenAI — optional AI image generation (falls back to the template card)
+  // OpenAI — drafts the posts (GPT-5) and generates images (gpt-image-1)
   openaiApiKey: process.env.OPENAI_API_KEY ?? "",
+  openaiModel: process.env.OPENAI_MODEL ?? "gpt-5",
+  // Set OPENAI_IMAGES=off to skip AI images and always use the template card
+  openaiImages: (process.env.OPENAI_IMAGES ?? "on") !== "off",
 
   // GitHub repo used as the datastore for drafts/images/state
   githubToken: process.env.GITHUB_TOKEN ?? "",
