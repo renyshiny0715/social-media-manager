@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-x79t7r",
+  "createdAt": "2026-08-14T17:21:07.102Z",
+  "topic": "Disciplined AI investment questions",
+  "angle": "Treat AI bets like any other capital allocation: frame the decision, meter the spend, and pre-commit the kill switch.",
+  "sourceTitle": "ServiceNow CFO: Trillions are being spent on AI initiatives. Are companies asking these 3 key questions?",
+  "sourceUrl": "https://fortune.com/2026/08/14/servicenow-cfo-trillions-are-being-spent-on-ai-initiatives-are-companies-asking-these-3-key-questions/",
+  "linkedinPost": "AI spending is exploding. Governance often isn’t.\n\nA recent Fortune piece with ServiceNow’s CFO argues leaders should slow down just enough to ask sharper questions before funding AI at scale. I agree—and I’d add a practitioner’s twist from deployments that actually cleared the ROI bar.\n\nThree questions I see separating value from waste:\n1) What decision or workload will this change—and what are we turning off if it works? If nothing will be decommissioned, expect soft savings only.\n2) How will we meter the experiment? Define a 30/60/90-day scorecard with 2-3 leading metrics (cycle time, FCR, deflection) and a pre-agreed “stop or scale” gate.\n3) What operating constraints are non-negotiable (risk, brand, compliance), and who owns them weekly—not at the QBR?\n\nThe finance lens matters: treat AI like capital allocation, not R&D theater. Time-box learning, tie spend to milestones, and pre-commit the kill switch.\n\nIf your AI initiative can’t survive those questions, it shouldn’t get budget. If it can, it deserves to scale.\n\nWhat’s on your 90-day AI scorecard before you release the next dollar? #AIStrategy #AITransformation #EnterpriseAI",
+  "xPost": "Fund AI like capital, not theater: name the workload, define 30/60/90 scorecards, pre-commit what you’ll turn off and when you’ll kill it. No decommissioning plan = soft savings. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: three large, numbered gate frames over a runway (30/60/90) with green and red signal lights, a small pilot cart carrying “AI budget” passing only if metrics light green. Bold isometric 3D render, dramatic diagonal composition. Color palette: deep navy background, electric coral and cyan accents. Lighting: neon rim light for signals, soft ambient glow. Mood: decisive and disciplined. no text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "Gate AI Like Capital",
+  "cardSubtitle": "30/60/90 scorecards decide spend and scale.",
+  "imageType": "ai",
+  "published": {}
+}
