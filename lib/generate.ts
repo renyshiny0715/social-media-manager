@@ -1,0 +1,111 @@
+import Anthropic from "@anthropic-ai/sdk";
+import { persona, postGuidelines, evergreenTopics } from "@/content/persona";
+import { config } from "./config";
+import type { Draft, FeedItem } from "./types";
+
+const draftSchema = {
+  type: "object" as const,
+  properties: {
+    drafts: {
+      type: "array" as const,
+      items: {
+        type: "object" as const,
+        properties: {
+          topic: { type: "string" as const, description: "Short topic label for this draft" },
+          angle: { type: "string" as const, description: "One sentence: Reny's take/angle" },
+          source_title: { type: "string" as const, description: "Title of the source article used, or 'evergreen' if none" },
+          source_url: { type: "string" as const, description: "URL of the source article, or empty string if evergreen" },
+          linkedin_post: { type: "string" as const, description: "Full LinkedIn post text following the LinkedIn rules" },
+          x_post: { type: "string" as const, description: "Full X post text, max 270 chars including hashtags" },
+          image_prompt: { type: "string" as const, description: "AI image generation prompt per the image guidance" },
+          card_headline: { type: "string" as const, description: "Max 8 words" },
+          card_subtitle: { type: "string" as const, description: "Max 14 words" },
+        },
+        required: [
+          "topic", "angle", "source_title", "source_url", "linkedin_post",
+          "x_post", "image_prompt", "card_headline", "card_subtitle",
+        ],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ["drafts"],
+  additionalProperties: false,
+};
+
+export interface GeneratedDraft {
+  topic: string;
+  angle: string;
+  source_title: string;
+  source_url: string;
+  linkedin_post: string;
+  x_post: string;
+  image_prompt: string;
+  card_headline: string;
+  card_subtitle: string;
+}
+
+export async function generateDrafts(articles: FeedItem[]): Promise<GeneratedDraft[]> {
+  const client = new Anthropic({ apiKey: config.anthropicApiKey });
+
+  const articleList =
+    articles.length > 0
+      ? articles
+          .map(
+            (a, i) =>
+              `${i + 1}. [${a.sourceName}] ${a.title}\n   URL: ${a.link}\n   ${a.snippet}`,
+          )
+          .join("\n\n")
+      : "(no fresh articles available this run)";
+
+  const userPrompt = `Here are fresh articles from reputable AI sources:
+
+${articleList}
+
+Task: write ${config.draftsPerRun} distinct social media post drafts.
+- Each draft covers a DIFFERENT topic/article. Pick the articles most relevant to AI careers,
+  forward deployed engineering, enterprise AI deployment, LLM engineering practice, or the
+  changing nature of software work. Skip pure funding/gossip news unless there is a real lesson in it.
+- If there are no suitable fresh articles (or fewer than needed), fill the remainder using these
+  evergreen angles instead (mark source_title as "evergreen", source_url as ""):
+${evergreenTopics.map((t) => `  - ${t}`).join("\n")}
+- Each draft needs both a LinkedIn version and an X version of the same idea.
+
+${postGuidelines}`;
+
+  const response = await client.messages.create({
+    model: "claude-opus-5",
+    max_tokens: 16000,
+    system: persona,
+    output_config: { format: { type: "json_schema", schema: draftSchema } },
+    messages: [{ role: "user", content: userPrompt }],
+  });
+
+  if (response.stop_reason === "refusal") {
+    throw new Error("Claude declined to generate drafts for this input.");
+  }
+
+  const text = response.content.find((b) => b.type === "text")?.text;
+  if (!text) throw new Error("No text in Claude response");
+  const parsed = JSON.parse(text) as { drafts: GeneratedDraft[] };
+  return parsed.drafts.slice(0, config.draftsPerRun);
+}
+
+export function toDraft(g: GeneratedDraft, imageType: Draft["imageType"]): Draft {
+  const id = `${new Date().toISOString().slice(0, 10)}-${Math.random().toString(36).slice(2, 8)}`;
+  return {
+    id,
+    createdAt: new Date().toISOString(),
+    topic: g.topic,
+    angle: g.angle,
+    sourceTitle: g.source_title,
+    sourceUrl: g.source_url,
+    linkedinPost: g.linkedin_post,
+    xPost: g.x_post,
+    imagePrompt: g.image_prompt,
+    cardHeadline: g.card_headline,
+    cardSubtitle: g.card_subtitle,
+    imageType,
+    published: {},
+  };
+}
