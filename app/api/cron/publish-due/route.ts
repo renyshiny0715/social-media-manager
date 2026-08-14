@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { config } from "@/lib/config";
+import { config, assertConfigured } from "@/lib/config";
 import { listDrafts, saveDraft } from "@/lib/github";
 import { publishToX } from "@/lib/publish/x";
 import { publishToLinkedIn } from "@/lib/publish/linkedin";
@@ -18,6 +18,11 @@ export async function GET(req: NextRequest) {
     config.cronSecret &&
     (auth === `Bearer ${config.cronSecret}` || secretParam === config.cronSecret);
   if (!ok) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+
+  // Nothing can be scheduled before the datastore exists — succeed quietly so
+  // the every-10-minutes GitHub Action stays green during initial setup.
+  const missing = assertConfigured(["githubToken", "githubRepo"]);
+  if (missing) return NextResponse.json({ ok: true, skipped: missing });
 
   const now = Date.now();
   const results: string[] = [];
