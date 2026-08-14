@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-0c5ult",
+  "createdAt": "2026-08-14T17:13:34.411Z",
+  "topic": "Managed AI agents for real work (Grok @Bot)",
+  "angle": "Managed agents only work when you shrink the problem and expand the guardrails.",
+  "sourceTitle": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+  "sourceUrl": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+  "linkedinPost": "AI “teammates” won’t replace your team. They’ll force you to define work precisely.\n\nLatent Space’s writeup on Grok @Bot frames the next wave: managed agents that tackle real tasks, not just chat. That’s the right direction—but the boring details decide if these ship or stall.\n\nMy take from FDE work: managed agents only work when you shrink the problem and expand the guardrails. We get wins by giving agents a tight task catalog, bounded tools, time budgets, and crisp handoff rules. “General assistant” fails quietly; “triage refund requests under $100 with policy X, escalate Y” succeeds.\n\nWe also log everything like a flight recorder: tool calls, intermediate thoughts, timeouts, retries. Then we run red-team scripts weekly to break them on purpose. Two numbers matter: containment rate (tasks finished without human) and bad-escalation rate (when they asked for help but shouldn’t have).\n\nA recent Latent Space piece highlights the market moment. The craft is in operational design: scoping, observability, and rollback paths.\n\nIf you’re piloting agents this quarter, what’s your smallest high-frequency task you’d trust to a bot first? #ForwardDeployedEngineer #AIEngineering #LLM #CustomerEngineering",
+  "xPost": "Agents work when you shrink scope and expand guardrails. Task catalogs, bounded tools, time budgets, audit logs—then track containment vs bad‑escalation rate. “General assistant” fails; specific workflows win. Start tiny, high‑frequency. #AIEngineering #LLM",
+  "imagePrompt": "Visual metaphor: a narrow factory conveyor with modular jigs guiding identical tasks, and a guarded side gate for human handoff—showing constrained, observable agent workflows. Art direction: bold isometric 3D render. Composition: dramatic diagonal conveyor from bottom-left to top-right, single centered station highlighted. Color palette: deep navy background with electric coral accents and cool cyan highlights. Lighting and mood: crisp studio lighting with subtle neon rim light on the jigs for precision feel. no text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "Agents Need Guardrails",
+  "cardSubtitle": "Shrink scope, expand observability, then scale.",
+  "imageType": "ai",
+  "published": {}
+}
