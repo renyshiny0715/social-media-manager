@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-14-1cjbcs",
+  "createdAt": "2026-08-14T17:14:18.882Z",
+  "topic": "Builder lessons from GPT‑5.6 guide",
+  "angle": "Routing and response control beat chasing the single ‘best’ model.",
+  "sourceTitle": "The builder’s guide to GPT‑5.6",
+  "sourceUrl": "https://openai.com/index/builders-guide-to-gpt-5-6",
+  "linkedinPost": "Chasing the “best model” is how you ship slow features.\n\nOpenAI’s new builder guide for GPT‑5.6 leans into smarter model selection and a tighter Responses API. That lines up with what works in the field: route ruthlessly, constrain outputs, and measure cost per successful task—not per token.\n\nMy playbook as an FDE:\n- Use a fast, cheap model for classification, routing, and schema validation; reserve the heavy model for the 10% hairy cases.\n- Lock outputs with JSON/grammar, then enforce at the boundary with strict validators.\n- Evals by slice: measure success on real workflows (e.g., “returns policy email, 3-shot accuracy, <5s latency”).\n- Cache aggressively; warm prompts at deploy; autoswap models behind feature flags.\n\nA recent OpenAI guide gives good defaults. The leap is operational: treat models like a fleet, not a monolith. When we did this for a customer support workflow, we cut cost 38% and shaved p95 latency from 7.2s to 2.9s without hurting CSAT.\n\nHow are you deciding what goes to small vs. big models in prod today? #AI #AIEngineering #LLM #ForwardDeployedEngineer",
+  "xPost": "Stop hunting the “best model.” Route: small model for 90%, big for hairy 10%. Constrain outputs, eval by slice, cache hard. Treat models like a fleet, not a monolith. Ships faster, cheaper, safer. #AIEngineering",
+  "imagePrompt": "Visual metaphor: a highway toll plaza where small cars breeze through many green “express” lanes and a few oversize trucks route to a supervised inspection bay—illustrating model routing. Art direction: flat editorial illustration with oversized geometric shapes. Composition: bird’s-eye view, strong lane lines converging upward. Color palette: cream background with cobalt blue lanes and warm amber accents. Lighting and mood: soft, clean daylight for clarity. no text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "Route, Don’t Idolize Models",
+  "cardSubtitle": "Treat models like a fleet in production.",
+  "imageType": "ai",
+  "published": {}
+}
