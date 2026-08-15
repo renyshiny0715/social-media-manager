@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-15-n4yc39",
+  "createdAt": "2026-08-15T23:15:24.383Z",
+  "topic": "Surveillance backlash and AI social license",
+  "angle": "AI deployment fails when you win the contract but lose the community.",
+  "sourceTitle": "Flock is tightening its rules in response to a growing surveillance backlash",
+  "sourceUrl": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/",
+  "linkedinPost": "Winning the RFP isn’t the same as earning permission to operate.\n\nMIT Technology Review reports a police-tech vendor is tightening access to its license-plate reader network after backlash and lost contracts. The pattern is familiar: launch fast, scale faster, then scramble when the social license collapses.\n\nEnterprises hit similar walls with AI that touches customers or citizens. The failure modes rhyme:\n- Ambiguous use policies no one enforces.\n- Vague opt-outs buried in settings.\n- Thin audit trails you can’t defend in public.\n\nMy take from deployments: Treat social license as a product requirement. Write “abuse stories” alongside user stories. Ship with clear consent flows, visible controls, and third-party audit hooks. Stand up an internal red team to pressure-test misuse before the press does.\n\nIf your AI changes people’s rights, choices, or safety, you need more than compliance. You need legitimacy, measured in renewals and absence of headlines.\n\nWhat’s one safeguard you’d add if you assumed your worst critic would read your logs tomorrow? #AIStrategy #AITransformation #EnterpriseAI",
+  "xPost": "Don’t just win the RFP—earn permission to operate. Build “abuse stories,” visible controls, and audit hooks into AI that changes rights or choices. Compliance ≠ legitimacy. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a shiny new “AI Surveillance Kiosk” ribbon-cutting ceremony on a town square. The ribbon reads “Contract Signed.” In the background, townspeople quietly swap the ribbon for a giant caution tape reading “Social License.” The exec with scissors looks confused. Optional bold phrase on a protest placard: “Show Your Logs.” Art direction: retro screen-print poster style. Color palette: charcoal background with neon lime and warm magenta accents. Lighting: bold graphic shadows, high contrast. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Win Trust, Not Just RFPs",
+  "cardSubtitle": "Social license is a product feature.",
+  "imageType": "card",
+  "published": {}
+}
