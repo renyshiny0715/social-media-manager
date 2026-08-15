@@ -6,7 +6,7 @@ import { publishToLinkedIn } from "@/lib/publish/linkedin";
 import { nextLondonPublishTime } from "@/lib/schedule";
 import { ensureAiImage } from "@/lib/images";
 
-export const maxDuration = 60;
+export const maxDuration = 300; // publish-time image generation can take ~a minute
 export const dynamic = "force-dynamic";
 
 // POST from the review page form. Publishing is POST-only so that email

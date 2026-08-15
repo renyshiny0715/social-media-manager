@@ -14,6 +14,7 @@ const draftSchema = {
           angle: { type: "string" as const, description: "One sentence: Reny's take/angle" },
           source_title: { type: "string" as const, description: "Title of the source article used, or 'evergreen' if none" },
           source_url: { type: "string" as const, description: "URL of the source article, or empty string if evergreen" },
+          source_name: { type: "string" as const, description: "Publication or author name exactly as shown in [brackets] in the article list, e.g. 'McKinsey Insights'; empty string if evergreen" },
           linkedin_post: { type: "string" as const, description: "Full LinkedIn post text following the LinkedIn rules" },
           x_post: { type: "string" as const, description: "Full X post text, max 270 chars including hashtags" },
           image_prompt: { type: "string" as const, description: "AI image generation prompt per the image guidance" },
@@ -21,7 +22,7 @@ const draftSchema = {
           card_subtitle: { type: "string" as const, description: "Max 14 words" },
         },
         required: [
-          "topic", "angle", "source_title", "source_url", "linkedin_post",
+          "topic", "angle", "source_title", "source_url", "source_name", "linkedin_post",
           "x_post", "image_prompt", "card_headline", "card_subtitle",
         ],
         additionalProperties: false,
@@ -37,6 +38,7 @@ export interface GeneratedDraft {
   angle: string;
   source_title: string;
   source_url: string;
+  source_name: string;
   linkedin_post: string;
   x_post: string;
   image_prompt: string;
@@ -120,6 +122,7 @@ export function toDraft(g: GeneratedDraft, imageType: Draft["imageType"]): Draft
     angle: g.angle,
     sourceTitle: g.source_title,
     sourceUrl: g.source_url,
+    sourceName: g.source_name,
     linkedinPost: g.linkedin_post,
     xPost: g.x_post,
     imagePrompt: g.image_prompt,

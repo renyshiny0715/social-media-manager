@@ -5,6 +5,7 @@ export interface Draft {
   angle: string;
   sourceTitle: string;
   sourceUrl: string;
+  sourceName?: string; // publication/author, e.g. "McKinsey Insights"
   linkedinPost: string;
   xPost: string;
   imagePrompt: string;

@@ -48,7 +48,10 @@ export default async function PublishPage({
       <p style={{ color: "#555", fontStyle: "italic" }}>{draft.angle}</p>
       {draft.sourceUrl && (
         <p style={{ fontSize: 13, color: "#777" }}>
-          Source: <a href={draft.sourceUrl}>{draft.sourceTitle}</a>
+          📰 <b style={{ color: "#444" }}>{draft.sourceName || domainOf(draft.sourceUrl)}</b>
+          {" · "}
+          <a href={draft.sourceUrl}>{draft.sourceTitle}</a>{" "}
+          <span style={{ color: "#aaa" }}>({domainOf(draft.sourceUrl)})</span>
         </p>
       )}
       {notice && (
@@ -201,6 +204,14 @@ function PlatformForm({
       </div>
     </form>
   );
+}
+
+function domainOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
 }
 
 function Shell({ children }: { children: React.ReactNode }) {

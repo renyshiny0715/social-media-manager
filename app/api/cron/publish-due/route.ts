@@ -5,7 +5,7 @@ import { publishToX } from "@/lib/publish/x";
 import { publishToLinkedIn } from "@/lib/publish/linkedin";
 import { ensureAiImage } from "@/lib/images";
 
-export const maxDuration = 120;
+export const maxDuration = 300; // may generate images for several due posts
 export const dynamic = "force-dynamic";
 
 // Publishes any scheduled posts whose time has come. Triggered every 10 minutes

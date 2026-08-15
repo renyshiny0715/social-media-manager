@@ -4,6 +4,14 @@ import { sign } from "./sign";
 import { imageUrlForDraft } from "./images";
 import type { Draft } from "./types";
 
+function domainOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
 function esc(s: string): string {
   return s
     .replace(/&/g, "&amp;")
@@ -22,8 +30,11 @@ function draftBlock(draft: Draft, index: number): string {
     <p style="margin:0 0 12px;color:#555;font-style:italic;">${esc(draft.angle)}</p>
     ${
       draft.sourceUrl
-        ? `<p style="margin:0 0 16px;font-size:13px;color:#777;">Source: <a href="${draft.sourceUrl}">${esc(draft.sourceTitle)}</a></p>`
-        : `<p style="margin:0 0 16px;font-size:13px;color:#777;">Evergreen topic (no external source)</p>`
+        ? `<p style="margin:0 0 16px;font-size:13px;color:#777;">
+             📰 <b style="color:#444;">${esc(draft.sourceName || domainOf(draft.sourceUrl))}</b>
+             &nbsp;·&nbsp; <a href="${draft.sourceUrl}">${esc(draft.sourceTitle)}</a>
+             &nbsp;<span style="color:#aaa;">(${domainOf(draft.sourceUrl)})</span></p>`
+        : `<p style="margin:0 0 16px;font-size:13px;color:#777;">💡 Evergreen topic (no external source)</p>`
     }
     <img src="${imgUrl}" alt="post image" style="width:100%;max-width:520px;border-radius:8px;margin-bottom:4px;" />
     <div style="font-size:12px;color:#999;margin-bottom:16px;">Preview card — a premium AI illustration is generated when you hit publish.</div>

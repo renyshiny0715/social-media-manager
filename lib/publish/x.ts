@@ -22,7 +22,11 @@ export async function publishToX(
 
   let mediaIds: [string] | undefined;
   if (image) {
-    const mediaId = await client.v1.uploadMedia(image, { mimeType: "image/png" });
+    // v2 media upload — the v1.1 endpoint returns 402 on the free API tier.
+    const mediaId = await client.v2.uploadMedia(image, {
+      media_type: "image/png",
+      media_category: "tweet_image",
+    });
     mediaIds = [mediaId];
   }
 
