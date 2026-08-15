@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-15-2ds2kr",
+  "createdAt": "2026-08-15T23:15:23.004Z",
+  "topic": "AI personalization and loyalty in restaurants",
+  "angle": "Personalization pays only when it’s tied to loyalty economics, not novelty.",
+  "sourceTitle": "How Fast-Casual Brands Build Loyalty",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/how-fast-casual-brands-build-loyalty/",
+  "linkedinPost": "Most “personalization” programs are just expensive ways to say hello by name.\n\nA recent Knowledge at Wharton interview with WOWorks’ CMO highlights how fast-casual brands use differentiation, personalization, and loyalty to win repeat visits. The lesson applies well beyond restaurants: loyalty is a math problem before it’s a marketing one.\n\nFrom the front lines, here’s what actually moves the needle with AI:\n\n- Tie recommendations to contribution margin, not clicks. “Popular” isn’t profitable if it pushes the wrong items.\n- Optimize for return visit within 14 days, not open rate. Frequency beats vanity.\n- Personalize offers by operational reality. Don’t promote what the kitchen (or warehouse) can’t fulfill.\n- Track cannibalization. A discounted upsell that replaces a full-price item isn’t growth.\n\nEnterprises that treat AI like a loyalty P&L get results. Those that chase shiny journeys create bespoke experiences nobody repeats—and nobody measures.\n\nMy take: Start with three numbers—incremental margin per customer, days-to-return, and cost to serve—and make the model prove it can move all three. Then scale.\n\nWhere has your “personalization” actually changed customer behavior you can monetize? #CustomerExperience #AIAdoption #EnterpriseAI #AIStrategy",
+  "xPost": "Personalization isn’t a greeting; it’s a P&L. Tie AI offers to margin, return frequency, and ops constraints—or you’re funding vanity. Start with 3 metrics: incremental margin, days-to-return, cost to serve. Make the model prove it. #CustomerExperience #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a vending machine labeled by shape as a “Loyalty Engine” dispensing two types of items—on the left, glittery ‘likes’ and ‘clicks’; on the right, humble coins labeled ‘margin’ and punch cards labeled ‘return in 14 days.’ A restaurant manager chooses the coins while a crowd reaches for glitter. Include a small counter display reading “Next Visit: 14 Days.” Art direction: flat editorial illustration with bold shapes. Color palette: cream background with cobalt blue and warm amber accents. Lighting and mood: clean, soft studio lighting with playful shadows. Optional bold phrase integrated on the machine marquee: “Measure What Pays.” No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Personalization That Pays",
+  "cardSubtitle": "Start with margin, return, and ops.",
+  "imageType": "card",
+  "published": {}
+}
