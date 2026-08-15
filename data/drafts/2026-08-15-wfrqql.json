@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-15-wfrqql",
+  "createdAt": "2026-08-15T10:18:11.772Z",
+  "topic": "From assistants to execution (agents)",
+  "angle": "Value appears when AI owns steps end-to-end with guardrails, not just drafts.",
+  "sourceTitle": "From assistance to execution: How enterprises put AI to work",
+  "sourceUrl": "https://openai.com/index/how-enterprises-put-ai-to-work",
+  "linkedinPost": "Most enterprises are stuck in “assistant mode”—lots of drafts, few outcomes.\n\nOpenAI’s piece on moving from assistance to execution mirrors what I’ve seen in the field: value scales when AI owns steps end‑to‑end with guardrails, not when it just suggests text.\n\nAssistants shave minutes. Execution changes throughput. In customer operations, we’ve seen 20–40% faster resolution by letting AI gather context, propose an action, check policy, execute, and log—only escalating edge cases.\n\nMy take: don’t attempt a grand agent. Start with a narrow, frequent workflow (refunds under $50, password resets, product replacements in stock) and define: inputs, decision rules, allowed actions, and fail‑safes. Instrument everything—coverage, deflection rate, error rate, and dollars returned to the queue.\n\nThe litmus test: can you turn it off for a day and measure the capacity you lose? If not, you don’t have execution yet—you have a helper.\n\nWhat’s the one repetitive process in your org that an agent could own safely by next quarter? #AIAdoption #CustomerExperience #EnterpriseAI #AIStrategy",
+  "xPost": "Assistants draft. Agents do. Start with one narrow workflow: define inputs, rules, allowed actions, and fail‑safes. Measure coverage, deflection, and errors. If turning it off doesn’t hurt capacity, it’s not execution yet. #AIAdoption #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a relay race baton that, instead of being passed, transforms into an autonomous conveyor belt carrying tasks to completion. Modern paper-cut collage with layered shapes. Composition: single centered belt emerging from a baton, generous negative space. Color palette: charcoal background, neon lime belt, bright teal baton accents. Lighting: subtle glow along the belt edge to imply motion. No text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "Move From Drafts to Done",
+  "cardSubtitle": "Let agents own narrow workflows.",
+  "imageType": "ai",
+  "published": {}
+}
