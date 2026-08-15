@@ -31,9 +31,9 @@ export default async function PublishPage({
 
   const notice =
     sp.done === "linkedin"
-      ? "✅ Published to LinkedIn!"
+      ? `✅ Published to LinkedIn!${sp.note ? ` (${decodeURIComponent(sp.note)})` : ""}`
       : sp.done === "x"
-        ? `✅ Published to X!${sp.note ? ` ⚠️ ${decodeURIComponent(sp.note)}` : ""}`
+        ? `✅ Published to X!${sp.note ? ` (${decodeURIComponent(sp.note)})` : ""}`
         : sp.scheduled === "linkedin"
           ? "🕙 Scheduled for LinkedIn at 10pm UK time."
           : sp.scheduled === "x"

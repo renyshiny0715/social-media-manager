@@ -96,3 +96,24 @@ export async function publishToLinkedIn(
   const postId = res.headers.get("x-restli-id") ?? "";
   return { postId };
 }
+
+// Adds a comment under a published post (used to attach the source link —
+// better reach than a link in the post body).
+export async function commentOnLinkedIn(postUrn: string, text: string): Promise<void> {
+  const auth = await loadLinkedInAuth();
+  if (!auth) throw new Error("LinkedIn not connected");
+  const res = await fetch(
+    `https://api.linkedin.com/rest/socialActions/${encodeURIComponent(postUrn)}/comments`,
+    {
+      method: "POST",
+      headers: liHeaders(auth),
+      body: JSON.stringify({
+        actor: auth.personUrn,
+        message: { text },
+      }),
+    },
+  );
+  if (!res.ok) {
+    throw new Error(`LinkedIn comment failed: ${res.status} ${await res.text()}`);
+  }
+}

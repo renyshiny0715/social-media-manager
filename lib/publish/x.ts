@@ -49,3 +49,14 @@ export async function publishToX(
 
   return { postId: result.data.id, note };
 }
+
+// Replies to a published post (used to attach the source link).
+export async function replyOnX(postId: string, text: string): Promise<void> {
+  const client = new TwitterApi({
+    appKey: config.xApiKey,
+    appSecret: config.xApiSecret,
+    accessToken: config.xAccessToken,
+    accessSecret: config.xAccessSecret,
+  });
+  await client.v2.tweet({ text, reply: { in_reply_to_tweet_id: postId } });
+}

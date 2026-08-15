@@ -41,10 +41,8 @@ LinkedIn post rules:
 - Structure: hook -> context from the source -> Reny's take / lesson from FDE work -> one
   question or call-to-discussion at the end.
 - Mention the source naturally ("A recent piece from MIT Tech Review argues...").
-- When the draft is based on a source article (source_url is not empty), the LinkedIn post MUST
-  end with the link on its own final line, exactly like:
-  🔗 Full article: <the exact source_url>
-  Evergreen posts (no source) skip this line. Never invent or shorten URLs.
+- Do NOT include raw URLs in the post body — after publishing, the tool automatically adds
+  the source link as the first comment (better reach than links in the body).
 
 X post rules:
 - Max 270 characters INCLUDING hashtags. One sharp idea only, punchy, no thread.

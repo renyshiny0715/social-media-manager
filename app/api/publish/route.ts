@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { loadDraft, saveDraft } from "@/lib/github";
 import { verify } from "@/lib/sign";
-import { publishToX } from "@/lib/publish/x";
-import { publishToLinkedIn } from "@/lib/publish/linkedin";
+import { publishToX, replyOnX } from "@/lib/publish/x";
+import { publishToLinkedIn, commentOnLinkedIn } from "@/lib/publish/linkedin";
+import { sourceComment } from "@/lib/source-comment";
 import { nextLondonPublishTime } from "@/lib/schedule";
 import { ensureAiImage } from "@/lib/images";
 
@@ -51,19 +52,41 @@ export async function POST(req: NextRequest) {
     // The premium AI illustration is generated here, at publish time.
     const image = await ensureAiImage(draft);
 
+    const notes: string[] = [];
     if (platform === "x") {
       const { postId, note } = await publishToX(draft, text, image);
       draft.published.x = { at: new Date().toISOString(), postId };
       if (draft.scheduled?.x) delete draft.scheduled.x;
-      await saveDraft(draft);
-      return back(`done=x${note ? `&note=${encodeURIComponent(note)}` : ""}`);
+      if (note) notes.push(note);
+      const comment = sourceComment(draft);
+      if (comment && postId) {
+        try {
+          await replyOnX(postId, comment);
+          notes.push("source link added as a reply");
+        } catch (err) {
+          console.error("X source reply failed:", err);
+          notes.push("source-link reply failed (post itself is live)");
+        }
+      }
     } else {
       const { postId } = await publishToLinkedIn(draft, text, image);
       draft.published.linkedin = { at: new Date().toISOString(), postId };
       if (draft.scheduled?.linkedin) delete draft.scheduled.linkedin;
+      const comment = sourceComment(draft);
+      if (comment && postId) {
+        try {
+          await commentOnLinkedIn(postId, comment);
+          notes.push("source link added as a comment");
+        } catch (err) {
+          console.error("LinkedIn source comment failed:", err);
+          notes.push("source-link comment failed (post itself is live)");
+        }
+      }
     }
     await saveDraft(draft);
-    return back(`done=${platform}`);
+    return back(
+      `done=${platform}${notes.length ? `&note=${encodeURIComponent(notes.join(" · "))}` : ""}`,
+    );
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     console.error(`publish to ${platform} failed:`, err);
