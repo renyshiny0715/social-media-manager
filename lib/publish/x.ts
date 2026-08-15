@@ -7,7 +7,7 @@ export async function publishToX(
   draft: Draft,
   text: string,
   imageOverride?: Buffer | null,
-): Promise<{ postId: string }> {
+): Promise<{ postId: string; note?: string }> {
   const missing = assertConfigured(["xApiKey", "xApiSecret", "xAccessToken", "xAccessSecret"]);
   if (missing) throw new Error(`X is not configured. ${missing}`);
 
@@ -21,13 +21,25 @@ export async function publishToX(
   const image = imageOverride ?? (await imageBytesForDraft(draft.id, draft.imageType));
 
   let mediaIds: [string] | undefined;
+  let note: string | undefined;
   if (image) {
-    // v2 media upload — the v1.1 endpoint returns 402 on the free API tier.
-    const mediaId = await client.v2.uploadMedia(image, {
-      media_type: "image/png",
-      media_category: "tweet_image",
-    });
-    mediaIds = [mediaId];
+    try {
+      const mediaId = await client.v2.uploadMedia(image, {
+        media_type: "image/png",
+        media_category: "tweet_image",
+      });
+      mediaIds = [mediaId];
+    } catch (err) {
+      // X's free API tier has no media-upload credits ("credits depleted", 402).
+      // Fall back to a text-only post rather than failing the publish.
+      const code = (err as { code?: number }).code;
+      if (code === 402 || code === 403) {
+        note = "Posted WITHOUT the image — X media upload needs API credits (free tier has none). Text went out fine.";
+        console.warn("X media upload unavailable, posting text-only:", code);
+      } else {
+        throw err;
+      }
+    }
   }
 
   const result = await client.v2.tweet({
@@ -35,5 +47,5 @@ export async function publishToX(
     ...(mediaIds ? { media: { media_ids: mediaIds } } : {}),
   });
 
-  return { postId: result.data.id };
+  return { postId: result.data.id, note };
 }

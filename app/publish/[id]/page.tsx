@@ -33,7 +33,7 @@ export default async function PublishPage({
     sp.done === "linkedin"
       ? "✅ Published to LinkedIn!"
       : sp.done === "x"
-        ? "✅ Published to X!"
+        ? `✅ Published to X!${sp.note ? ` ⚠️ ${decodeURIComponent(sp.note)}` : ""}`
         : sp.scheduled === "linkedin"
           ? "🕙 Scheduled for LinkedIn at 10pm UK time."
           : sp.scheduled === "x"

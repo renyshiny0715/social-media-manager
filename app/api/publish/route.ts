@@ -52,9 +52,11 @@ export async function POST(req: NextRequest) {
     const image = await ensureAiImage(draft);
 
     if (platform === "x") {
-      const { postId } = await publishToX(draft, text, image);
+      const { postId, note } = await publishToX(draft, text, image);
       draft.published.x = { at: new Date().toISOString(), postId };
       if (draft.scheduled?.x) delete draft.scheduled.x;
+      await saveDraft(draft);
+      return back(`done=x${note ? `&note=${encodeURIComponent(note)}` : ""}`);
     } else {
       const { postId } = await publishToLinkedIn(draft, text, image);
       draft.published.linkedin = { at: new Date().toISOString(), postId };
