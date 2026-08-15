@@ -16,11 +16,13 @@ export async function generateAiImage(prompt: string): Promise<Buffer | null> {
         model: "gpt-image-1",
         prompt: `${prompt}
 
-Render as a premium, scroll-stopping editorial illustration for a professional social feed:
-polished and gallery-quality, sharp focus, high contrast, rich color depth, subtle texture
-and depth of field. Absolutely no text, letters, numbers, watermarks, or logos anywhere.`,
+Render as a bold, scroll-stopping editorial illustration for a professional social feed.
+Style requirements: strong graphic composition with a few large clean shapes, confident color
+blocking, crisp edges, smooth flawless gradients, high contrast between subject and background,
+poster-like simplicity. No clutter, no busy fine detail, no photorealistic textures.
+Absolutely no text, letters, numbers, watermarks, or logos anywhere.`,
         size: "1536x1024",
-        quality: "high",
+        quality: "medium",
         n: 1,
       }),
     });

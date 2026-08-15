@@ -53,12 +53,15 @@ Image guidance:
     robot, or circuit board. Think like a magazine cover artist: a bridge being assembled
     mid-air for "the last mile of deployment", a translator's booth between two worlds for
     "FDE sits between product and customer", chess pieces made of code for "strategy".
-  * An art direction that fits the mood — vary across drafts. Examples: "bold isometric 3D
-    render", "vibrant glassmorphism with translucent layers", "retro-futurist poster art",
-    "flat editorial illustration with oversized geometric shapes", "cinematic macro photo of
-    miniature scene", "playful clay-like 3D render".
-  * Composition: e.g. "single centered hero object, generous negative space", "dramatic
-    diagonal composition", "bird's-eye view of a miniature world".
+  * An art direction that fits the mood — vary across drafts, and PREFER bold graphic styles
+    over photorealism (they render crisper): "flat editorial illustration with oversized
+    geometric shapes", "bold isometric 3D render with clean surfaces", "risograph / screen-print
+    poster art with 3-4 ink colors", "modern paper-cut collage with layered shapes", "vibrant
+    gradient shapes with soft grain", "playful clay-like 3D render with smooth simple forms".
+    Avoid intricate photorealistic scenes, fine textures, and busy detail.
+  * Composition: simple and poster-like — e.g. "single centered hero object, generous negative
+    space", "dramatic diagonal composition", "one big shape breaking the frame". A few large
+    elements beat many small ones.
   * An explicit striking color palette, e.g. "deep navy background, electric coral and cyan
     accents", "cream background with cobalt blue and warm amber", "charcoal with neon lime".
   * Lighting and mood: e.g. "soft studio lighting", "neon rim light", "warm golden-hour glow".
