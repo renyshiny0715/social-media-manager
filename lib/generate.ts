@@ -87,7 +87,7 @@ ${postGuidelines}`;
       ],
       // GPT-5 is a reasoning model: the cap covers hidden reasoning + output,
       // so keep it generous and the reasoning effort low for this writing task.
-      max_completion_tokens: 20000,
+      max_completion_tokens: 28000,
       reasoning_effort: "low",
       response_format: {
         type: "json_schema",

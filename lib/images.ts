@@ -1,9 +1,15 @@
-// Image pipeline: try OpenAI image generation when a key is configured;
-// otherwise (or on failure) fall back to the template card rendered by /api/card.
+// Image pipeline, lazy by design: drafts are emailed with a free template-card
+// preview, and the real AI illustration (high quality) is generated only at
+// publish time — so image spend goes 100% to posts that actually ship.
 
 import { config } from "./config";
+import { loadImage, saveImage, saveDraft } from "./github";
+import type { Draft } from "./types";
 
-export async function generateAiImage(prompt: string): Promise<Buffer | null> {
+export async function generateAiImage(
+  prompt: string,
+  quality: "low" | "medium" | "high" = "high",
+): Promise<Buffer | null> {
   if (!config.openaiApiKey || !config.openaiImages) return null;
   try {
     const res = await fetch("https://api.openai.com/v1/images/generations", {
@@ -16,13 +22,14 @@ export async function generateAiImage(prompt: string): Promise<Buffer | null> {
         model: "gpt-image-1",
         prompt: `${prompt}
 
-Render as a bold, scroll-stopping editorial illustration for a professional social feed.
-Style requirements: strong graphic composition with a few large clean shapes, confident color
-blocking, crisp edges, smooth flawless gradients, high contrast between subject and background,
-poster-like simplicity. No clutter, no busy fine detail, no photorealistic textures.
-Absolutely no text, letters, numbers, watermarks, or logos anywhere.`,
+Render as a scroll-stopping, magazine-cover-quality editorial illustration for a professional
+social feed. Bold, witty and instantly readable at thumbnail size: strong focal point, confident
+colors, high contrast, a touch of humor in the visual storytelling. Rich detail is welcome as
+long as the main idea pops first. If the prompt includes a short phrase or number to display,
+render it big, bold and perfectly spelled — otherwise include no text at all. Never add
+watermarks, logos, or any other stray text.`,
         size: "1536x1024",
-        quality: "medium",
+        quality,
         n: 1,
       }),
     });
@@ -40,7 +47,29 @@ Absolutely no text, letters, numbers, watermarks, or logos anywhere.`,
   }
 }
 
-// URL of the image to show/publish for a draft (AI PNG in repo, or on-the-fly card).
+// Called at publish time: returns the final image bytes for the draft,
+// generating + storing the AI illustration on first use. Falls back to the
+// template card if generation is unavailable or fails.
+export async function ensureAiImage(draft: Draft): Promise<Buffer | null> {
+  if (draft.imageType === "ai") {
+    const existing = await loadImage(draft.id);
+    if (existing) return existing;
+  }
+
+  const generated = await generateAiImage(draft.imagePrompt, "high");
+  if (generated) {
+    await saveImage(draft.id, generated);
+    if (draft.imageType !== "ai") {
+      draft.imageType = "ai";
+      await saveDraft(draft); // persist immediately so a failed publish never re-bills the image
+    }
+    return generated;
+  }
+
+  return imageBytesForDraft(draft.id, "card");
+}
+
+// URL of the image to show for a draft (AI PNG in repo, or on-the-fly card).
 export function imageUrlForDraft(draftId: string, imageType: "ai" | "card"): string {
   if (imageType === "ai") {
     return `https://raw.githubusercontent.com/${config.githubRepo}/${config.githubBranch}/data/images/${draftId}.png`;

@@ -2,8 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { config, assertConfigured } from "@/lib/config";
 import { fetchFreshArticles } from "@/lib/rss";
 import { generateDrafts, toDraft } from "@/lib/generate";
-import { generateAiImage } from "@/lib/images";
-import { saveDraft, saveImage, loadState, saveState } from "@/lib/github";
+import { saveDraft, loadState, saveState } from "@/lib/github";
 import { sendDraftEmail } from "@/lib/email";
 import { loadLinkedInAuth, daysUntilExpiry, renewalUrl } from "@/lib/linkedin-token";
 import type { Draft } from "@/lib/types";
@@ -46,17 +45,16 @@ export async function GET(req: NextRequest) {
     const generated = await generateDrafts(articles);
     log.push(`generated ${generated.length} drafts`);
 
-    // 4. Images: AI first (if configured), template card as fallback.
+    // 4. Save drafts with free template-card previews. The real AI illustration
+    //    is generated lazily at publish time (high quality, only for posts that ship).
     const drafts: Draft[] = [];
     for (const g of generated) {
-      const aiImage = await generateAiImage(g.image_prompt);
-      const draft = toDraft(g, aiImage ? "ai" : "card");
-      if (aiImage) await saveImage(draft.id, aiImage);
+      const draft = toDraft(g, "card");
       await saveDraft(draft);
       drafts.push(draft);
       if (g.source_url) used.add(g.source_url);
     }
-    log.push(`saved ${drafts.length} drafts (${drafts.filter((d) => d.imageType === "ai").length} with AI images)`);
+    log.push(`saved ${drafts.length} drafts (AI images deferred to publish time)`);
 
     // 5. Remember which articles were used.
     await saveState({ usedUrls: [...used], lastRunAt: new Date().toISOString() });

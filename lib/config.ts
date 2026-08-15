@@ -23,7 +23,7 @@ export const config = {
   appUrl: (process.env.APP_URL ?? "http://localhost:3000").replace(/\/$/, ""),
   appSecret: process.env.APP_SECRET ?? "",
   cronSecret: process.env.CRON_SECRET ?? "",
-  draftsPerRun: Number(process.env.DRAFTS_PER_RUN ?? "3"),
+  draftsPerRun: Number(process.env.DRAFTS_PER_RUN ?? "6"),
 
   // X (Twitter) — OAuth 1.0a user context from the developer portal
   xApiKey: process.env.X_API_KEY ?? "",

@@ -47,6 +47,7 @@ async function uploadImage(auth: LinkedInAuth, imageBytes: Buffer): Promise<stri
 export async function publishToLinkedIn(
   draft: Draft,
   text: string,
+  imageOverride?: Buffer | null,
 ): Promise<{ postId: string }> {
   const auth = await loadLinkedInAuth();
   if (!auth) {
@@ -55,7 +56,7 @@ export async function publishToLinkedIn(
     );
   }
 
-  const image = await imageBytesForDraft(draft.id, draft.imageType);
+  const image = imageOverride ?? (await imageBytesForDraft(draft.id, draft.imageType));
   let imageUrn: string | null = null;
   if (image) {
     imageUrn = await uploadImage(auth, image);

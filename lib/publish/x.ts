@@ -3,7 +3,11 @@ import { config, assertConfigured } from "../config";
 import { imageBytesForDraft } from "../images";
 import type { Draft } from "../types";
 
-export async function publishToX(draft: Draft, text: string): Promise<{ postId: string }> {
+export async function publishToX(
+  draft: Draft,
+  text: string,
+  imageOverride?: Buffer | null,
+): Promise<{ postId: string }> {
   const missing = assertConfigured(["xApiKey", "xApiSecret", "xAccessToken", "xAccessSecret"]);
   if (missing) throw new Error(`X is not configured. ${missing}`);
 
@@ -14,7 +18,7 @@ export async function publishToX(draft: Draft, text: string): Promise<{ postId: 
     accessSecret: config.xAccessSecret,
   });
 
-  const image = await imageBytesForDraft(draft.id, draft.imageType);
+  const image = imageOverride ?? (await imageBytesForDraft(draft.id, draft.imageType));
 
   let mediaIds: [string] | undefined;
   if (image) {

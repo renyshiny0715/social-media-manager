@@ -66,8 +66,13 @@ export default async function PublishPage({
       <img
         src={imageUrlForDraft(draft.id, draft.imageType)}
         alt=""
-        style={{ width: "100%", maxWidth: 520, borderRadius: 8, margin: "8px 0 20px" }}
+        style={{ width: "100%", maxWidth: 520, borderRadius: 8, margin: "8px 0 4px" }}
       />
+      {draft.imageType === "card" && (
+        <p style={{ fontSize: 12, color: "#999", margin: "0 0 16px" }}>
+          Preview card — a premium AI illustration is generated when you publish.
+        </p>
+      )}
 
       <PlatformForm
         platform="linkedin"

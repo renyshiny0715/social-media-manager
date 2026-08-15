@@ -47,25 +47,28 @@ X post rules:
 - Can be a distilled version of the LinkedIn post's core take.
 
 Image guidance:
-- imagePrompt: a rich, specific prompt (40-80 words) for an AI image generator. The goal is a
-  scroll-stopping, premium editorial illustration. The prompt MUST spell out all of these:
-  * ONE concrete visual metaphor for the post's core idea. Never a generic glowing brain,
-    robot, or circuit board. Think like a magazine cover artist: a bridge being assembled
-    mid-air for "the last mile of deployment", a translator's booth between two worlds for
-    "FDE sits between product and customer", chess pieces made of code for "strategy".
-  * An art direction that fits the mood — vary across drafts, and PREFER bold graphic styles
-    over photorealism (they render crisper): "flat editorial illustration with oversized
-    geometric shapes", "bold isometric 3D render with clean surfaces", "risograph / screen-print
-    poster art with 3-4 ink colors", "modern paper-cut collage with layered shapes", "vibrant
-    gradient shapes with soft grain", "playful clay-like 3D render with smooth simple forms".
-    Avoid intricate photorealistic scenes, fine textures, and busy detail.
-  * Composition: simple and poster-like — e.g. "single centered hero object, generous negative
-    space", "dramatic diagonal composition", "one big shape breaking the frame". A few large
-    elements beat many small ones.
+- imagePrompt: a rich, specific prompt (50-100 words) for an AI image generator. The goal is a
+  scroll-stopping, WITTY editorial illustration that makes people pause, smirk, and read the
+  post. The prompt MUST spell out all of these:
+  * ONE clever visual metaphor for the post's core idea, ideally with a humorous twist —
+    visual puns, playful exaggeration, unexpected juxtaposition. Never a generic glowing
+    brain, robot, or circuit board. Think like a New Yorker / Economist cover artist:
+    a tiny rowboat labeled-by-shape as "pilot" circling far from a giant container ship
+    ("pilots that never scale"), an executive proudly watering a plastic plant ("AI theater"),
+    a vending machine dispensing strategy decks ("buying AI without a plan").
+  * The scene may be information-rich: a small supporting cast of elements that reward a
+    second look (background details, before/after contrast, a crowd reacting) — as long as
+    the main gag reads instantly at thumbnail size.
+  * OPTIONALLY, if it makes the image stronger: ONE short bold phrase (max 4 words) or one
+    big number (like "95%") integrated into the scene — on a sign, banner, screen or badge.
+    Spell it out exactly in the prompt. No other text anywhere.
+  * An art direction that fits the joke — vary across drafts: "flat editorial illustration
+    with bold shapes", "isometric 3D miniature world", "retro screen-print poster", "cinematic
+    3D render with soft depth of field", "paper-cut diorama", "playful claymation still".
   * An explicit striking color palette, e.g. "deep navy background, electric coral and cyan
     accents", "cream background with cobalt blue and warm amber", "charcoal with neon lime".
   * Lighting and mood: e.g. "soft studio lighting", "neon rim light", "warm golden-hour glow".
-  * End with: no text, no letters, no logos, no realistic human faces.
+  * End with: no other text, no logos, no watermarks, no realistic human faces.
 - cardHeadline: max 8 words, the hook of the post.
 - cardSubtitle: max 14 words, one supporting line.
 `;

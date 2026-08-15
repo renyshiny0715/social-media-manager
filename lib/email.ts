@@ -25,7 +25,8 @@ function draftBlock(draft: Draft, index: number): string {
         ? `<p style="margin:0 0 16px;font-size:13px;color:#777;">Source: <a href="${draft.sourceUrl}">${esc(draft.sourceTitle)}</a></p>`
         : `<p style="margin:0 0 16px;font-size:13px;color:#777;">Evergreen topic (no external source)</p>`
     }
-    <img src="${imgUrl}" alt="post image" style="width:100%;max-width:520px;border-radius:8px;margin-bottom:16px;" />
+    <img src="${imgUrl}" alt="post image" style="width:100%;max-width:520px;border-radius:8px;margin-bottom:4px;" />
+    <div style="font-size:12px;color:#999;margin-bottom:16px;">Preview card — a premium AI illustration is generated when you hit publish.</div>
     <div style="background:#f4f7fb;border-radius:8px;padding:14px;margin-bottom:12px;">
       <div style="font-weight:bold;color:#0a66c2;margin-bottom:6px;">LinkedIn</div>
       <div style="font-size:14px;color:#222;line-height:1.5;">${esc(draft.linkedinPost)}</div>
@@ -72,7 +73,7 @@ export async function sendDraftEmail(drafts: Draft[], warnings: string[] = []): 
   await transporter.sendMail({
     from: `"Social Media Manager" <${config.gmailUser}>`,
     to: config.emailTo,
-    subject: `${drafts.length} post drafts ready — ${date}`,
+    subject: `🚀 ${drafts.length} posts ready to ship — “${drafts[0]?.topic ?? "new drafts"}” & more`,
     html,
   });
 }

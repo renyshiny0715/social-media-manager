@@ -4,6 +4,7 @@ import { verify } from "@/lib/sign";
 import { publishToX } from "@/lib/publish/x";
 import { publishToLinkedIn } from "@/lib/publish/linkedin";
 import { nextLondonPublishTime } from "@/lib/schedule";
+import { ensureAiImage } from "@/lib/images";
 
 export const maxDuration = 60;
 export const dynamic = "force-dynamic";
@@ -47,12 +48,15 @@ export async function POST(req: NextRequest) {
       return back(`scheduled=${platform}`);
     }
 
+    // The premium AI illustration is generated here, at publish time.
+    const image = await ensureAiImage(draft);
+
     if (platform === "x") {
-      const { postId } = await publishToX(draft, text);
+      const { postId } = await publishToX(draft, text, image);
       draft.published.x = { at: new Date().toISOString(), postId };
       if (draft.scheduled?.x) delete draft.scheduled.x;
     } else {
-      const { postId } = await publishToLinkedIn(draft, text);
+      const { postId } = await publishToLinkedIn(draft, text, image);
       draft.published.linkedin = { at: new Date().toISOString(), postId };
       if (draft.scheduled?.linkedin) delete draft.scheduled.linkedin;
     }

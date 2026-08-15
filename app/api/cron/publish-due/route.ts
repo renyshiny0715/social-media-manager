@@ -3,6 +3,7 @@ import { config, assertConfigured } from "@/lib/config";
 import { listDrafts, saveDraft } from "@/lib/github";
 import { publishToX } from "@/lib/publish/x";
 import { publishToLinkedIn } from "@/lib/publish/linkedin";
+import { ensureAiImage } from "@/lib/images";
 
 export const maxDuration = 120;
 export const dynamic = "force-dynamic";
@@ -40,11 +41,12 @@ export async function GET(req: NextRequest) {
         continue;
       }
       try {
+        const image = await ensureAiImage(draft);
         if (platform === "x") {
-          const { postId } = await publishToX(draft, draft.xPost);
+          const { postId } = await publishToX(draft, draft.xPost, image);
           draft.published.x = { at: new Date().toISOString(), postId };
         } else {
-          const { postId } = await publishToLinkedIn(draft, draft.linkedinPost);
+          const { postId } = await publishToLinkedIn(draft, draft.linkedinPost, image);
           draft.published.linkedin = { at: new Date().toISOString(), postId };
         }
         delete draft.scheduled[platform];
