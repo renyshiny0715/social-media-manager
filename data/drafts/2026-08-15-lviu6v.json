@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-15-lviu6v",
+  "createdAt": "2026-08-15T23:15:25.166Z",
+  "topic": "Open AI ecosystems and vendor risk",
+  "angle": "Open ecosystems cut lock-in but shift the real risk to integration and ops.",
+  "sourceTitle": "Alibaba AI models hit 3 billion downloads, passing Meta, Google",
+  "sourceUrl": "https://fortune.com/2026/08/15/alibaba-qwen-open-ai-models-3-billion-downloads-meta-google/",
+  "linkedinPost": "Open beats closed—until integration buries you.\n\nFortune reports Alibaba’s open-weight AI family has crossed 3 billion downloads with hundreds of derivatives. The signal for enterprises: the supply of capable models is exploding, and vendor concentration risk is falling.\n\nBut the risk didn’t disappear. It moved.\n\nMy take from the trenches: when model lock-in drops, integration and operations become the bottleneck. The winners standardize how they select, deploy, and swap models without torching security, data pipelines, and governance.\n\nThree moves I see working:\n- Create a “model interchange” contract: common adapters, evals, and guardrails that any model must meet to enter production.\n- Separate data and orchestration from the model. Your value lives upstream and around, not inside, the weights.\n- Budget for model churn. Plan for swaps every 6–12 months; make it boring.\n\nOpen ecosystems are great for TCO and resilience—if you industrialize the last mile.\n\nWhere in your stack would a model swap cause the most pain today? #AITransformation #EnterpriseAI #AIStrategy",
+  "xPost": "Open models cut lock-in—but push risk to integration and ops. Build a “model interchange” (adapters, evals, guardrails), keep data/orchestration separate, and budget for churn. Make swaps boring. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a highway toll plaza labeled “Model Interchange” with multiple lanes for different AI “trucks” swapping trailers. The trailers (data/orchestration) remain while cabs (models) detach and reattach smoothly. A signboard shows “Next Swap: 6–12 mo.” Art direction: cinematic 3D render with soft depth of field. Color palette: steel blue and asphalt gray with electric coral signage. Lighting: overcast daylight with reflective highlights. Optional bold phrase on the sign: “Swap, Don’t Stall.” No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Open Cuts Lock-In—Then What?",
+  "cardSubtitle": "Standardize swaps before they hurt.",
+  "imageType": "card",
+  "published": {}
+}
