@@ -14,7 +14,7 @@ function headers() {
   };
 }
 
-async function getFile(path: string): Promise<{ content: Buffer; sha: string } | null> {
+export async function getFile(path: string): Promise<{ content: Buffer; sha: string } | null> {
   const res = await fetch(
     `${API}/repos/${config.githubRepo}/contents/${path}?ref=${config.githubBranch}`,
     { headers: headers(), cache: "no-store" },
@@ -25,7 +25,7 @@ async function getFile(path: string): Promise<{ content: Buffer; sha: string } |
   return { content: Buffer.from(json.content, "base64"), sha: json.sha };
 }
 
-async function putFile(path: string, content: Buffer, message: string): Promise<void> {
+export async function putFile(path: string, content: Buffer, message: string): Promise<void> {
   const existing = await getFile(path);
   const res = await fetch(`${API}/repos/${config.githubRepo}/contents/${path}`, {
     method: "PUT",

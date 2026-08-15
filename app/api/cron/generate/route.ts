@@ -5,6 +5,7 @@ import { generateDrafts, toDraft } from "@/lib/generate";
 import { generateAiImage } from "@/lib/images";
 import { saveDraft, saveImage, loadState, saveState } from "@/lib/github";
 import { sendDraftEmail } from "@/lib/email";
+import { loadLinkedInAuth, daysUntilExpiry, renewalUrl } from "@/lib/linkedin-token";
 import type { Draft } from "@/lib/types";
 
 export const maxDuration = 300;
@@ -60,8 +61,24 @@ export async function GET(req: NextRequest) {
     // 5. Remember which articles were used.
     await saveState({ usedUrls: [...used], lastRunAt: new Date().toISOString() });
 
-    // 6. Email the drafts for one-click review & publish.
-    await sendDraftEmail(drafts);
+    // 6. Email the drafts for one-click review & publish, with token-expiry warnings.
+    const warnings: string[] = [];
+    try {
+      const liAuth = await loadLinkedInAuth();
+      if (liAuth) {
+        const days = daysUntilExpiry(liAuth);
+        if (days !== null && days <= 14) {
+          warnings.push(
+            days < 0
+              ? `Your LinkedIn token has EXPIRED — renew it in one click: <a href="${renewalUrl()}">re-authorize LinkedIn</a>`
+              : `Your LinkedIn token expires in ${days} day${days === 1 ? "" : "s"} — renew it in one click: <a href="${renewalUrl()}">re-authorize LinkedIn</a>`,
+          );
+        }
+      }
+    } catch {
+      // never block the email over a warning check
+    }
+    await sendDraftEmail(drafts, warnings);
     log.push(`emailed ${config.emailTo}`);
 
     return NextResponse.json({ ok: true, log, draftIds: drafts.map((d) => d.id) });

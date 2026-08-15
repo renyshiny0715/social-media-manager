@@ -79,7 +79,14 @@ You should get an email with 3 drafts within a minute. (Publish buttons will rep
 4. Set `LINKEDIN_CLIENT_ID` and `LINKEDIN_CLIENT_SECRET` in Vercel, redeploy
 5. Visit `https://YOUR-APP.vercel.app/api/linkedin/auth?secret=YOUR_APP_SECRET`, approve, and copy the shown `LINKEDIN_ACCESS_TOKEN` + `LINKEDIN_PERSON_URN` into Vercel, redeploy
 
-> ⚠️ LinkedIn tokens expire after ~60 days. When LinkedIn publishing fails with a 401, repeat step 5.
+> ⚠️ LinkedIn tokens expire after ~60 days (standard apps get no refresh token, so this can't be fully automated).
+> The tool makes renewal one click: draft emails warn you starting 14 days before expiry with a renewal link;
+> visiting `/api/linkedin/auth?secret=...` and clicking Allow stores the fresh token automatically
+> (AES-256-GCM-encrypted in `data/secrets/`, keyed by `APP_SECRET`) — no env var edits, no redeploy.
+>
+> **Token lifetimes at a glance:** X keys, OpenAI key, Gmail app password, `APP_SECRET`/`CRON_SECRET` — never expire.
+> GitHub fine-grained token — expires on the date you chose at creation. LinkedIn — ~60 days, one-click renewal.
+> Check everything live at `/api/health?secret=<APP_SECRET>`.
 
 ### 6. Images
 

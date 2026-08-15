@@ -1,12 +1,12 @@
-import { config, assertConfigured } from "../config";
 import { imageBytesForDraft } from "../images";
+import { loadLinkedInAuth, renewalUrl, type LinkedInAuth } from "../linkedin-token";
 import type { Draft } from "../types";
 
 const LI_VERSION = "202506";
 
-function liHeaders() {
+function liHeaders(auth: LinkedInAuth) {
   return {
-    Authorization: `Bearer ${config.linkedinAccessToken}`,
+    Authorization: `Bearer ${auth.accessToken}`,
     "LinkedIn-Version": LI_VERSION,
     "X-Restli-Protocol-Version": "2.0.0",
     "Content-Type": "application/json",
@@ -18,12 +18,12 @@ function escapeCommentary(text: string): string {
   return text.replace(/[\\|{}@[\]()<>#*_~]/g, (c) => `\\${c}`);
 }
 
-async function uploadImage(imageBytes: Buffer): Promise<string> {
+async function uploadImage(auth: LinkedInAuth, imageBytes: Buffer): Promise<string> {
   const init = await fetch("https://api.linkedin.com/rest/images?action=initializeUpload", {
     method: "POST",
-    headers: liHeaders(),
+    headers: liHeaders(auth),
     body: JSON.stringify({
-      initializeUploadRequest: { owner: config.linkedinPersonUrn },
+      initializeUploadRequest: { owner: auth.personUrn },
     }),
   });
   if (!init.ok) {
@@ -34,7 +34,7 @@ async function uploadImage(imageBytes: Buffer): Promise<string> {
   const put = await fetch(value.uploadUrl, {
     method: "PUT",
     headers: {
-      Authorization: `Bearer ${config.linkedinAccessToken}`,
+      Authorization: `Bearer ${auth.accessToken}`,
       "Content-Type": "application/octet-stream",
     },
     body: new Uint8Array(imageBytes),
@@ -48,21 +48,21 @@ export async function publishToLinkedIn(
   draft: Draft,
   text: string,
 ): Promise<{ postId: string }> {
-  const missing = assertConfigured(["linkedinAccessToken", "linkedinPersonUrn"]);
-  if (missing) {
+  const auth = await loadLinkedInAuth();
+  if (!auth) {
     throw new Error(
-      `LinkedIn is not configured. ${missing}. Run the OAuth helper at /api/linkedin/auth to obtain a token.`,
+      "LinkedIn is not connected. Set LINKEDIN_CLIENT_ID/SECRET and run the OAuth helper at /api/linkedin/auth.",
     );
   }
 
   const image = await imageBytesForDraft(draft.id, draft.imageType);
   let imageUrn: string | null = null;
   if (image) {
-    imageUrn = await uploadImage(image);
+    imageUrn = await uploadImage(auth, image);
   }
 
   const body: Record<string, unknown> = {
-    author: config.linkedinPersonUrn,
+    author: auth.personUrn,
     commentary: escapeCommentary(text),
     visibility: "PUBLIC",
     distribution: {
@@ -79,9 +79,14 @@ export async function publishToLinkedIn(
 
   const res = await fetch("https://api.linkedin.com/rest/posts", {
     method: "POST",
-    headers: liHeaders(),
+    headers: liHeaders(auth),
     body: JSON.stringify(body),
   });
+  if (res.status === 401) {
+    throw new Error(
+      `LinkedIn token expired or revoked. Renew it in one click: ${renewalUrl()}`,
+    );
+  }
   if (!res.ok) {
     throw new Error(`LinkedIn post failed: ${res.status} ${await res.text()}`);
   }

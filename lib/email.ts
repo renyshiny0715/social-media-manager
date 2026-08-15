@@ -41,7 +41,7 @@ function draftBlock(draft: Draft, index: number): string {
   </div>`;
 }
 
-export async function sendDraftEmail(drafts: Draft[]): Promise<void> {
+export async function sendDraftEmail(drafts: Draft[], warnings: string[] = []): Promise<void> {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: { user: config.gmailUser, pass: config.gmailAppPassword },
@@ -56,6 +56,12 @@ export async function sendDraftEmail(drafts: Draft[]): Promise<void> {
   const html = `
   <div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:640px;margin:0 auto;background:#fafafa;padding:24px;">
     <h1 style="font-size:22px;color:#111;">Your post drafts — ${date}</h1>
+    ${warnings
+      .map(
+        (w) =>
+          `<p style="background:#fff3cd;border:1px solid #ffe08a;padding:12px;border-radius:8px;color:#7a5b00;">⚠️ ${w}</p>`,
+      )
+      .join("")}
     <p style="color:#555;">Pick a draft, review it, and publish with one click. You can edit the text on the review page before it goes out.</p>
     ${drafts.map((d, i) => draftBlock(d, i)).join("")}
     <p style="font-size:12px;color:#999;margin-top:24px;">
