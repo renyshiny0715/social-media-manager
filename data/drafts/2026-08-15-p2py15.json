@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-15-p2py15",
+  "createdAt": "2026-08-15T10:17:48.205Z",
+  "topic": "AI regulation strategies across markets",
+  "angle": "Treat AI regulation as product requirements per market, not philosophical noise.",
+  "sourceTitle": "The Different Philosophies Driving AI Regulation Today",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/article/the-different-philosophies-driving-ai-regulation-today/",
+  "linkedinPost": "If your AI program has one policy for “compliance,” you don’t have a policy. You have a risk.\n\nKnowledge at Wharton lays out how the U.S., EU, and others are approaching AI regulation with very different philosophies. I see this play out in enterprise deployments weekly.\n\nLeaders hope for a single global standard. Instead, we have patchwork reality: purpose-based rules in one market, process-based in another, data-locality and high‑risk use restrictions elsewhere. Waiting for convergence delays value—and compounds remediation costs later.\n\nMy take: treat regulation like product requirements by market. Encode it into your architecture and ops. Concretely: build a catalog of use cases with risk tiers, map controls (data provenance, human oversight, redress) per tier, log model lineage, and make consent, routing, and retention configurable by region.\n\nOne customer saved months by separating “policy as code” from the model layer—so when the EU tightened high‑risk definitions, they updated guardrails without retraining.\n\nQuestion for leaders: do you know which markets you’re compliant in today—and could you prove it in a week if asked? #AIStrategy #AIAdoption #EnterpriseAI #DigitalTransformation",
+  "xPost": "Stop hoping for one AI rulebook. Treat regulation as product requirements per market: use-case tiers, policy-as-code, regional routing, and auditable lineage. Prove compliance in a week, not a wishlist. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a single product blueprint overlaid with interchangeable snap-in rule panels labeled only by shapes/colors for different regions. Flat editorial illustration with oversized geometric shapes. Composition: centered blueprint with modular tiles clicking in around the edges, simple poster layout. Color palette: cream background, cobalt blue blueprint lines, warm amber and forest green tiles. Lighting: soft, even editorial lighting. No text, no letters, no logos, no realistic human faces.",
+  "cardHeadline": "Design for Patchwork Rules",
+  "cardSubtitle": "Make compliance configurable by market.",
+  "imageType": "ai",
+  "published": {}
+}
