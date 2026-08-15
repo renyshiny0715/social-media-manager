@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-15-qorbgx",
+  "createdAt": "2026-08-15T23:15:25.828Z",
+  "topic": "Can AI companies self-regulate?",
+  "angle": "Self-regulation helps only when buyers hard-wire governance into contracts and KPIs.",
+  "sourceTitle": "Can AI Companies Regulate Themselves?",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/can-ai-companies-regulate-themselves/",
+  "linkedinPost": "Relying on vendor virtue is not a strategy.\n\nKnowledge at Wharton outlines why AI self-regulation falls short and what governments might do. In the enterprise world, the faster lever is on the buyer side: procurement and performance management.\n\nFrom deployments, here’s what actually changes behavior:\n- Governance clauses with teeth: audit rights, incident reporting SLAs, and sunset triggers for repeated violations.\n- Outcome-based KPIs that price risk: model accuracy plus measurable bias, complaint rates, and false positive costs.\n- Kill-switch design: operational controls your team can invoke without vendor approval.\n\nMy take: Treat governance like uptime. If a vendor won’t commit to observable controls and penalties, you’re buying promises, not capabilities. And mirror it internally—assign a single owner for AI risk with authority to stop shipments.\n\nRegulation will (and should) evolve. But you can buy accountability today—if you insist on it in the contract and the dashboard.\n\nWhat’s one governance control you’d require if you had to live with the downside on your P&L? #AIStrategy #AITransformation #EnterpriseAI",
+  "xPost": "Vendor virtue isn’t a control. Buy accountability: audit rights, incident SLAs, outcome KPIs (incl. bias/complaints), and a kill switch you control. If they won’t commit, you’re buying promises. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a shiny “AI Vendor” vending machine offering buttons like “Accuracy,” “Speed,” and one grayed-out “Accountability.” A savvy buyer inserts a special coin labeled “Contract KPIs,” and the accountability button lights up. Optional bold phrase on machine: “With Teeth.” Art direction: paper-cut diorama with layered textures. Color palette: cream and slate with pops of amber and teal. Lighting: warm golden-hour glow with soft shadows. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Buy Accountability, Not Hype",
+  "cardSubtitle": "Put governance ‘with teeth’ in contracts.",
+  "imageType": "card",
+  "published": {}
+}
