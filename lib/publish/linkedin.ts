@@ -2,7 +2,9 @@ import { imageBytesForDraft } from "../images";
 import { loadLinkedInAuth, renewalUrl, type LinkedInAuth } from "../linkedin-token";
 import type { Draft } from "../types";
 
-const LI_VERSION = "202506";
+// LinkedIn versioned-API month (YYYYMM). Versions stay active ~12 months;
+// bump this if you ever see 426 NONEXISTENT_VERSION.
+const LI_VERSION = "202606";
 
 function liHeaders(auth: LinkedInAuth) {
   return {
