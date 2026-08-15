@@ -1,0 +1,15 @@
+{
+  "id": "2026-08-15-0u7j0z",
+  "createdAt": "2026-08-15T23:15:23.702Z",
+  "topic": "Content watermarking and enterprise risk",
+  "angle": "Watermarking helps governance only if you wire it into workflows and incentives.",
+  "sourceTitle": "Anthropic shares more details about how Claude’s new watermarks will work",
+  "sourceUrl": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+  "linkedinPost": "Watermarks won’t save you—process will.\n\nTechCrunch breaks down how a major AI provider’s new watermarks work and what might break them. Useful progress. But I see enterprises overestimating tech and underinvesting in the boring part: governance that survives real-world editing and deadlines.\n\nIn production, provenance fails for three reasons:\n- It’s optional. Creators can turn it off, or downstream tools strip it.\n- It’s invisible in the workflow. Reviewers don’t see or act on provenance signals.\n- It’s misaligned with incentives. Teams get rewarded for speed, not compliance.\n\nMy take: Treat watermarking like seatbelts—standard, automatic, and hard to remove. Bake signals into your CMS and approval gates. Flag, route, and audit content with SLAs. Tie compliance to performance reviews. And assume adversaries can still wash it—so layer controls.\n\nAsk your vendors two questions: How does the watermark survive common edits? And how will my teams see and act on it without extra clicks? #AIStrategy #EnterpriseAI #AIAdoption",
+  "xPost": "Watermarks help only if your workflow cares. Make provenance signals visible in tools, tie compliance to incentives, and assume adversaries can wash it—so layer controls. Tech alone won’t manage content risk. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: an assembly line for marketing assets where each passes under a bright “Provenance Scanner” arch. Some assets try to sneak by wearing silly disguises (mustaches, sunglasses), but a dashboard above flashes green/red tags. A bored manager stamps “GO/NO” without looking until a big red buzzer forces attention. Optional bold phrase on the arch: “Trust, Then Verify.” Art direction: isometric 3D miniature world. Color palette: deep navy background with electric coral and cyan accents. Lighting: neon rim light and soft depth of field. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Watermarks Need Workflows",
+  "cardSubtitle": "Governance beats gadgets every time.",
+  "imageType": "card",
+  "published": {}
+}
