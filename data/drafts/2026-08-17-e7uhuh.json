@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-17-e7uhuh",
+  "createdAt": "2026-08-17T15:53:14.210Z",
+  "topic": "AI and cybersecurity: the defender’s window",
+  "angle": "The advantage swings in narrow windows—instrument your org and rehearse now to capture it.",
+  "sourceTitle": "The Defender’s Window",
+  "sourceUrl": "https://openai.com/index/the-defenders-window",
+  "sourceName": "OpenAI News",
+  "linkedinPost": "In security, timing beats tooling.\n\nOpenAI’s note on “the defender’s window” hits a truth security leaders feel daily: AI is tilting offense and defense in short bursts. The edge goes to whoever operationalizes faster—then the window closes.\n\nFrom what I see in enterprises, the gap isn’t model access—it’s readiness. Teams have logs, but not labeled. Policies exist, but aren’t codified in workflows. Incidents are rehearsed for malware, not for prompt-injection or data exfil via AI tools.\n\nMy take: treat AI security like SRE meets tabletop. Unify telemetry (app, identity, data), label sensitive content, and wire detections to auto-contain risky agent/tool actions. Stand up an AI-sec runbook with a standing purple-team: simulate phishing with AI, jailbreak attempts, and tool misuse monthly. Measure “time-to-containment,” not just “time-to-detect.”\n\nExecutives: ask for a one-page map of AI touchpoints (where models run, what tools they can call, what data they touch) and the kill switch for each.\n\nThe window won’t wait for your next quarterly review.\n\nWhat’s the one metric you’ll use to prove your AI defenses buy you time? #AIStrategy #EnterpriseAI #AITransformation",
+  "xPost": "AI security is a timing game. Unify telemetry, label sensitive data, rehearse AI-specific attacks, and measure time-to-containment—not just time-to-detect. The window closes fast. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Show a medieval castle wall with a small open window labeled by shape as DEFENDER’S WINDOW. A large stopwatch hangs beside it. Arrows labeled “phishing,” “prompt injection,” and “data exfil” freeze mid-air as defenders install smart shutters with sensors and cables. A big banner on the wall reads in bold: “Minutes Matter.” Style: cinematic 3D render with soft depth of field. Color palette: charcoal stone with neon lime and cobalt highlights. Lighting: dramatic, with neon rim light on the shutters. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Security’s Short Advantage",
+  "cardSubtitle": "Instrument. Rehearse. Contain faster.",
+  "imageType": "card",
+  "published": {}
+}
