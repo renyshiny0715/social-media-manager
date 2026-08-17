@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-17-xdam6l",
+  "createdAt": "2026-08-17T15:53:12.601Z",
+  "topic": "Stripe + OpenRouter and the enterprise AI stack",
+  "angle": "Multi-model gateways lower friction but shift lock-in up the stack—treat them like a core platform, not a shortcut.",
+  "sourceTitle": "Stripe Acquiring OpenRouter, Aggregating AI?, Flipping the Business Model",
+  "sourceUrl": "https://stratechery.com/2026/stripe-acquiring-openrouter-aggregating-ai-flipping-the-business-model/",
+  "sourceName": "Stratechery — Ben Thompson",
+  "linkedinPost": "The AI layer cake is reorganizing—are you ready for lock-in to move up the stack?\n\nA recent analysis on Stratechery explores Stripe reportedly acquiring OpenRouter and the idea of “aggregating AI” behind a single gateway. Translation for enterprises: the multi-model switchboard is becoming a real platform, not a side utility.\n\nFrom the trenches, gateways do two things well: they compress switching costs and standardize procurement. That’s gold when your product teams need to test models fast without renegotiating contracts.\n\nBut new convenience creates new dependencies. You can end up locked into the gateway’s roadmap, observability, pricing, and safety posture—while losing visibility into model-by-model performance.\n\nMy playbook: pilot via a gateway to learn quickly, but keep a direct path to critical models for your top-ROI use cases. Maintain a living model leaderboard per use case (quality, latency, cost, risk). Negotiate data controls, rate limits, egress fees, and exportable logs up front. And decide who owns the “last mile” prompts and evals—you, not the gateway.\n\nIf aggregation is the future, your leverage is the contract and your telemetry.\n\nHow are you balancing gateway speed with the risk of a new single point of failure? #AIStrategy #EnterpriseAI #AIAdoption #AITransformation",
+  "xPost": "Multi-model gateways cut switching costs—but shift lock-in up the stack. Pilot through the gateway, keep a direct path for your top ROI use cases, and negotiate exportable logs + data controls on day one. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Create a witty editorial scene of a harried CIO holding an oversized “universal remote” labeled by shape as AI GATEWAY, aimed at a wall of mismatched TVs, each showing a different stormy channel (cost, latency, safety, quality). One TV’s power cord is tangled in a knot shaped like a padlock. A sticky note on the remote reads “SLA”. A nearby small exit door has a lit sign: “Direct Path”. Include the bold phrase on a small floor sign: “Mind the lock-in”. Style: flat editorial illustration with bold shapes. Color palette: deep navy background, electric coral and cyan accents. Lighting: soft studio lighting. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Gateways: Speed vs. Lock‑In",
+  "cardSubtitle": "Use them fast, keep your escape hatch.",
+  "imageType": "card",
+  "published": {}
+}
