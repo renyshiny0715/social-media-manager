@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-17-9uor7u",
+  "createdAt": "2026-08-17T15:53:15.714Z",
+  "topic": "Governing AI with trust as a deliverable",
+  "angle": "Trust must be operationalized in AI programs with measurable controls, not mission statements.",
+  "sourceTitle": "Governing AI with intention in the social impact sector",
+  "sourceUrl": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/governing-ai-with-intention-in-the-social-impact-sector",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "In mission-driven work, trust isn’t marketing. It’s the product.\n\nMcKinsey’s piece on governing AI in the social impact sector captures a lesson every enterprise should internalize: adoption without trust is a boomerang. It comes back as complaints, churn, or regulatory heat.\n\nFrom the front lines, “governance” only works when it shows up as controls people can see and measure. Here’s what I see working: a living use-case registry with a simple risk tier; consent and data provenance surfaced to the end user; human appeal paths defined by SLA; and audit trails that don’t require a hero to reconstruct.\n\nMake trust a KPI: track percentage of AI decisions with explainer views, opt-out rates, and resolution time on escalations. Put a community advisory group or customer council in the loop before launch, not after headlines.\n\nYour model may be state-of-the-art. Your process needs to be state-of-reassurance.\n\nIf you had to ship one new “trust control” this quarter, what would your customers actually notice? #AITransformation #EnterpriseAI #CustomerExperience #AIStrategy",
+  "xPost": "AI governance that works is visible. Ship controls users notice: clear consent, explainer views, human appeal SLAs, and audit trails. Make trust a KPI, not a poster. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Illustrate a storefront bakery called by shape TRUST, where a baker weighs two items on a scale: a shiny AI feature cupcake vs. a compliance checklist cookie. Customers only pay when the scale balances, filling a tip jar labeled by shape as TRUST. Include a small hanging tag reading in bold: “Prove It.” Style: retro screen‑print poster. Color palette: cream background with cobalt blue and warm amber. Lighting: warm golden-hour glow. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Make Trust Visible",
+  "cardSubtitle": "Ship controls customers can feel.",
+  "imageType": "card",
+  "published": {}
+}
