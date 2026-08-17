@@ -2,6 +2,7 @@ import { loadDraft } from "@/lib/github";
 import { verify } from "@/lib/sign";
 import { imageUrlForDraft } from "@/lib/images";
 import { formatLondon } from "@/lib/schedule";
+import { config } from "@/lib/config";
 
 export const dynamic = "force-dynamic";
 
@@ -44,6 +45,14 @@ export default async function PublishPage({
 
   return (
     <Shell>
+      <div style={{ textAlign: "right", marginBottom: 4 }}>
+        <a
+          href={`/engage?secret=${config.appSecret}`}
+          style={{ fontSize: 13, color: "#0a66c2", textDecoration: "none" }}
+        >
+          💬 Engage helper (comment/repost someone&apos;s post) →
+        </a>
+      </div>
       <h1 style={{ fontSize: 22 }}>{draft.topic}</h1>
       <p style={{ color: "#555", fontStyle: "italic" }}>{draft.angle}</p>
       {draft.sourceUrl && (

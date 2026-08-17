@@ -77,7 +77,8 @@ export async function sendDraftEmail(drafts: Draft[], warnings: string[] = []): 
     <p style="color:#555;">Pick a draft, review it, and publish with one click. You can edit the text on the review page before it goes out.</p>
     ${drafts.map((d, i) => draftBlock(d, i)).join("")}
     <p style="font-size:12px;color:#999;margin-top:24px;">
-      Sent by your Social Media Manager · <a href="${config.appUrl}">dashboard</a>
+      Sent by your Social Media Manager · <a href="${config.appUrl}">dashboard</a> ·
+      <a href="${config.appUrl}/engage?secret=${config.appSecret}">💬 engage helper</a>
     </p>
   </div>`;
 
