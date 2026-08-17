@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-17-d6twkm",
+  "createdAt": "2026-08-17T15:53:17.339Z",
+  "topic": "The hidden economics of $6 AI agents",
+  "angle": "If you don’t meter agent work at the task level, your ROI is imaginary—and costs leak at night.",
+  "sourceTitle": "🔮 The curious economics of a $6 AI agent #597",
+  "sourceUrl": "https://www.exponentialview.co/p/ev-597",
+  "sourceName": "Exponential View — Azeem Azhar",
+  "linkedinPost": "AI spend doesn’t explode. It evaporates—quietly.\n\nExponential View shared a wild anecdote: an AI agent project ran for months, racking up charges while no one noticed. The headline number was “$6,” but the real story is invisible usage and missing unit economics.\n\nHere’s the enterprise pattern I see: teams meter models, not work. Without task-level accounting, you can’t tell if a $0.03 call saved $30 of labor—or spawned 300 more calls at 2 a.m.\n\nFix it with three moves: give every agent a unique identity and budget, meter per task (ticket resolved, lead qualified, claim drafted), and enforce guardrails (sandbox, max steps, and an auto-off switch on anomalies). Your dashboard should show cost-per-outcome, not tokens burned.\n\nThen price the outcome: if an agent drafts a response that cuts handle time by 45 seconds, attribute the labor delta. If it escalates, charge the rework back to the agent’s P&L.\n\nIf you can’t meter it, you can’t manage it—and you definitely can’t scale it.\n\nWhat’s the one outcome metric you’ll tie to every agent before year-end? #EnterpriseAI #AIAdoption #AIStrategy",
+  "xPost": "AI costs don’t explode—they evaporate. Give every agent an identity, budget, task-level metering, and a kill switch. Track cost-per-outcome, not tokens. If you can’t meter it, don’t scale it. #EnterpriseAI #AIAdoption",
+  "imagePrompt": "A tiny hamster labeled by a price tag “$6” runs in a wheel connected to a massive analog meter labeled by shape CLOUD SPEND, the needle spiking into red. A startled finance person holds a magnifying glass, revealing a hidden on/off switch tagged “Kill Switch.” Add a small floor stencil in bold: “Meter Running.” Style: playful claymation still. Color palette: soft pastels with a punch of neon red on the meter zone. Lighting: soft studio lighting. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Meter The Work",
+  "cardSubtitle": "Cost-per-outcome or it didn’t happen.",
+  "imageType": "card",
+  "published": {}
+}
