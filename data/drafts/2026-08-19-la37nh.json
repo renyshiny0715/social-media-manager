@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-19-la37nh",
+  "createdAt": "2026-08-19T15:22:02.683Z",
+  "topic": "AI’s power problem for enterprises",
+  "angle": "AI ROI now depends on watts, permits, and contracts as much as models.",
+  "sourceTitle": "The AI Boom Is Testing America’s Power Grid",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/podcast/ripple-effect/the-ai-boom-is-testing-americas-power-grid/",
+  "sourceName": "Knowledge at Wharton",
+  "linkedinPost": "Your AI roadmap might be bottlenecked by a transformer — the electrical kind.\n\nKnowledge at Wharton highlights a growing constraint: the grid. AI’s power appetite is colliding with real-world permitting, interconnect queues, and transmission limits. Fancy roadmaps won’t matter if you can’t plug them in.\n\nFrom the front lines, here’s what separates programs that scale from those that stall:\n\n- Sequence use cases by compute intensity. Don’t lead with GPU-hungry science projects if your power contract renews next quarter.\n- Make energy a KPI. Track tokens per kWh, throughput per watt, and cost per successful task — not just latency.\n- Co-design with facilities. Capacity planning, heat, and siting are now product decisions.\n- Build reversible ops. Use burstable workloads, demand-response windows, and multi-region flexibility so you’re not hostage to one substation.\n- Talk to your utility early. The teams that treat utilities as strategic partners, not vendors, win time.\n\nMy take: AI strategy just became an infrastructure strategy. If your CFO and facilities lead aren’t in the same room as your AI team, you’re not doing portfolio planning — you’re gambling.\n\nHow are you derisking power in your 2026 AI plan? #AITransformation #EnterpriseAI #AIStrategy",
+  "xPost": "AI ROI now hinges on watts as much as models. Sequence use cases by compute intensity, make energy a KPI, and partner with your utility early. AI strategy = infrastructure strategy. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Visual metaphor: a sleek, oversized AI server rack trying to plug into a tiny overburdened household power strip labeled by shape as “Office”. The strip’s red switch sweats, nearby breakers tremble, and sticky notes on plugs read “Chatbot”, “RAG”, “Vision”, “Agents”. On the wall, a utility meter spins wildly with a bold sticker: “Capacity: 0 MW”. A facilities manager and a CFO tug a heavy-duty industrial cable toward a locked door marked “Substation Permits”. Art direction: flat editorial illustration with bold shapes. Color palette: deep navy background, electric coral and cyan accents. Lighting: soft studio lighting with a subtle neon rim on the server rack. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "AI Meets The Grid",
+  "cardSubtitle": "Plan for watts before models.",
+  "imageType": "card",
+  "published": {}
+}
