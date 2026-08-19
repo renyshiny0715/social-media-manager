@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-19-mgxsie",
+  "createdAt": "2026-08-19T15:22:04.844Z",
+  "topic": "Is AI a bubble? Spend wisely",
+  "angle": "Treat AI as a portfolio with exit ramps: stage gates, unit economics, decommission plans.",
+  "sourceTitle": "🫧 Is AI a bubble yet? Our five gauges say no",
+  "sourceUrl": "https://www.exponentialview.co/p/is-ai-a-bubble-yet-our-five-gauges",
+  "sourceName": "Exponential View — Azeem Azhar",
+  "linkedinPost": "Bubble or boom? Your CFO doesn’t care — cash flow does.\n\nAzeem Azhar’s Exponential View argues demand is real, but AI spend is getting harder to unwind. That matches what I see: the risk isn’t just overpaying; it’s getting stuck with irreversible costs and orphaned projects.\n\nHow we keep enterprise AI spend sane:\n\n- Stage gates tied to business metrics (not demos). Move from POC to pilot only if cost per resolved ticket or lead conversion improves by X%.\n- Model unit economics per workflow. Price per successful task, not per token.\n- Pre-plan decommission. Every project starts with a rollback path and an owner for turning it off.\n- Shared infra with quotas. Don’t let one shiny use case mortgage the GPU budget.\n- Hard “kill switches” and governance that actually uses them.\n\nMy take: Treat AI like a product portfolio with exit ramps. It’s fine to bet big — as long as you can get out fast when value stalls.\n\nWhat’s one metric you use to greenlight phase 2, and one that kills it? #AIStrategy #EnterpriseAI #AITransformation",
+  "xPost": "AI spend shouldn’t be irreversible. Use stage gates tied to outcomes, price per successful task, and pre-plan decommission. Bet big—with exit ramps. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a giant hot-air balloon labeled by shape as “AI Spend” trying to lift off, held down by sturdy ropes tagged “Stage Gate”, “Unit Econ”, “Decom Plan”. A big red lever on the basket reads in bold: “Kill Switch”. A CFO calmly holds the ropes while confetti “hype” floats away. Art direction: isometric 3D miniature world. Color palette: charcoal ground with neon lime and magenta accents. Lighting: soft studio lighting with crisp shadows. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Bet Big, Exit Fast",
+  "cardSubtitle": "Stage-gate your AI portfolio.",
+  "imageType": "card",
+  "published": {}
+}
