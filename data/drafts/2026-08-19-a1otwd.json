@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-19-a1otwd",
+  "createdAt": "2026-08-19T15:22:03.941Z",
+  "topic": "Retaining AI talent beyond comp",
+  "angle": "You can’t outbid churn; impact, autonomy, and shipping to production keep builders.",
+  "sourceTitle": "What Gets Your Best Employees to Stay",
+  "sourceUrl": "https://sloanreview.mit.edu/article/what-gets-your-best-employees-to-stay/",
+  "sourceName": "MIT Sloan Management Review",
+  "linkedinPost": "You can’t outbid churn.\n\nMIT Sloan Management Review notes that even eye-popping comp couldn’t stop high-profile defections at top AI shops. If they can’t buy retention, neither can you. Money opens the door; impact and autonomy keep people in the room.\n\nWhat actually works in AI orgs I’ve seen stick:\n\n- Ship to production fast. Builders stay where their work touches customers, not slide decks.\n- Protect “maker time.” Cap meeting load; measure and defend uninterrupted build hours.\n- Clear pathways to technical leadership without people management. Don’t force ICs into manager chairs.\n- Internal mobility, not hero projects. Move talent to the next valuable problem before recruiters do.\n- Transparent governance. Nothing kills morale like unclear risk rules that change at the 11th hour.\n\nMy take: Retention is an operating system, not a perk. Track time-to-impact, percent of work in prod, and voluntary internal moves like core KPIs. And make managers accountable for them.\n\nIf one lever had to move this quarter: what would you change to help your AI builders ship more and meet less? #AIAdoption #EnterpriseAI #AIStrategy",
+  "xPost": "You can’t outbid churn. In AI teams, retention = impact + autonomy. Ship to prod fast, protect maker time, and give ICs real paths. Track time-to-impact like a KPI. #AIAdoption #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: shiny golden handcuffs made of braided Ethernet cables lying open on a desk, while a door labeled by shape as “Production” glows invitingly. A cluttered “Meetings” calendar melts off a wall, and a clean roadmap arrow points to “Ship”. Include one bold phrase on a desk placard: “Stay to Ship”. Art direction: retro screen-print poster style with grain. Color palette: cream background with cobalt blue and warm amber. Lighting: warm golden-hour glow. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Retain Builders, Not Badges",
+  "cardSubtitle": "Impact beats compensation packages.",
+  "imageType": "card",
+  "published": {}
+}
