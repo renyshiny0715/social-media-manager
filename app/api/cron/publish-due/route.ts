@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { config, assertConfigured } from "@/lib/config";
 import { listDrafts, saveDraft } from "@/lib/github";
 import { publishToX, replyOnX } from "@/lib/publish/x";
-import { publishToLinkedIn, commentOnLinkedIn } from "@/lib/publish/linkedin";
+import { publishToLinkedIn } from "@/lib/publish/linkedin";
 import { ensureAiImage } from "@/lib/images";
-import { sourceComment } from "@/lib/source-comment";
+import { sourceComment, withSourceLink } from "@/lib/source-comment";
 
 export const maxDuration = 300; // may generate images for several due posts
 export const dynamic = "force-dynamic";
@@ -53,13 +53,10 @@ export async function GET(req: NextRequest) {
             );
           }
         } else {
-          const { postId } = await publishToLinkedIn(draft, draft.linkedinPost, image);
+          const finalText = withSourceLink(draft.linkedinPost, draft);
+          const { postId } = await publishToLinkedIn(draft, finalText, image);
+          draft.linkedinPost = finalText;
           draft.published.linkedin = { at: new Date().toISOString(), postId };
-          if (comment && postId) {
-            await commentOnLinkedIn(postId, comment).catch((e) =>
-              console.error("LinkedIn source comment failed:", e),
-            );
-          }
         }
         delete draft.scheduled[platform];
         await saveDraft(draft);

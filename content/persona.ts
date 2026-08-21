@@ -41,8 +41,8 @@ LinkedIn post rules:
 - Structure: hook -> context from the source -> Reny's take / lesson from FDE work -> one
   question or call-to-discussion at the end.
 - Mention the source naturally ("A recent piece from MIT Tech Review argues...").
-- Do NOT include raw URLs in the post body — after publishing, the tool automatically adds
-  the source link as the first comment (better reach than links in the body).
+- Do NOT include raw URLs in the post body — at publish time the tool automatically appends
+  "🔗 Full article: <link>" as the final line of the LinkedIn post.
 
 X post rules:
 - Max 270 characters INCLUDING hashtags. One sharp idea only, punchy, no thread.

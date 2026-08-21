@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { loadDraft, saveDraft } from "@/lib/github";
 import { verify } from "@/lib/sign";
 import { publishToX, replyOnX } from "@/lib/publish/x";
-import { publishToLinkedIn, commentOnLinkedIn } from "@/lib/publish/linkedin";
-import { sourceComment } from "@/lib/source-comment";
+import { publishToLinkedIn } from "@/lib/publish/linkedin";
+import { sourceComment, withSourceLink } from "@/lib/source-comment";
 import { nextLondonPublishTime } from "@/lib/schedule";
 import { ensureAiImage } from "@/lib/images";
 
@@ -69,19 +69,14 @@ export async function POST(req: NextRequest) {
         }
       }
     } else {
-      const { postId } = await publishToLinkedIn(draft, text, image);
+      // LinkedIn's comments API is partner-only (403 for standard apps), so the
+      // source link is appended to the post body instead.
+      const finalText = withSourceLink(text, draft);
+      const { postId } = await publishToLinkedIn(draft, finalText, image);
+      draft.linkedinPost = finalText;
       draft.published.linkedin = { at: new Date().toISOString(), postId };
       if (draft.scheduled?.linkedin) delete draft.scheduled.linkedin;
-      const comment = sourceComment(draft);
-      if (comment && postId) {
-        try {
-          await commentOnLinkedIn(postId, comment);
-          notes.push("source link added as a comment");
-        } catch (err) {
-          console.error("LinkedIn source comment failed:", err);
-          notes.push("source-link comment failed (post itself is live)");
-        }
-      }
+      if (finalText !== text) notes.push("source link appended to the post");
     }
     await saveDraft(draft);
     return back(
