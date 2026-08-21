@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-21-3gy298",
+  "createdAt": "2026-08-21T15:47:51.108Z",
+  "topic": "Measuring AI ROI, not tokens",
+  "angle": "If your AI metrics don’t map to business KPIs, you’re measuring theater, not value.",
+  "sourceTitle": "How to measure returns on AI",
+  "sourceUrl": "https://www.economist.com/business/2026/08/20/how-to-measure-returns-on-ai",
+  "sourceName": "The Economist (Business)",
+  "linkedinPost": "If your AI ROI deck talks about token counts, you’re measuring the wrong thing.\n\nThe Economist just outlined better ways to assess AI returns—moving from technical vanity metrics to business impact. That’s the shift enterprises miss most.\n\nOn programs that paid off, we started with a baseline and a control. Then we tied AI to 3–5 hard KPIs the CFO already cares about: cost-to-serve, containment rate, average handle time, NPS/CSAT, revenue per visit, backlog burn, time-to-resolution by segment.\n\nWe also priced risk, not just speed: precision/recall mapped to refunds, compliance breaches, or churn, with dollar values in the denominator. If a model improves deflection by 8% but increases escalations by 2%, the math decides—not the demo.\n\nFinally, we tracked full costs: model calls, grounding data pipelines, human review, retraining, incident response. Many “wins” vanish when you add the last mile.\n\nMy rule: if the metric can’t move a budget line, it doesn’t belong on the AI scorecard. Make value boring, measurable, and defensible.\n\nWhat KPIs would make your AI program CFO-proof? #EnterpriseAI #AITransformation #AIStrategy #CustomerExperience",
+  "xPost": "Token counts aren’t ROI. Tie AI to CFO KPIs: cost-to-serve, containment, AHT, NPS, revenue per visit—plus risk-priced precision/recall. If it can’t move a budget line, it’s not a metric. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Visual metaphor: a flashy carnival scale weighing glowing “tokens” on one side versus a dull-looking ledger book labeled by shape as “P&L” on the other. The ledger easily outweighs the tokens. Small side details: tickets labeled “AHT,” “CSAT,” “Deflection,” “Refunds.” Include bold phrase on the ledger cover: “Move the P&L.” Art direction: retro screen-print poster style. Color palette: charcoal with neon lime and hot magenta accents. Lighting: neon rim light for contrast. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Measure What Pays",
+  "cardSubtitle": "Map AI to the P&L, not tokens.",
+  "imageType": "card",
+  "published": {}
+}
