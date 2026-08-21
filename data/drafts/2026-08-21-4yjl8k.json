@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-21-4yjl8k",
+  "createdAt": "2026-08-21T15:47:52.724Z",
+  "topic": "Model volatility and vendor strategy",
+  "angle": "Stop chasing model-of-the-month; build an abstraction and buy portability.",
+  "sourceTitle": "OpenAI is gaining on Anthropic with business users, new data indicates",
+  "sourceUrl": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+  "sourceName": "TechCrunch AI",
+  "linkedinPost": "If you’re whipsawing between AI vendors, that’s a strategy problem, not a model problem.\n\nTechCrunch notes businesses are flipping between labs as models leapfrog—evidence that “stickiness” is thin. I see the consequences: rework, surprise bills, and brittle prompt hacks that don’t survive the next release.\n\nThe fix is an abstraction layer and a procurement shift. On the build side: a model router, eval harness with golden sets per use case, per-call SLAs (latency, quality, cost caps), and caching. Grounding data lives outside any vendor SDK.\n\nOn the buy side: portability clauses, price floors, deprecation notice periods, and usage credits that follow you across model families. Also, measure switching cost up front like a liability on the balance sheet.\n\nMost value comes from your data, workflows, and evaluation discipline—not the logo on the box. Treat models as interchangeable components you can benchmark and swap without drama.\n\nQuestion for leaders: what’s the one contract or architecture choice you’ll make now to avoid vendor lock-in later? #AIStrategy #EnterpriseAI #AITransformation",
+  "xPost": "Model-of-the-month whiplash is a strategy bug. Build an abstraction (router + eval harness + SLAs + caching) and buy portability (price floors, deprecation notices). Your moat is data + workflow, not the logo. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a pit stop crew rapidly swapping branded racing tires labeled by shape as different “models” onto the same steady car labeled by shape as “Your Product.” The car’s route map reads “SLAs, Evals, Caching.” Include bold phrase on a pit sign: “Swap, Don’t Stall.” Art direction: cinematic 3D render with soft depth of field. Color palette: graphite tarmac with neon lime and cobalt accents. Lighting: dramatic spotlights and rim light. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Beat Model Whiplash",
+  "cardSubtitle": "Abstract, evaluate, and stay portable.",
+  "imageType": "card",
+  "published": {}
+}
