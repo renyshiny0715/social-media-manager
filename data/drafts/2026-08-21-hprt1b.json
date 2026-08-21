@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-21-hprt1b",
+  "createdAt": "2026-08-21T15:47:51.937Z",
+  "topic": "Trust-by-design beats accuracy alone",
+  "angle": "Enterprises lose AI programs to trust debt, not model error—design trust into the product.",
+  "sourceTitle": "Earning and sustaining trust in the age of AI",
+  "sourceUrl": "https://www.mckinsey.com/industries/financial-services/our-insights/earning-and-sustaining-trust-in-the-age-of-ai",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Most AI programs don’t fail on accuracy—they fail on trust.\n\nMcKinsey’s conversation with Invesco’s CEO nails it: AI has to sit inside the core strategy and customer promise. Once you burn trust, you don’t get a second try.\n\nFrom the front lines, “trust-by-design” beats post-hoc explainers every time. The teams that ship responsibly do four things:\n\n1) Show data lineage like a receipt—what data grounded this answer?\n2) Offer easy escalation and human appeal, with SLAs a manager signs.\n3) Log every decision with why/why-not reasoning for audit.\n4) Red-team with customer ops in the room, not just engineers.\n\nWe also freeze go-lives until we can answer one question on a dashboard: “Can we explain this recommendation in one sentence a customer would believe?” If not, it’s not ready—no matter the model score.\n\nTrust isn’t a marketing campaign; it’s part of the product spec and the controls. You ship it, or you don’t.\n\nWhat’s the one trust control you’d refuse to launch without? #AITransformation #EnterpriseAI #CustomerExperience",
+  "xPost": "AI rarely dies from accuracy—it dies from trust debt. Ship trust-by-design: data lineage receipts, human appeal paths, auditable logs, red-teams with ops. If you can’t explain it in one sentence customers believe, don’t ship. #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a sleek vending machine labeled by shape as “AI” that only dispenses sealed “trust receipts”—transparent capsules showing ingredients: data source, policy, reviewer stamp. A crowd chooses receipts over candy. Include bold phrase on a marquee above: “Trust Ships.” Art direction: isometric 3D miniature world. Color palette: deep navy background with electric coral and cyan accents. Lighting: soft studio lighting with gentle reflections. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Ship Trust, Not Hype",
+  "cardSubtitle": "Build controls into the product.",
+  "imageType": "card",
+  "published": {}
+}
