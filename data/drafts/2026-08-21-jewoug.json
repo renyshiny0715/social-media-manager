@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-21-jewoug",
+  "createdAt": "2026-08-21T15:47:50.289Z",
+  "topic": "Beyond copilots: redesign the SDLC",
+  "angle": "Tools don’t fix process—redesign the product development system or your AI copilot will stall.",
+  "sourceTitle": "Beyond the copilot: Scaling the agentic product development life cycle",
+  "sourceUrl": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/beyond-the-copilot-scaling-the-agentic-product-development-life-cycle",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "An AI copilot won’t fix a broken software lifecycle.\n\nA recent McKinsey piece argues the teams seeing real gains are redesigning their entire product development system, not just rolling out tools. That matches what I see on the ground.\n\nWhere we’ve moved the needle, we didn’t “add AI to Jira.” We rebuilt workflows and decision rights around it. Example: we cut PR cycle time by 30% by letting agents auto-generate tests, propose fixes, and route edge cases to the right reviewer—paired with new guardrails and clear rollback paths.\n\nWe also shifted metrics. Instead of counting “AI suggestions,” we track lead time for changes, escaped defects, incidents per deploy, and cost-to-serve per feature. And we rewrote roles: TLs own evaluation harnesses, QA owns safety gates, and product owns the acceptance criteria the agents optimize for.\n\nThe pattern: pick two or three chokepoints (test data creation, regression triage, documentation drift), redesign the flow end-to-end with agents in the loop, and only then scale.\n\nIf your “gen AI program” is a tool rollout, you’ll get pilot wins that never add up. If it’s an operating-model change, you’ll see compounding impact.\n\nWhere would a full-flow redesign beat a tool drop in your org? #AITransformation #EnterpriseAI #AIStrategy #ForwardDeployedEngineer",
+  "xPost": "AI copilots don’t fix a broken SDLC. Redesign the flow (metrics, roles, guardrails), then add agents. Tool rollouts = pilot wins; operating-model change = compounding impact. Start with 2–3 chokepoints, not 20. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Visual metaphor: a shiny “AI copilot” jet engine bolted onto a rickety wooden cart with square wheels. The cart stalls until the team swaps to round wheels labeled by shape as “workflow,” “metrics,” and “roles,” after which the engine lifts it. Small signs for chokepoints: “tests,” “triage,” “docs.” Include one bold phrase on a workshop sign: “Fix the flow.” Art direction: flat editorial illustration with bold shapes. Color palette: cream background with cobalt blue and warm amber accents. Lighting: soft studio lighting. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Copilots Won’t Fix Flow",
+  "cardSubtitle": "Redesign the SDLC or stall out.",
+  "imageType": "card",
+  "published": {}
+}
