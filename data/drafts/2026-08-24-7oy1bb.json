@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-24-7oy1bb",
+  "createdAt": "2026-08-24T15:10:29.614Z",
+  "topic": "AI enablement policies (lessons from classrooms)",
+  "angle": "Move from prohibition to structured use: rubrics, attribution, and audit trails.",
+  "sourceTitle": "How to encourage smarter AI use in the classroom",
+  "sourceUrl": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies/",
+  "sourceName": "MIT Technology Review (AI)",
+  "linkedinPost": "Bans don’t build capability. Good guardrails do.\n\nMIT Technology Review highlights how schools are shifting from blocking chatbots to teaching structured use—clear rubrics, attribution rules, and consequences. It’s a useful mirror for enterprises stuck between “no AI” and “use it everywhere.”\n\nWhat works in production environments is very similar:\n- Define allowed uses by task (drafting, summarizing, code scaffolding) with quality rubrics.\n- Require attribution: “AI-assisted” tags and prompts preserved with the deliverable.\n- Keep an audit trail: stored prompts/outputs linked to the ticket, not screenshots in DMs.\n- Teach verification: sources, test cases, and a checklist for when to escalate to a human.\n\nMy take: enablement beats enforcement. The fastest teams I support didn’t wait for a perfect policy—they set a minimum viable one, measured errors and time saved, then iterated monthly.\n\nIf your policy can’t be explained on a single slide, people won’t use it—or they’ll work around it.\n\nWhat’s on your one-slide AI use policy today? #AIAdoption #AIStrategy #EnterpriseAI",
+  "xPost": "Bans don’t build capability. Ship a one-slide AI policy: allowed uses by task, attribution required, audit trail kept, verification checklist enforced. Enablement > enforcement—and it actually scales. #AIAdoption #EnterpriseAI",
+  "imagePrompt": "Metaphor: a classroom-style poster-sized “One-Slide Policy” pinned to a corporate corkboard with four big icons: Allowed Tasks, Attribution, Audit Trail, Verification. Around it, tangled red tape lies cut on the floor. Style: paper-cut diorama with layered textures. Color palette: cream background with cobalt blue and warm amber accents. Lighting: warm golden-hour glow. Include a small sticky note text: “One Slide.” no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Enablement Beats Bans",
+  "cardSubtitle": "One-slide policies build real capability.",
+  "imageType": "card",
+  "published": {}
+}
