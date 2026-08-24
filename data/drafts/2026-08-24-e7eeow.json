@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-24-e7eeow",
+  "createdAt": "2026-08-24T15:10:30.514Z",
+  "topic": "Platform strategy: one AI vs many",
+  "angle": "Tool sprawl kills ROI; standardize on one primary AI to reduce overhead and improve quality.",
+  "sourceTitle": "Why one AI is better than four #598",
+  "sourceUrl": "https://www.exponentialview.co/p/why-one-ai-is-better-than-four-598",
+  "sourceName": "Exponential View — Azeem Azhar",
+  "linkedinPost": "Most AI “platform strategies” are just tool sprawl with a nicer slide.\n\nAzeem Azhar argues one AI often beats four. In the enterprise, I see this daily: context fragmentation, duplicated prompts, conflicting guardrails, and a support queue that never ends. The hidden tax crushes ROI.\n\nMy take: standardize on a primary AI surface area for 70–80% of use. That doesn’t mean monoculture; it means a backbone.\n\nWhat changes when you pick one:\n- Reusable prompt libraries, evals, and policies that compound.\n- Fewer integrations to secure and monitor; clearer data residency story.\n- Better enablement: one playbook, fresher examples, faster onboarding.\n- Cleaner metrics: time saved and quality gains tracked apples-to-apples.\n\nKeep an “exceptions lane” for edge cases, but make it earn its keep with measured lift.\n\nIf value is stalling, your problem might not be the model—it’s the portfolio. Consolidate, measure, then expand where the data says so.\n\nWhere could consolidation free 20% of your team’s time next quarter? #AIStrategy #AITransformation #EnterpriseAI",
+  "xPost": "Tool sprawl kills ROI. Pick one primary AI surface for 70–80% of use, build shared prompts/evals/policies, and measure lift. Keep an exceptions lane—but make it earn its keep. Backbone > buffet. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Metaphor: a tangled buffet of mismatched utensils labeled with different AI tools spilling everywhere, while a single sturdy “backbone” serving line moves smoothly with neatly stacked trays labeled “Prompts,” “Evals,” “Policies.” Style: isometric 3D miniature world. Color palette: steel gray with pops of electric coral and teal. Lighting: soft depth of field highlighting the backbone line. Include a bold sign above the smooth line: “One Backbone.” no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Backbone, Not Buffet",
+  "cardSubtitle": "Consolidate tools to unlock real ROI.",
+  "imageType": "card",
+  "published": {}
+}
