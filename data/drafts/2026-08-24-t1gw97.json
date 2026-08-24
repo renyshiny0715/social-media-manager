@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-24-t1gw97",
+  "createdAt": "2026-08-24T15:10:27.751Z",
+  "topic": "AI agents in the enterprise",
+  "angle": "Agents create value only when scoped to real workflows with metrics, guardrails, and human handoffs.",
+  "sourceTitle": "OpenAI is building AI agents for everything. Will everyone use them?",
+  "sourceUrl": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
+  "sourceName": "TechCrunch AI",
+  "linkedinPost": "“An agent for everything” sounds great—until it tries to do everything at once inside your company.\n\nTechCrunch reports on the push to bring AI agents from engineers to everyone. The promise is software that can take actions, not just draft answers. In the enterprise, that’s where the risk—and the value—both live.\n\nMy take from FDE work: agents don’t replace business processes; they amplify them. If your returns process is fuzzy, an agent will automate confusion faster. If your knowledge is scattered, it will confidently act on partial truths.\n\nWhat works in production:\n- Narrow missions (“close level-1 billing tickets within policy”), not open-ended assistants.\n- Clear guardrails (systems of record it may touch, thresholds for human review).\n- Telemetry and SLAs (cycle time, first-contact resolution, error budgets) tied to dollars.\n- Designed handoffs to humans when confidence, cost, or ethics trip a rule.\n\nPilot for a week, but instrument for a quarter. The winners won’t have the flashiest demos—they’ll have the cleanest handoffs and clearest ROI.\n\nWhere would a tightly scoped agent actually move a KPI in your world? #EnterpriseAI #AIAdoption #AIStrategy",
+  "xPost": "Agents don’t replace processes—they amplify them. Scope them tightly, wire guardrails + SLAs to dollars, and design handoffs. Flashy demos fade; clean handoffs compound. Where would one narrow agent move a KPI? #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Visual metaphor: a Swiss Army knife the size of a delivery van trying to fix a tiny watch, while a small single-purpose screwdriver efficiently tightens a crucial screw labeled “SLA.” Background shows a scoreboard with “Cycle Time” and “FCR” improving only for the screwdriver. Style: flat editorial illustration with bold shapes. Include a small tag on the big knife reading “Do-It-All.” Color palette: deep navy background, electric coral and cyan accents. Lighting: soft studio lighting. Mood: witty and crisp. Add one bold phrase on a hanging tag: “Scope It.” no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Agents Need Narrow Jobs",
+  "cardSubtitle": "Scope, guardrails, and SLAs beat flashy demos.",
+  "imageType": "card",
+  "published": {}
+}
