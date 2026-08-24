@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-24-ib0eqc",
+  "createdAt": "2026-08-24T15:10:28.734Z",
+  "topic": "AI and workforce restructuring",
+  "angle": "Layoffs aren’t an AI strategy; redesigning work and measures is.",
+  "sourceTitle": "His boss asked if AI could replace human coders. Two weeks later, he and 160 colleagues were laid off in Beijing",
+  "sourceUrl": "https://fortune.com/2026/08/24/china-ai-jobs-workers-layoffs-coders/",
+  "sourceName": "Fortune (AI)",
+  "linkedinPost": "“Can AI replace our coders?” is the wrong first question—and a dangerous one.\n\nFortune reports on a team in Beijing laid off weeks after leadership asked if AI could do the job. This will keep happening wherever output is measured as tickets closed, not outcomes shipped.\n\nFrom the front lines: layoffs are not an AI strategy. The companies capturing value redesign the work, not just the headcount. They move from task factories to product squads; from lines of code to customer KPIs; from generic “prompting” to roles like reviewer, verifier, and integrator.\n\nTactics I’ve seen work:\n- Reduce work-in-progress, then insert AI to compress cycle time, not just labor.\n- Pair engineers with domain specialists; make AI do the glue (tests, docs, scaffolding).\n- Change incentives: reward fewer incidents, faster recovery, better NPS—not raw velocity.\n- Invest in upskilling pathways before reorgs, with clear gates and new role definitions.\n\nIf your metrics don’t change, your org won’t either—and AI will just be a blunt cost lever.\n\nLeaders: what outcome metric would you change before touching headcount? #AITransformation #AIStrategy #EnterpriseAI",
+  "xPost": "Layoffs aren’t an AI strategy. Redesign the work and the measures: move from tickets/LOC to customer KPIs, make AI do glue work, and upskill for reviewer/verifier roles. Change metrics first, headcount last. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Metaphor: a company tries to ‘lose weight’ by cutting off shadows of employees with giant scissors labeled “Cost,” while a nearby operating table labeled “Workflow” sits untouched. A small scale shows “NPS” and “Incidents” as the real measures to fix. Style: retro screen-print poster with bold, simplified forms. Color palette: charcoal background with neon lime and warm amber highlights. Lighting: strong graphic contrast. Add one big number on a wall chart: “0% Strategy.” no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Layoffs ≠ AI Strategy",
+  "cardSubtitle": "Redesign work and metrics before cuts.",
+  "imageType": "card",
+  "published": {}
+}
