@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-26-cymyn1",
+  "createdAt": "2026-08-26T20:09:41.365Z",
+  "topic": "AI branding/UX confusion (TechCrunch)",
+  "angle": "Stop making users learn your AI stack—give them one front door, task-first.",
+  "sourceTitle": "Google’s Gemini has a branding problem, and so does the rest of AI",
+  "sourceUrl": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
+  "sourceName": "TechCrunch AI",
+  "linkedinPost": "If your users need a decoder ring to pick the right AI, you’ve already lost adoption.\n\nTechCrunch’s take on AI branding nails a real enterprise problem: we make people learn product architecture instead of getting work done. Model names, tiers, modes—none of that maps to a task under deadline.\n\nIn the field, our highest-adoption launches have one front door and task-first labels. Not “Model X Ultra,” but “Refund an Order.” Not “Vision Pro,” but “Flag Damage.” Behind the door, we can route to the right engine. The user should never have to care.\n\nMy playbook: a service catalog of AI-powered actions with stable URLs/buttons, a single chat/command surface, and guardrails that auto-select the cheapest engine that meets the SLA. Change the plumbing as much as you want—never the surface.\n\nIf your AI feels like a product line, it will be evaluated like one—and many won’t bother.\n\nWhere could you replace five AI entry points with one “Do My Task” button? #CustomerExperience #AIAdoption #EnterpriseAI",
+  "xPost": "Users shouldn’t learn your AI stack. One front door, task-first labels. Route engines behind the scenes and keep the surface stable. Adoption follows simplicity. #AIAdoption",
+  "imagePrompt": "Produce a flat editorial illustration of a wall covered in confusing buttons labeled by shape as techy names, next to one big, glowing door with a clear sign: Headline inside image: “One Front Door”. Three tiny wayfinding labels on the wall: “Task Names”, “Stable UX”, “No Jargon”. A frazzled employee drops a decoder ring as they choose the glowing door. Art direction: bold shapes, clean sans-serif text, playful minimalism. Color palette: cream background with cobalt blue and warm amber accents. Lighting: warm golden-hour glow emphasizing the door. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "One Front Door",
+  "cardSubtitle": "Hide models. Show tasks people need.",
+  "imageType": "card",
+  "published": {}
+}
