@@ -81,8 +81,34 @@ export default async function PublishPage({
         style={{ width: "100%", maxWidth: 520, borderRadius: 8, margin: "8px 0 4px" }}
       />
       {draft.imageType === "card" && (
-        <p style={{ fontSize: 12, color: "#999", margin: "0 0 16px" }}>
-          Preview card — a premium AI illustration is generated when you publish.
+        <div style={{ margin: "0 0 16px" }}>
+          <p style={{ fontSize: 12, color: "#999", margin: "0 0 8px" }}>
+            Preview card — the premium AI illustration is generated when you publish, or
+            preview it now:
+          </p>
+          <form method="POST" action="/api/preview-image" style={{ display: "inline" }}>
+            <input type="hidden" name="id" value={draft.id} />
+            <input type="hidden" name="sig" value={sig} />
+            <button
+              type="submit"
+              style={{
+                background: "#fff",
+                color: "#555",
+                border: "1px solid #bbb",
+                padding: "8px 16px",
+                borderRadius: 8,
+                fontSize: 13,
+                cursor: "pointer",
+              }}
+            >
+              🎨 Generate AI image preview (~30s, ≈$0.19 — publish reuses it)
+            </button>
+          </form>
+        </div>
+      )}
+      {sp.previewed && draft.imageType === "ai" && (
+        <p style={{ background: "#d4edda", padding: 10, borderRadius: 8, fontSize: 13 }}>
+          ✅ AI image generated — this exact image will be used when publishing.
         </p>
       )}
 

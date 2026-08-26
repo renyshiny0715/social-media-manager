@@ -22,12 +22,13 @@ export async function generateAiImage(
         model: "gpt-image-1",
         prompt: `${prompt}
 
-Render as a scroll-stopping, magazine-cover-quality editorial illustration for a professional
-social feed. Bold, witty and instantly readable at thumbnail size: strong focal point, confident
-colors, high contrast, a touch of humor in the visual storytelling. Rich detail is welcome as
-long as the main idea pops first. If the prompt includes a short phrase or number to display,
-render it big, bold and perfectly spelled — otherwise include no text at all. Never add
-watermarks, logos, or any other stray text.`,
+Render as a scroll-stopping editorial illustration that doubles as a mini-infographic for a
+professional social feed. Magazine-cover quality: strong focal point, confident colors, high
+contrast, a touch of humor in the visual storytelling. TYPOGRAPHY RULES: render every headline
+and label EXACTLY as spelled in the prompt above — clean bold sans-serif, large and legible at
+thumbnail size, high contrast against its background; text is part of the composition, not an
+afterthought. Do not add, repeat, or invent any text beyond what the prompt specifies. Never
+add watermarks, logos, or stray characters.`,
         size: "1536x1024",
         quality,
         n: 1,

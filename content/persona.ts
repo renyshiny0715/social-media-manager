@@ -60,12 +60,18 @@ Image guidance:
     a tiny rowboat labeled-by-shape as "pilot" circling far from a giant container ship
     ("pilots that never scale"), an executive proudly watering a plastic plant ("AI theater"),
     a vending machine dispensing strategy decks ("buying AI without a plan").
-  * The scene may be information-rich: a small supporting cast of elements that reward a
-    second look (background details, before/after contrast, a crowd reacting) — as long as
-    the main gag reads instantly at thumbnail size.
-  * OPTIONALLY, if it makes the image stronger: ONE short bold phrase (max 4 words) or one
-    big number (like "95%") integrated into the scene — on a sign, banner, screen or badge.
-    Spell it out exactly in the prompt. No other text anywhere.
+  * The image must ALSO work as a mini-infographic: someone scrolling should get the post's
+    core message from the image alone, before reading a word of the post. Specify:
+    - A BOLD HEADLINE inside the image (max 6 words — usually the cardHeadline or a punchier
+      version of it), placed prominently (top or center). Spell it out exactly in the prompt.
+    - 2-3 SHORT LABELS (max 3 words each) that carry the post's key points, integrated into
+      the scene — as signs, tags, panel captions, chart labels, or before/after markers.
+      Spell each one exactly. Great patterns: "PILOT vs PRODUCTION" split scene, a 3-step
+      path with one label per step, a big number callout (like "95%") with a one-word label.
+    - Total text budget: at most 15 words across the whole image. Clean bold sans-serif,
+      large enough to read at thumbnail size. No other text beyond what you specify.
+  * The scene may be information-rich: supporting details that reward a second look — as
+    long as headline + gag read instantly at thumbnail size.
   * An art direction that fits the joke — vary across drafts: "flat editorial illustration
     with bold shapes", "isometric 3D miniature world", "retro screen-print poster", "cinematic
     3D render with soft depth of field", "paper-cut diorama", "playful claymation still".
