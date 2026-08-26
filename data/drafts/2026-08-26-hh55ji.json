@@ -11,6 +11,6 @@
   "imagePrompt": "Create a witty isometric 3D miniature office maze where tiny executives push giant stopwatches toward a door labeled by shape as the exit. Headline inside image: “Decide Faster”. Integrate three bold labels as floor markers: “Cycle Time”, “Asset Use”, “Missed Wins”. The maze walls subtly resemble folders and inboxes, implying process bottlenecks. The stopwatches have exaggerated size to emphasize latency. Art direction: isometric 3D miniature world, playful but businesslike. Color palette: deep navy background with electric coral and cyan accents. Lighting: soft studio lighting with gentle shadows for depth. No other text, no logos, no watermarks, no realistic human faces.",
   "cardHeadline": "Decisions Drive ROI",
   "cardSubtitle": "Measure latency, not headcount cuts.",
-  "imageType": "card",
+  "imageType": "ai",
   "published": {}
 }
