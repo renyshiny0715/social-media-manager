@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-26-hh55ji",
+  "createdAt": "2026-08-26T20:09:38.806Z",
+  "topic": "AI’s decision dividend (McKinsey)",
+  "angle": "The biggest ROI from AI comes from slashing decision latency, not headcount.",
+  "sourceTitle": "The decision dividend: How AI creates economic value",
+  "sourceUrl": "https://www.mckinsey.com/industrials/our-insights/the-decision-dividend-how-ai-creates-economic-value",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Most AI business cases I see are built on the wrong line of the P&L.\n\nA recent piece from McKinsey argues the largest AI gains come from faster decisions, better asset use, and catching opportunities you’d otherwise miss—not from labor savings alone.\n\nThat matches what I see on the ground. A claims team that cuts “time to decision” from 3 days to 30 minutes unlocks cash and customer trust. A field ops group that routes parts proactively squeezes more out of the same trucks and techs. No layoffs required.\n\nIf your AI ROI hinges on FTE reduction, you’re likely under-scoping the real value. Shift the scorecard:\n- Decision cycle time (before/after)\n- First-pass yield / rework rate\n- Asset utilization (trucks, rooms, inventory)\n- Opportunity capture (upsell, win rate) tied to AI suggestions actually used\n\nAlso: measure adoption like a product team. If users aren’t acting on the AI’s recommendations, there is no “decision dividend.”\n\nMy take: Put “decision latency” on the exec dashboard and fund the boring workflow plumbing that shortens it. That’s where returns show up.\n\nWhat’s one decision your org could speed up by 10x with AI today? #AITransformation #EnterpriseAI #AIStrategy",
+  "xPost": "AI ROI rarely comes from headcount cuts. It comes from slashing decision latency and boosting asset use. Put “time to decision” on the dashboard—or you’ll miss the dividend. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Create a witty isometric 3D miniature office maze where tiny executives push giant stopwatches toward a door labeled by shape as the exit. Headline inside image: “Decide Faster”. Integrate three bold labels as floor markers: “Cycle Time”, “Asset Use”, “Missed Wins”. The maze walls subtly resemble folders and inboxes, implying process bottlenecks. The stopwatches have exaggerated size to emphasize latency. Art direction: isometric 3D miniature world, playful but businesslike. Color palette: deep navy background with electric coral and cyan accents. Lighting: soft studio lighting with gentle shadows for depth. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Decisions Drive ROI",
+  "cardSubtitle": "Measure latency, not headcount cuts.",
+  "imageType": "card",
+  "published": {}
+}
