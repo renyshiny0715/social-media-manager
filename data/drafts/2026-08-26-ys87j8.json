@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-26-ys87j8",
+  "createdAt": "2026-08-26T20:09:40.613Z",
+  "topic": "AI capex shows as GDP drag (Fortune)",
+  "angle": "Don’t confuse near-term accounting optics with long-term AI value—plan the runway.",
+  "sourceTitle": "U.S. economy grows at sluggish 1.5% pace in second quarter",
+  "sourceUrl": "https://fortune.com/2026/08/26/economy-sluggish-gdp-growth-1-5-percent/",
+  "sourceName": "Fortune (AI)",
+  "linkedinPost": "AI can make your quarter look worse before it makes your business better.\n\nFortune notes GDP grew 1.5%, and the surge in computer chip and AI investment shipments actually sliced 1.64 percentage points off the number. Accounting optics, not lack of activity.\n\nExecutives feel the same tension: imported GPUs hit cash and margins now, benefits arrive later and unevenly. That’s not a reason to pause—it’s a reason to manage the runway and measure the right leading indicators.\n\nMy playbook with clients:\n- Stage-gate capex by use case, not by hardware tranche\n- Track decision/cycle time, containment rate, and assisted-NPS as early signals\n- Tie variable cloud/GPU spend to unit economics (per ticket, per claim, per lead)\n- Pre-commit decommission plans for unused capacity\n\nIf your board only sees spend, you’ll starve the programs right before value shows up. If they see a clear path from infrastructure → workflow changes → measurable outcomes, you’ll keep patience and funding.\n\nWhat’s on your AI scorecard that proves value is compounding—even before the P&L catches up? #AITransformation #AIStrategy #EnterpriseAI",
+  "xPost": "AI spend can dent near-term optics (ask GDP), then pay back in workflows. Fund by use case, track decision time/containment/NPS, tie GPU costs to unit economics. Manage the runway, not the headline. #AIStrategy",
+  "imagePrompt": "Create a paper-cut diorama: a rainy construction site building a giant “AI” factory, while a nearby dashboard gauge labeled by shape dips slightly. A CFO figure holds an umbrella labeled by shape as P&L, watching cranes lift servers. Headline inside image: “Short-Term Drag”. Three small site signs as labels: “CapEx Now”, “Value Later”, “Right KPIs”. Art direction: layered paper textures, crisp shadows. Color palette: slate gray sky, warm amber cranes, teal accents. Lighting: soft overcast with gentle depth. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Short-Term Drag, Real Value",
+  "cardSubtitle": "Fund runway, track leading indicators.",
+  "imageType": "card",
+  "published": {}
+}
