@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-26-xpu82q",
+  "createdAt": "2026-08-26T15:37:53.854Z",
+  "topic": "CX orchestration for AI agents (VentureBeat)",
+  "angle": "Without an orchestration layer, AI in CX just creates faster silos.",
+  "sourceTitle": "Orchestration is the new challenge for CX in the age of AI agents",
+  "sourceUrl": "https://venturebeat.com/orchestration/orchestration-is-the-new-challenge-for-cx-in-the-age-of-ai-agents",
+  "sourceName": "VentureBeat AI",
+  "linkedinPost": "AI agents are flooding CX. The wiring behind them isn’t.\n\nVentureBeat highlights a reality we see daily: enterprises are gluing conversational AI onto legacy systems never built for it. The result? Impressive demos, chaotic operations. Tickets bounce, context is lost, and humans inherit the mess.\n\nMy take: orchestration isn’t optional; it’s the product. You need a layer that routes, remembers, and governs across channels — voice, chat, email — and across bots and humans.\n\nWhat to build or buy now:\n- Policy-aware routing (who/what handles which intents under which risk rules)\n- Shared memory and case lineage so context survives handoffs\n- Live transfer with receipts (what the bot did, what’s pending)\n- Observability tied to CX metrics: containment, CSAT, handle time, recontact rate\n- Fall-forward design: graceful degradation to a human, not a dead end\n\nIf no one owns orchestration, the customer will notice — and your agents (human and AI) will burn out cleaning it up.\n\nWho owns orchestration in your org today: CX, IT, or a dedicated platform team? #CustomerExperience #EnterpriseAI #AIAdoption #AIStrategy",
+  "xPost": "AI in CX without orchestration = faster silos. Route by policy, preserve context, transfer with receipts, and measure outcomes — not just intent accuracy. Make orchestration someone’s job. #CustomerExperience #EnterpriseAI",
+  "imagePrompt": "Illustrate an airport baggage hall where an octopus in a traffic-officer hat directs luggage belts labeled by shape as “Voice,” “Chat,” and “Email” into two exits: “Bot” and “Human,” avoiding pileups. A big floor sign reads: No Lost Handoffs. Small details show tags like “Policy” and “Memory” on suitcases. Style: isometric 3D miniature world. Palette: cream background with cobalt blue and warm amber. Lighting: warm golden-hour glow. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Orchestrate Or Escalate",
+  "cardSubtitle": "In CX, plumbing is the product.",
+  "imageType": "card",
+  "published": {}
+}
