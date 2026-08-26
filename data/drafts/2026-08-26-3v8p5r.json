@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-26-3v8p5r",
+  "createdAt": "2026-08-26T15:37:54.681Z",
+  "topic": "AI’s unfinished foundation (MIT Sloan)",
+  "angle": "Balance quick wins with a standing backlog for foundations you can reuse.",
+  "sourceTitle": "Building on AI’s Unfinished Foundation",
+  "sourceUrl": "https://sloanreview.mit.edu/article/building-on-ais-unfinished-foundation/",
+  "sourceName": "MIT Sloan Management Review",
+  "linkedinPost": "Leaders keep asking: “How do we move fast on AI when the foundation keeps shifting?”\n\nMIT Sloan argues today’s AI sits on an unfinished foundation. True — but waiting for perfect is just another way to stall. From the field, the winners do two things at once: ship small wins and fund reusable foundations.\n\nHow that looks in practice:\n- Maintain a living “foundation backlog” (data contracts, access controls, evaluation methods) with real owners and OKRs.\n- Reuse before you reinvent: intents, prompts, taxonomies, policies, and analytics pipelines.\n- Productize governance: approvals, audit trails, and red-teaming as standard steps, not favors.\n- Treat enablement like infra: training, playbooks, and sandboxes that persist after the pilot.\n\nMy take: if your first use case doesn’t leave behind assets the second team can grab on day one, you’re renting outcomes, not building capability.\n\nWhat’s on your foundation backlog this quarter — and who is accountable for shipping it? #AITransformation #AIStrategy #EnterpriseAI",
+  "xPost": "Ship wins, build foundations. If use case #1 doesn’t leave reusable assets for #2, you’re renting outcomes, not building capability. Keep a “foundation backlog” with owners and OKRs. #AITransformation #AIStrategy",
+  "imagePrompt": "Show a skyscraper under construction where workers are installing fancy penthouse furniture while the ground-level foundation is still being poured. A site banner on a fence reads: Reuse First. Include small labels by shape on crates: “Policies,” “Prompts,” “Data Contracts.” Style: retro screen-print poster. Palette: charcoal with neon lime and safety orange accents. Lighting: neon rim light for contrast. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Build While You Ship",
+  "cardSubtitle": "Quick wins that harden the core.",
+  "imageType": "card",
+  "published": {}
+}
