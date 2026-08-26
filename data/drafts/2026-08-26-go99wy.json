@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-26-go99wy",
+  "createdAt": "2026-08-26T15:37:55.502Z",
+  "topic": "AI slop and trust (Fortune)",
+  "angle": "Trust is now a KPI; treat AI content like regulated comms.",
+  "sourceTitle": "Over 1 million people clicked LinkedIn’s ‘seems like AI slop’ button",
+  "sourceUrl": "https://fortune.com/2026/08/25/1-million-people-clicked-linkedin-ai-slop/",
+  "sourceName": "Fortune (AI)",
+  "linkedinPost": "Over 1 million people hit “seems like AI slop” on LinkedIn. That’s your customers and candidates voting with their thumbs.\n\nFortune covers the backlash. One analysis tagged 40% of long-form posts as fully AI-generated. As someone shipping AI into customer-facing workflows, here’s the blunt truth: if you don’t operationalize trust, AI will quietly torch your brand and funnel.\n\nWhat we implement with clients:\n- Label AI-assisted content; require sources for claims.\n- Maintain a prompt and source library — reuse what’s verified.\n- Add editorial QA and fact-check as a standard control, not a last-minute fix.\n- Track “trust KPIs”: complaint rate, bounce/unsubscribe, time-on-page, and correction volume.\n- Escalate risky topics to humans by policy, not vibe.\n\nMy take: treat AI content like regulated communications — discoverable, reviewable, attributable. The compliance burden is cheaper than rebuilding trust.\n\nHow are you measuring trust in your AI-assisted content today — and who signs off before it ships? #EnterpriseAI #AIAdoption #CustomerExperience",
+  "xPost": "AI content without governance is brand debt. Label it, cite it, QA it, and track trust KPIs — or pay with churn and complaints later. Treat AI comms like regulated comms. #EnterpriseAI #CustomerExperience",
+  "imagePrompt": "Depict a lavish buffet where dishes look delicious but are obviously plastic. A large table tent reads: Seems Like Slop. Diners hold napkins labeled by shape as “Trust,” looking skeptical. A discreet inspector stamps plates “QA Passed” on a few real items. Style: playful claymation still. Palette: cream and pastel teal with pops of cherry red. Lighting: soft studio lighting. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Operationalize Trust",
+  "cardSubtitle": "Govern AI content like it’s regulated.",
+  "imageType": "card",
+  "published": {}
+}
