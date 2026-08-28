@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-28-q3dvmc",
+  "createdAt": "2026-08-28T15:43:22.334Z",
+  "topic": "Agent complexity, not autonomy, is the risk",
+  "angle": "The real failure mode is the messy web between agents, not any single bot.",
+  "sourceTitle": "Enterprise AI's real risk isn't autonomous agents. It's the complexity between them.",
+  "sourceUrl": "https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them",
+  "sourceName": "VentureBeat AI",
+  "linkedinPost": "Enterprises aren’t deploying a “super-agent.” They’re stitching together a flock of bots that call each other, tap old systems, and rack up costs in the shadows.\n\nA recent piece from VentureBeat argues the real risk in enterprise AI isn’t autonomy—it’s the complexity between agents. That maps exactly to what I see on the ground.\n\nIn production, failure looks like circular handoffs, orphaned API calls, and surprise bills from retries. No one designed the “between.”\n\nMy playbook: start with one narrowly scoped agent and draw the dependency graph like a wiring diagram. Add timeouts, idempotency, and a hard kill switch. Put observability on inter-agent calls first, not last.\n\nCreate a simple “service catalog” for agents: owner, inputs, outputs, SLOs. Give each agent a budget (latency, cost), and fail closed if another bot exceeds it. Measure task success rate, MTTR, and “control breaches” (actions outside contract).\n\nIf you can’t trace a decision across agents end-to-end, you don’t have value—you have risk with a nice demo.\n\nWhere in your stack does the “between” live today—and who owns it? #EnterpriseAI #AIStrategy #AIAdoption #AITransformation",
+  "xPost": "The risk in enterprise AI isn’t a rogue super-bot. It’s the messy web between dozens of agents. Map the “between,” set budgets, add kill switches, and observe inter-agent calls first—not last. Ownership beats hype. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Create a witty editorial illustration: a cluttered office desk with a giant knot of multicolored extension cords labeled by shape as small name tags attached to plugs, representing different AI agents. One frazzled manager holds scissors shaped like a “kill switch,” while a clear path is taped over the desk showing three labeled checkpoints. Bold headline at top center: “TAME AGENT SPRAWL”. Integrate three short labels as desk sticky notes: “Unknown Calls”, “Hidden Loops”, “Cost Blowups”. Flat editorial illustration with bold shapes. Color palette: deep navy background, electric coral, cyan, and warm yellow accents. Soft studio lighting, clean sans-serif text large enough to read at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Tame Agent Sprawl",
+  "cardSubtitle": "The risk hides between your bots",
+  "imageType": "card",
+  "published": {}
+}
