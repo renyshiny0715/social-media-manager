@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-28-ypcz8b",
+  "createdAt": "2026-08-28T15:43:24.313Z",
+  "topic": "Robots in data centers and workforce design",
+  "angle": "Automate tasks, redesign roles, and measure repair economics before cutting headcount.",
+  "sourceTitle": "Inside Meta’s Push to Put Robots to Work in Data Centers",
+  "sourceUrl": "https://www.wired.com/story/inside-metas-experiments-with-data-center-robots/",
+  "sourceName": "WIRED (AI)",
+  "linkedinPost": "Robots are coming for… cable swaps and hard resets.\n\nWIRED reports Meta is piloting robots for data center tasks technicians handle today. That’s the real shape of automation: repetitive, time-sensitive jobs where consistency beats finesse.\n\nWhat this means for enterprises: don’t start with layoffs—start with a role redesign. Turn hands-on techs into reliability engineers, robot wranglers, and escalation specialists. The win isn’t fewer people; it’s faster recovery and fewer truck rolls.\n\nIn my deployments, the sensible path is: pick 2-3 boring tasks (swap, reset, inventory), instrument them, and baseline cost per intervention, MTTR, and task success rate. Then automate and compare. If the spreadsheet doesn’t improve, don’t scale.\n\nBuild a transition ladder (certs, rotations) before the first bot rolls in. People adopt what they helped design—and what advances their career.\n\nWhich tasks in your operations are ready for a robotic handoff, and what metrics would prove it? #AITransformation #EnterpriseAI #CustomerExperience",
+  "xPost": "Data-center robots aren’t about cuts—they’re about MTTR, consistency, and fewer truck rolls. Automate 2–3 boring tasks, baseline the metrics, then scale. Redesign roles before you buy hardware. #EnterpriseAI #AITransformation",
+  "imagePrompt": "Create a playful scene: a glossy data center aisle where a small wheeled robot arm swaps a bright red cable, while a human technician in a pit-crew headset coaches with a checklist. A wall clock ticks. Bold headline centered: “ROBOTS IN THE AISLE”. Integrate three labels as decals on floor markers: “Swap”, “Reset”, “Escalate”. Cinematic 3D render with soft depth of field. Color palette: cool steel blues with electric coral and lime accents. Warm golden-hour rim glow spilling in from one end of the aisle. Clean sans-serif text, readable at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Data Centers Go Robotic",
+  "cardSubtitle": "Redesign roles before you cut",
+  "imageType": "card",
+  "published": {}
+}
