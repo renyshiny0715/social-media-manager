@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-28-adv249",
+  "createdAt": "2026-08-28T15:43:23.431Z",
+  "topic": "Governance must live in the data layer",
+  "angle": "If agents can act, your brakes must be data-level, not UI-level.",
+  "sourceTitle": "When agents act on their own, governance has to live in the data layer",
+  "sourceUrl": "https://venturebeat.com/security/when-agents-act-on-their-own-governance-has-to-live-in-the-data-layer",
+  "sourceName": "VentureBeat AI",
+  "linkedinPost": "Most AI governance I see is a UI pop-up asking for approval. That’s theater.\n\nVentureBeat makes the key point: as you give agents autonomy, your real brakes must live in the data layer—where actions actually happen.\n\nIn production, the risky moment isn’t a pretty confirmation screen; it’s the write to a system of record. If an agent tries to do something it shouldn’t, the data plane should block it by policy, every time.\n\nPatterns that work: policy-as-data (central policy engine), attribute-based access (down to row/field), pre-commit checks with dry-run mode, and immutable decision logs. Put guardrails at integration points, not only in the app layer.\n\nMetrics that matter: unauthorized actions blocked, false blocks (with fast appeal), and mean time to policy change. If you can’t show an end-to-end audit of “who/what/why” for an agent action, you don’t have governance—you have hopes.\n\nWhere do your brakes live today: UI, app, or data? #AIStrategy #EnterpriseAI #AIAdoption",
+  "xPost": "UI approvals aren’t AI governance. If agents can act, your brakes must live at the data layer: policy engine, pre-commit checks, immutable logs. Guardrails at write time, not demo time. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Design a witty scene: a factory conveyor of “agent actions” (little packages) rushing toward a vault door labeled by shape as the data store. The vault floor has a bright yellow speed bump gate operated by a lever marked like a policy engine. Bold headline centered top: “GOVERNANCE LIVES IN DATA”. Integrate three tiny signboards along the conveyor: “Policy Engine”, “Audit Trail”, “Kill Switch”. Isometric 3D miniature world style. Color palette: charcoal base with neon lime and cyan accents. Neon rim light for contrast. Clean bold sans-serif text, readable at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Put Brakes in Data",
+  "cardSubtitle": "Agents need guardrails at write time",
+  "imageType": "card",
+  "published": {}
+}
