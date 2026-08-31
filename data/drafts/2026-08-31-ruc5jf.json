@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-31-ruc5jf",
+  "createdAt": "2026-08-31T15:43:44.849Z",
+  "topic": "Deployment lessons from heavy industry",
+  "angle": "Treat AI like heavy equipment: commission it, certify operators, and instrument everything.",
+  "sourceTitle": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+  "sourceUrl": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+  "sourceName": "TechCrunch AI",
+  "linkedinPost": "AI deployments fail when we treat them like apps instead of assets.\n\nTechCrunch reports how Caterpillar is porting lessons from autonomous mining to enterprise AI rollouts. It resonates: in harsh, safety-critical environments, success comes from commissioning, operator training, and telemetry—not just clever software.\n\nMy take from the field: treat AI like heavy equipment. Commission it with a checklist (data quality, failure modes, rollback), certify operators (who can start/stop, when to handover), and instrument everything (events, drift, human overrides). Then run a controlled ramp: one site, one shift, one clear KPI.\n\nThis discipline looks slow, but it’s the fastest path to scale because it avoids the rework that kills timelines and trust. Bonus: regulators and risk teams will work with you when you can show safety cases and post‑incident reviews.\n\nIf your AI touches customers, money, or safety, it’s not a toy—it’s a fleet.\n\nWhat’s on your “AI commissioning” checklist before you go live beyond a pilot? #AITransformation #AIStrategy #EnterpriseAI #ForwardDeployedEngineer",
+  "xPost": "Treat AI like heavy equipment: commission it, certify operators, instrument everything, then ramp by site/shift/KPI. Slow is smooth; smooth scales. That’s how you avoid AI rework that kills trust and timelines. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Show a construction site where a bright yellow excavator is labeled by shape as “AI” and is being checked with a pilot’s preflight clipboard. A foreman stamps a checklist while dashboards on a trailer display live telemetry. Bold headline on a site sign: “Commission, Then Scale”. Integrate three short labels as safety decals on the machine: “Safety”, “Training”, “Telemetry”. Paper‑cut diorama style with layered cardstock look. Color palette: sand beige, industrial yellow, and slate gray with coral accents. Warm midday lighting. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Commission, Then Scale",
+  "cardSubtitle": "Run AI like a fleet, not an app.",
+  "imageType": "card",
+  "published": {}
+}
