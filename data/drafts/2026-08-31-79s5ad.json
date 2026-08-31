@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-31-79s5ad",
+  "createdAt": "2026-08-31T15:43:42.782Z",
+  "topic": "AI in semiconductor fab operations",
+  "angle": "Value in fabs shows up in tiny percentages—plan deployments to catch them on the line, not in slideware.",
+  "sourceTitle": "Revolutionizing semiconductor fab operations with AI",
+  "sourceUrl": "https://www.mckinsey.com/industries/semiconductors/our-insights/revolutionizing-semiconductor-fab-operations-with-ai",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "In chip manufacturing, a 1% improvement moves millions. That’s where AI actually pays.\n\nMcKinsey outlines how AI can boost semiconductor fab yield, maintenance, and throughput. The thesis is right—but the hard part isn’t the model, it’s catching value where it happens: at the line, shift, and tool level.\n\nMy take from deployments on factory floors: plan for “operator-first” AI. Put predictions where techs work (line-side tablets, MES screens), with plain language (“scrap risk high: check etch step”) and a one-tap action. Tie incentives: process engineers, line managers, and IT share one KPI tree—yield, scrap, uptime—so nobody optimizes a dashboard while the line stalls.\n\nStart painfully small. Pick one defect mode on one tool family. Prove a 1–2% scrap reduction over a month. Only then extend across lots. And budget most of the project for data plumbing and change management; model training is the easy 10%.\n\nIf you run industrial ops, where would a verified 1% lift change your P&L the most? #EnterpriseAI #AITransformation #AIStrategy",
+  "xPost": "In fabs, AI value hides in tiny percentages. Design “operator-first” AI at the line, share KPIs across ops/IT, and prove 1–2% scrap cuts on one tool before scaling. The model is 10%; plumbing + change is 90%. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Show a factory workbench where an oversized adjustable wrench labeled by shape as “AI” is turning a large dial on a production tool from “Scrap” toward “Yield.” A line operator’s gloved hand taps a simple on-screen prompt: “Check etch step.” Bold headline centered: “AI On The Line”. Integrate three mini-infographic labels as gauges/markers: “Scrap -2%”, “Uptime +1%”, “Joint KPIs”. Isometric 3D miniature world style, with meticulous details like conveyor belts and wafer stacks. Color palette: charcoal base with neon lime and amber highlights. Warm golden-hour glow across the scene. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "AI On The Line",
+  "cardSubtitle": "Capture value where work actually happens.",
+  "imageType": "card",
+  "published": {}
+}
