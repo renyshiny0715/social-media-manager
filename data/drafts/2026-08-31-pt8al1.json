@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-31-pt8al1",
+  "createdAt": "2026-08-31T15:43:41.731Z",
+  "topic": "Customer resistance to AI in service",
+  "angle": "Design CX automation around when customers actually want AI—not when finance wants deflection.",
+  "sourceTitle": "Three Things to Know About Customer Resistance to AI",
+  "sourceUrl": "https://sloanreview.mit.edu/article/three-things-to-know-about-customer-resistance-to-ai/",
+  "sourceName": "MIT Sloan Management Review",
+  "linkedinPost": "Most chatbot ROI dies on contact with a frustrated customer.\n\nA recent piece from MIT Sloan Management Review synthesizes research on when customers accept AI in service. The pattern tracks what I see: people tolerate bots for low‑stakes, low‑emotion tasks but reject them when the issue feels risky, unfair, or personal.\n\nHere’s my take from shipping AI in enterprise CX: design for choice, not captivity. Put a visible “talk to a human” path up front. Route high‑stakes intents (billing disputes, outages, cancellations) to humans by default. Use AI for triage, summaries, and after‑call work where it improves speed without blocking empathy.\n\nMeasure the right thing: “deflection with satisfaction,” not deflection alone. If your NPS/CSAT drops on deflected cases, you’re taxing the brand to save OPEX. Also track time‑to-human and containment only on eligible intents, or you’ll celebrate the wrong wins.\n\nPractical rule: start with workflows where latency tolerance is high and stakes are low (password resets, simple order status). Earn trust there, then expand.\n\nWhere has customer resistance surprised you—either stronger or weaker than expected? #CustomerExperience #AIAdoption #AIStrategy #EnterpriseAI",
+  "xPost": "Most chatbot ROI dies on contact with a frustrated customer. Design for choice: visible human opt‑out, route high‑stakes to agents, measure “deflection with satisfaction.” Start with low‑stakes wins, then expand. #CustomerExperience #AIAdoption",
+  "imagePrompt": "Create a witty editorial illustration of a highway tollbooth labeled by shape as an AI chatbot gate. A long line of cars is split into two lanes: one lane has a bright green sign letting some cars pass to a human attendant, the other loops through an automated gate for simple tasks. Headline inside image at top: “Let Humans Through”. Integrate three short labels as road signs: “Low-stakes” over the bot lane, “High-stakes” over the human lane, and “Opt-out” on a big pull-cord by the gate. Flat editorial illustration with bold shapes. Color palette: deep navy background with electric coral and cyan accents. Soft studio lighting feel. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Let Humans Through",
+  "cardSubtitle": "Design CX automation around choice, not captivity.",
+  "imageType": "card",
+  "published": {}
+}
