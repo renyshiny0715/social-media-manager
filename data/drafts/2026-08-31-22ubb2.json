@@ -1,0 +1,16 @@
+{
+  "id": "2026-08-31-22ubb2",
+  "createdAt": "2026-08-31T15:43:43.692Z",
+  "topic": "Who will really use AI heavily at work",
+  "angle": "Enterprise AI usage will be uneven—optimize for power users, not average users.",
+  "sourceTitle": "Will anybody use AI as much as coders do?",
+  "sourceUrl": "https://www.economist.com/business/2026/08/30/will-anybody-use-ai-as-much-as-coders-do",
+  "sourceName": "The Economist (Business)",
+  "linkedinPost": "Most employees won’t use AI like coders do—and that’s OK if you plan for it.\n\nThe Economist asks whether any job will see AI usage as intense as software development. From what I’ve seen in large deployments, usage concentrates: a minority become power users, a big middle dabbles, and a chunk opts out.\n\nMy take: design your AI program for the distribution you actually get, not the average you wish for. Invest in enablement for the top 10–20% who’ll move the needle (playbooks, prompts, workflow integration), and stop overpaying for idle seats. License based on verified active use, not ambition.\n\nPick use cases with high task frequency and tight feedback loops—claims triage, QA checks, sales email drafting—where power users can compound gains daily. Then let their playbooks pull the middle forward.\n\nIf adoption lags, it’s usually because the workflow didn’t change. Tools don’t transform outcomes; redesigned processes do.\n\nHow are you measuring real adoption (not just logins) and reallocating budget toward your power users? #AIStrategy #AIAdoption #EnterpriseAI",
+  "xPost": "Enterprise AI usage is uneven. Design for power users, not averages. Fund enablement where tasks are frequent and feedback is tight; license on verified active use, not ambition. Tools don’t transform outcomes—process changes do. #AIStrategy #AIAdoption",
+  "imagePrompt": "Illustrate an office cafeteria buffet where three plates represent AI usage: one heaped high (power users), one modest (casuals), one nearly empty (non-users). A witty signboard overhead carries the headline: “Uneven AI Usage”. Add three tiny plate labels: “Power users”, “Casuals”, “Non-users”. Retro screen‑print poster style with bold halftones. Cream background with cobalt blue and warm amber accents. Soft studio lighting. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Uneven AI Usage",
+  "cardSubtitle": "Build for power users, not averages.",
+  "imageType": "card",
+  "published": {}
+}
