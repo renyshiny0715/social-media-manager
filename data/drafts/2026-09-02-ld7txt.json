@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-02-ld7txt",
+  "createdAt": "2026-09-02T15:44:15.357Z",
+  "topic": "Simplicity at scale: integration beats novelty",
+  "angle": "AI value shows up when you simplify the stack and fix the plumbing, not when you add more tools.",
+  "sourceTitle": "Facilitating AI integration with simplicity at scale",
+  "sourceUrl": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
+  "sourceName": "MIT Technology Review (AI)",
+  "linkedinPost": "Your AI roadmap is only as good as your data plumbing.\n\nA recent piece from MIT Technology Review profiles how Jabil scaled AI by simplifying integrations across messy, distributed operations. The lesson isn’t “add an agent.” It’s “remove friction.” Connect the systems, kill the spreadsheets, and make signal flow.\n\nFrom the front lines, I see two patterns:\n\n- Companies that consolidate to a few backbone platforms can ship AI to production 3-5x faster than those juggling site-specific tools.\n- The biggest ROI jumps come from standardizing events and decisions (e.g., “part shortage,” “late order”) so AI can act consistently across plants, regions, or channels.\n\nMy playbook: design for boring. Start with a canonical data model, one event bus, and 2-3 well-defined “decisions” you’ll automate end-to-end. Then add the fancy stuff. If your AI needs a swivel chair to move data between apps, you’re taxing value at every hop.\n\nIf your AI initiative feels stuck, don’t buy another tool—delete three.\n\nWhere is integration debt silently taxing your AI ROI today? #AITransformation #EnterpriseAI #AIStrategy #DigitalTransformation",
+  "xPost": "AI value = fewer hops. Standardize events, consolidate platforms, and remove swivel-chair workflows. Don’t buy another tool—delete three. Where is integration debt taxing your ROI? #EnterpriseAI #AITransformation",
+  "imagePrompt": "Create a flat editorial illustration showing a tangled garden hose labeled by shape as a multi-connector pipe knotted between several mismatched faucets, choking flow to a single thirsty plant in a pot. A gardener clips away extra adapters so one clean hose delivers water. Headline text at top-center: “Simplify To Scale”. Three small sign labels integrated into the scene: “Fewer Hops”, “One Model”, “Standard Events”. Palette: cream background with cobalt blue and warm amber accents. Style: bold shapes, clean lines, minimal text. Lighting: soft studio lighting. Add playful details (discarded adapters as tripping hazards) that reward a second look. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Simplify to Scale",
+  "cardSubtitle": "Delete tools. Standardize signals. Unlock AI ROI.",
+  "imageType": "card",
+  "published": {}
+}
