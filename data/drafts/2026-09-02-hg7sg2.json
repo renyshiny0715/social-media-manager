@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-02-hg7sg2",
+  "createdAt": "2026-09-02T15:44:17.403Z",
+  "topic": "Customer obsession you can operationalize",
+  "angle": "Use AI to scale “read the customer’s email” rituals into daily operating rhythm, not vanity dashboards.",
+  "sourceTitle": "As Apple gets a new CEO... Tim Cook’s 4 a.m. ritual",
+  "sourceUrl": "https://fortune.com/2026/09/02/apple-gets-new-ceo-john-ternus-tim-cook-shares-4am-morning-ritual-stuck-by-15-years/",
+  "sourceName": "Fortune (AI)",
+  "linkedinPost": "Customer obsession isn’t a slogan—it’s an operating system.\n\nFortune recounts Tim Cook’s 4 a.m. ritual: reading hundreds of customer emails for 15 years. That’s not about heroics. It’s about keeping the most important signals close to the work.\n\nMost enterprises try to “scale” this with dashboards that summarize sentiment into green arrows. Then we wonder why the product feels distant from real people.\n\nMy take from the field: use AI to scale the ritual, not abstract it. Build a daily, role-specific “customer inbox” that:\n- Surfaces raw voice-of-customer snippets tied to real cases/orders.\n- Clusters by intent (“can’t find status,” “pricing confusion”), not topic nouns.\n- Routes to owners with a suggested fix and a one-click close-the-loop reply.\n\nIn customer service, I’ve seen this cut time-to-insight from weeks to hours and drive double-digit deflection because the fix actually matches the frustration.\n\nBefore another dashboard, ask: what would your executives learn if they “read the mail” for 15 minutes a day—and how can AI make that unavoidable? #CustomerExperience #AIAdoption #EnterpriseAI",
+  "xPost": "Don’t let AI turn customer voice into green arrows. Build a daily “customer inbox” with raw snippets, intent clusters, and one-click fixes. Scale the ritual, not the dashboard. #CustomerExperience #EnterpriseAI",
+  "imagePrompt": "Craft a paper-cut diorama of a giant physical inbox overflowing with colorful customer letters. A conveyor with a small robot hand sorts letters into three trays labeled. Headline centered on the inbox flap: “Read The Mail”. Three tray labels: “Real Snippets”, “Intent Clusters”, “Owner Action”. Palette: cream with cobalt blue and warm red accents. Lighting: warm golden-hour glow. Add witty details (coffee mug, sticky notes) that make the scene inviting. Keep text minimal and legible. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Read The Mail",
+  "cardSubtitle": "Scale customer obsession into daily routines.",
+  "imageType": "card",
+  "published": {}
+}
