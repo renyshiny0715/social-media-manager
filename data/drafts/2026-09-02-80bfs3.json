@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-02-80bfs3",
+  "createdAt": "2026-09-02T15:44:16.456Z",
+  "topic": "AI ROI vs trillion-dollar spend",
+  "angle": "Leaders must stage measurable productivity gains now, not bet on a distant step-change.",
+  "sourceTitle": "Can AI Productivity Grow Fast Enough to Justify Big Tech’s Spending?",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/article/can-ai-productivity-grow-fast-enough-to-justify-big-techs-spending/",
+  "sourceName": "Knowledge at Wharton",
+  "linkedinPost": "If your AI plan only pays off “once the foundation is done,” you don’t have a plan—you have a hope.\n\nKnowledge at Wharton highlights a big question: can productivity gains grow fast enough to justify massive AI capex? That dilemma isn’t just for hyperscalers. It’s the same trap enterprises fall into with multi-year AI “platform first” programs that defer value until Phase 5.\n\nMy take: design for compounding ROI. Ship a measurable productivity lift every 90 days that also lays track for the next one.\n\nHow we do it on the ground:\n- Define a hard operating metric (cycle time, handle time, rework rate) and target a 5–10% lift per quarter.\n- Tie each lift to an asset that accrues (a reusable dataset, a decision service, a workflow pattern).\n- Gate future funding on realized savings or revenue, not demos.\n\nThis approach makes the CFO an ally. Small wins stack. And if the curve never bends, you find out early and reallocate.\n\nWhat is your next 90‑day, production‑measurable AI gain—and what asset will it leave behind? #AIStrategy #EnterpriseAI #AITransformation",
+  "xPost": "AI ROI can’t live in Phase 5. Ship a 5–10% productivity lift every 90 days—and make each win accrue reusable assets. If the curve won’t bend, learn early and reallocate. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Design a retro screen-print poster of a staircase made of coins ascending quarter by quarter, with small flags on each step. Each flag represents a quarter’s gain. A distant shiny pedestal labeled by shape as “Big Bet” looks tempting but far. Bold headline centered: “Value Every 90 Days”. Three tiny step labels on the first three steps: “+5%”, “+7%”, “+8%”. Palette: charcoal with neon lime and electric coral accents. Mood: energetic discipline. Keep text minimal and legible at thumbnail size. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Value Every 90 Days",
+  "cardSubtitle": "Stage gains now; build assets that compound.",
+  "imageType": "card",
+  "published": {}
+}
