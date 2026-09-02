@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-02-pitb1m",
+  "createdAt": "2026-09-02T15:44:18.572Z",
+  "topic": "Leadership anxiety and AI stall-outs",
+  "angle": "Executives’ fear shows up as control theater—scope thrash, consensus traps, and value delays.",
+  "sourceTitle": "﻿How Leadership Anxiety Derails Transformation",
+  "sourceUrl": "https://sloanreview.mit.edu/article/how-leadership-anxiety-derails-transformation/",
+  "sourceName": "MIT Sloan Management Review",
+  "linkedinPost": "Most AI programs don’t die from bad models—they die from leadership anxiety.\n\nMIT Sloan Management Review describes how transformation efforts derail when leaders manage their fears instead of the work: constant re-scoping, performative updates, and decision bottlenecks.\n\nFrom the trenches, I see three telltales:\n- Consensus traps: “Let’s get ten VPs to align” (translation: no owner).\n- Control theater: new steering decks every week while teams wait on access.\n- Scope thrash: redefining success mid-flight to avoid committing to outcomes.\n\nMy fixes are boring and effective:\n- Name a single accountable exec. Publish 3 metrics and freeze them for a quarter.\n- Time-box decisions (72 hours) and pre-commit to default paths if no verdict.\n- Move status from slides to telemetry dashboards tied to production usage.\n\nWhen anxiety is channeled into clarity, throughput jumps. When it isn’t, AI becomes a very expensive group therapy session.\n\nWhich anti-pattern above do you see most—and what’s one mechanism you’ll install this month to counter it? #AITransformation #AIStrategy #EnterpriseAI",
+  "xPost": "AI programs rarely fail on models—they fail on leadership anxiety: consensus traps, control theater, scope thrash. Appoint one owner, freeze 3 metrics/quarter, 72‑hour decisions, status from telemetry—not slides. #AITransformation #AIStrategy",
+  "imagePrompt": "Build an isometric 3D miniature world: a factory line producing “AI value” boxes keeps stopping at three oversized gates labeled as roadblocks. Each gate has a silly security guard stand. Bold headline floating above: “Decide, Don’t Dither”. Three gate labels: “Consensus Trap”, “Control Theater”, “Scope Thrash”. Palette: deep navy background with electric coral and cyan accents. Lighting: neon rim light for a modern feel. Add tiny details like idle forklifts and stacks of untouched slide decks to reward a second look. Keep all text minimal and bold. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Decide, Don’t Dither",
+  "cardSubtitle": "Channel anxiety into clear ownership and cadence.",
+  "imageType": "card",
+  "published": {}
+}
