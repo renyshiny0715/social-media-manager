@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-04-syd03z",
+  "createdAt": "2026-09-04T15:43:55.943Z",
+  "topic": "AI tools vs transformation (Benedict Evans)",
+  "angle": "AI won’t kill apps; it raises the bar for workflow design, governance, and change.",
+  "sourceTitle": "AI, tools and transformation",
+  "sourceUrl": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+  "sourceName": "Benedict Evans",
+  "linkedinPost": "“Everyone will build their own app with AI” is a comforting story—and a trap.\n\nBenedict Evans argues that imagining AI turns everyone into tool-builders misunderstands how software gets made and how companies actually work. I agree. In the enterprise, apps aren’t dead; ownership, permissions, compliance, and support don’t disappear because you can prompt.\n\nMy take: AI is a new UI and automation layer, not a substitute for product management. The winners design opinionated workflows with embedded guardrails, connect them to systems of record, and define who owns outcomes. The losers ship a blank chat box and call it “transformation.”\n\nA practical checklist I use: start with one painful workflow, write the success metric in business terms, constrain the model’s playground, capture feedback in the tool, and train the team like it’s a new process (because it is).\n\nWhere have you seen “ask the model” flop—and what did you replace it with that people actually use? #AITransformation #EnterpriseAI #DigitalTransformation",
+  "xPost": "AI won’t kill apps. It raises the bar for workflow design, governance, and change mgmt. Ship opinionated flows with guardrails—not a blank chat box. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Create an isometric 3D miniature scene: on the left, a chaotic Swiss‑Army‑knife gadget labeled by shape as “Anything” lying unused; on the right, a neatly organized tool cabinet with a guided path mat leading to it. Big centered headline: “Tools ≠ Transformation”. Three tiny drawer labels as callouts: “Workflow”, “Ownership”, “Adoption”. Palette: charcoal background with neon lime and teal accents. Lighting: neon rim light with soft depth of field. Visual gag should instantly convey that structure beats generic capability. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Tools ≠ Transformation",
+  "cardSubtitle": "Opinionated workflows beat blank chat boxes",
+  "imageType": "card",
+  "published": {}
+}
