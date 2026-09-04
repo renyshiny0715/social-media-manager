@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-04-ou7yi7",
+  "createdAt": "2026-09-04T15:43:53.900Z",
+  "topic": "Utilities: AI as reliability and flexibility lever",
+  "angle": "Treat AI like grid planning: portfolio bets, reliability SLAs, and frontline adoption, not lab demos.",
+  "sourceTitle": "Utilities at an inflection point: Four strategic evolutions ahead",
+  "sourceUrl": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/utilities-at-an-inflection-point-four-strategic-evolutions-ahead",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Utilities aren’t software companies—until grid reliability and flexibility force them to behave like one.\n\nA recent McKinsey piece argues European utilities face a structural reset: electrification, renewables volatility, and AI will redefine the operating model and economics. Translation: more decisions move from monthly planning cycles to near‑real‑time software loops.\n\nMy take from the front lines: treat AI like grid planning, not like an app. Build a portfolio of use cases with reliability SLAs, not one flashy pilot. Examples that pay back: demand forecasting to shave peak purchases, outage triage that routes the right crew the first time, and customer communications that cut calls during storms.\n\nThe unlock isn’t model accuracy alone—it’s frontline adoption. Dispatchers must trust recommendations. Field techs need workflows that work offline. Regulators need explainability.\n\nMeasure business outcomes, not “AI activity”: SAIDI/SAIFI reduction, forecast error vs. spot price avoided, truck rolls and call volume deflected, and time-to-restore.\n\nIf you run a utility or an energy retailer, what’s the one reliability KPI you’d be willing to put in an AI contract as a performance target? #AITransformation #EnterpriseAI #AIStrategy #CustomerExperience",
+  "xPost": "Utilities don’t need more AI pilots—they need reliability SLAs. Tie AI to SAIDI/SAIFI, peak buys avoided, and truck rolls reduced. Treat it like grid planning, not an app demo. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Create a witty editorial illustration of a vintage power-grid control room. A massive two-handed lever labeled by shape as “Assets” on one side and “Algorithms” on the other, with an operator’s glove midway between. Prominent bold headline at top: “Grid, Meet AI”. Three small panel-meters integrated into the console read as labels: “Reliability”, “Flexibility”, “Cost”. Use a retro screen-print poster style with grain. Color palette: deep navy background with electric coral and cyan accents. Lighting: soft studio glow with subtle halftone texture. The scene should instantly signal the shift from hardware to software while reading at thumbnail size. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Grid, Meet AI",
+  "cardSubtitle": "Treat AI like reliability infrastructure",
+  "imageType": "card",
+  "published": {}
+}
