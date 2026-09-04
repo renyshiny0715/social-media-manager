@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-04-zk7ibh",
+  "createdAt": "2026-09-04T15:43:56.802Z",
+  "topic": "Avoiding AI sameness in customer experience",
+  "angle": "Generative helpers need brand voice, constraints, and an editor—or they erode CX fast.",
+  "sourceTitle": "The sameness problem behind those unappetizing AI-generated menus",
+  "sourceUrl": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
+  "sourceName": "TechCrunch AI",
+  "linkedinPost": "Customers can taste “AI sameness.” Sometimes literally.\n\nTechCrunch called out AI‑generated restaurant menus that all read the same—and turn diners off. Swap “menu” for “marketing email,” “support reply,” or “sales proposal” and the lesson holds: unbounded generative tools flatten voice and sap trust.\n\nMy take from enterprise rollouts: treat generative AI like a talented junior copywriter. Give it a style guide, a banned list, examples of “do/don’t,” and a human editor. Build constraints into the tool: tone presets, product facts from a source of truth, and personalization that respects customer history.\n\nTrack the right CX metrics: conversion and bounce rate lift by segment, complaint volume about “robotic” tone, NPS in cohorts exposed to AI content, and manual-edit rate by team.\n\nIf you wouldn’t let a new hire email customers without onboarding, don’t let a model do it either. What guardrails have kept your brand voice intact while still scaling content? #CustomerExperience #EnterpriseAI #AIAdoption",
+  "xPost": "AI can scale content—or flatten your brand. Treat it like a junior writer: style guide, banned list, examples, and an editor. Measure CX lift, not token count. #CustomerExperience #EnterpriseAI",
+  "imagePrompt": "Craft a playful claymation still of a buffet table filled with identical gray casseroles under domes. A chef adds a bright spice labeled by shape as “Brand” to one dish, which becomes colorful. Bold headline at top: “Kill AI Sameness”. Three tiny placards on the table read: “Voice”, “Guardrails”, “Edit”. Color palette: cream backdrop with pops of coral, mustard, and teal; warm golden-hour glow. The visual should instantly show bland uniformity vs curated distinctiveness. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Kill AI Sameness",
+  "cardSubtitle": "Scale content without flattening brand",
+  "imageType": "card",
+  "published": {}
+}
