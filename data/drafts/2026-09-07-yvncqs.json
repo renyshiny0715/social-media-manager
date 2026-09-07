@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-07-yvncqs",
+  "createdAt": "2026-09-07T15:43:53.343Z",
+  "topic": "Financing the AI boom",
+  "angle": "Treat AI like long-dated infrastructure: unit economics guardrails beat hype and lock-in.",
+  "sourceTitle": "The Hidden Financial Risks of the AI Boom",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/the-hidden-financial-risks-of-the-ai-boom/",
+  "sourceName": "Knowledge at Wharton",
+  "linkedinPost": "AI budgets rarely blow up on day one—they decay into unsustainable run rates.\n\nKnowledge at Wharton flags the financing risks behind the AI boom. I see the enterprise version daily: multi-year commitments, vendor lock-in, and usage that drifts away from value while the invoice compounds.\n\nMy take: treat AI like long-dated infrastructure with strict unit economics.\n\n- Define the unit. $ per successful outcome (resolved ticket, qualified lead, prevented fraud), not $ per token or seat.\n- Set guardrails. Hard kill-switches when $/outcome crosses a threshold or quality dips.\n- Stage commitments. Step-up capacity only after proving unit economics at each tier.\n- Hedge dependency. Contractual exit ramps and data/weights portability where possible.\n\nFinance and product need a shared dashboard: usage, quality, and cost per outcome on one page. If you can’t show payback period and sensitivity to rate changes, you’re financing hope.\n\nWhat’s the one metric you’d tie to every AI invoice next quarter? #AIStrategy #AITransformation #EnterpriseAI",
+  "xPost": "Don’t finance hope. Tie AI spend to $/successful outcome, add kill-switches when it drifts, and stage commitments only after unit economics are proven. Treat AI like long-dated infrastructure, not a blank check. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Build a paper-cut diorama of a shiny “AI Factory” plugged into an oversized electric meter labeled with a big rolling number and a bold dial labeled “$/Outcome.” A banker’s hand hovers over a large red toggle labeled “KILL SWITCH.” Three roadside sign labels lead to the factory: “Define Unit,” “Guardrails,” “Stage Spend.” Bold headline across the sky: “FINANCE REAL OUTCOMES.” Art direction: paper-cut diorama with layered shadows. Palette: cream background, cobalt blue machinery, warm amber accents, small red toggle. Lighting: soft studio lighting. Text large and readable. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Finance Real Outcomes",
+  "cardSubtitle": "Guardrails beat hype and lock-in",
+  "imageType": "card",
+  "published": {}
+}
