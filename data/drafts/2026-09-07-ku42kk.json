@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-07-ku42kk",
+  "createdAt": "2026-09-07T15:43:52.433Z",
+  "topic": "AI infrastructure economics",
+  "angle": "Stop buying GPUs to fix I/O problems—optimize data movement to cut latency and cost.",
+  "sourceTitle": "Architecting memory and storage in the AI era",
+  "sourceUrl": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
+  "sourceName": "MIT Technology Review (AI)",
+  "linkedinPost": "Your GPU bill is loud. Your data pipeline is the real bottleneck.\n\nMIT Technology Review highlights a shift to the “inference era,” where responsiveness and throughput win. Most enterprises react by buying more compute. In practice, I see latency and cost blown up by memory and storage choices, not model size.\n\nMy take: three levers consistently beat a new GPU order:\n\n- Proximity: keep models next to the data they touch most; reduce cross-zone hops.\n- Caching: cache hot prompts/embeddings and common tool outputs; avoid recomputing.\n- Retrieval discipline: right-size context; prune tokens that don’t move decisions.\n\nTrack the right dials: p95 latency, tokens/sec/user, cache hit rate, and $/resolved ticket or $/successful action. If these don’t improve, hardware won’t save you.\n\nOne client cut p95 by 40% and cost per resolution by 28% without changing the model—just smarter data movement.\n\nIf you got surprise cloud overages last month, where’s your memory/storage heat map? #EnterpriseAI #AIStrategy #AIAdoption",
+  "xPost": "If your AI is slow, don’t start with more GPUs. Fix data movement: proximity, caching, and slimmer retrieval. Measure p95 latency, cache hits, and $/successful action. Hardware last. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Create a retro screen-print poster showing a muscular GPU trying to pull a heavy wagon labeled “Latency & Cost,” but the wagon’s wheels are square blocks labeled “Far Data,” “Cold Cache,” “Bloated Context.” A simple downhill ramp labeled “Fix I/O” waits nearby. Bold headline at top: “STOP HAULING, START FLOWING.” Add three small sign labels along the ramp: “Proximity,” “Caching,” “Retrieval.” Color palette: charcoal with neon lime and hot magenta accents. Lighting: high-contrast poster style. Keep text large and readable. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Stop Hauling, Start Flowing",
+  "cardSubtitle": "Fix I/O before buying GPUs",
+  "imageType": "card",
+  "published": {}
+}
