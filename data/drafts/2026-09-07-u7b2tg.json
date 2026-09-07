@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-07-u7b2tg",
+  "createdAt": "2026-09-07T15:43:50.525Z",
+  "topic": "Voice-note customer feedback",
+  "angle": "Voice feedback only pays off if you redesign the intake-to-resolution pipeline, not just add a new inbox.",
+  "sourceTitle": "Whispering Complaints Into Your Phone May Be the Future of Customer Feedback",
+  "sourceUrl": "https://www.wired.com/story/whispering-complaints-into-your-phone-may-be-the-future-of-customer-feedback/",
+  "sourceName": "WIRED (AI)",
+  "linkedinPost": "Customers don’t want another survey—they want to be heard.\n\nA WIRED piece profiles “voice-note” feedback tools that let customers record complaints instead of filling forms. Lower friction means more (and richer) signal: tone, urgency, specifics you never get from star ratings.\n\nMy take from the front lines: this only drives value if you rewire what happens after the note arrives. The win isn’t collecting audio. It’s turning those minutes into resolved issues and product changes.\n\nWhat works in enterprises:\n- Auto-transcribe and summarize for agents, including sentiment and urgency.\n- Route to the right team with clear SLAs, not a generic queue.\n- Close the loop: notify customers when their issue is fixed, and tag the fix.\n\nMeasure outcomes, not uploads: time-to-first-response, first-contact resolution, dollar impact of defect reductions, and topics that trigger churn.\n\nTwo cautions: get consent and retention right (privacy), and support multilingual/accents without bias—otherwise your richest signals come from the easiest voices to parse.\n\nIf you’re piloting voice feedback, do you have a “capture → route → resolve → learn” map on one page? #CustomerExperience #AIAdoption #EnterpriseAI",
+  "xPost": "Voice-note feedback isn’t value by itself. The ROI shows up only when you redesign “capture → route → resolve → learn” with SLAs and outcome metrics—not just a new inbox. Measure resolved issues, not minutes recorded. #CustomerExperience #EnterpriseAI",
+  "imagePrompt": "Create a witty editorial illustration of a giant voicemail bottle washed ashore at a corporate beach. Inside the transparent bottle, a rolled “customer rant” tape winds through a simple factory conveyor that has three labeled gates: “ROUTE,” “RESOLVE,” “LEARN.” Bold headline at top: “HEAR IT, FIX IT.” A tiny lifeguard chair labeled “SLA” oversees the conveyor. A neglected pile of unopened bottles labeled “INBOX” sits off to the side. Style: flat editorial illustration with bold shapes. Color palette: cream background with cobalt blue and warm amber accents. Lighting: soft studio lighting. Ensure headline and labels are large and readable. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Hear It, Fix It",
+  "cardSubtitle": "Voice notes need a resolve loop",
+  "imageType": "card",
+  "published": {}
+}
