@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-09-sand68",
+  "createdAt": "2026-09-09T15:43:37.857Z",
+  "topic": "AI spend per employee slumped",
+  "angle": "Falling spend can be healthy—if it reflects learning curves and sharper ROI, not apathy.",
+  "sourceTitle": "AI spend per employee slumped at top firms in August — summer doldrums or a warning sign?",
+  "sourceUrl": "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/",
+  "sourceName": "TechCrunch AI",
+  "linkedinPost": "AI spend per employee is slipping. Panic… or progress?\n\nTechCrunch reports that August saw a dip as token prices fell, cheaper models spread, and usage cooled. From the trenches, lower spend can be a good sign—if it reflects the learning curve from “explore everywhere” to “scale what works.”\n\nIn mature rollouts I’ve led, unit costs fall while value rises because teams:\n- Consolidate to a few proven use cases with P&L owners.\n- Right-size models and context windows to the job-to-be-done.\n- Cache, batch, and precompute to cut waste without hurting CX.\n\nRed flags are different: abandoned dashboards, orphaned pilots, and no business metrics tied to usage.\n\nMy take: Don’t track AI success by gross spend. Track cost-to-serve, handle time, conversion, deflection, and NPS next to model costs. If spend drops and outcomes hold or improve, that’s maturity—not malaise.\n\nHow are you separating disciplined efficiency from fading interest in your AI program?",
+  "xPost": "Falling AI spend/employee isn’t doom if outcomes hold. Mature teams right-size models, cache/batch, and scale only what moves P&L. Measure CX + costs next to tokens, not vanity usage. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Create a witty finance dashboard scene: a seesaw with a fat “Spend” block on one end shrinking while a rising “Outcomes” block lifts the other. Metaphor: paying less for the same or more value. Bold headline in image: “AI Spend Slump”. Three short labels as gauge captions: “Cheaper Tokens”, “Right-Sizing”, “Real ROI”. Make it read at a glance like a mini-infographic with the seesaw trend obvious. Art direction: retro screen-print poster style with bold textures. Palette: charcoal background with neon lime and hot pink accents. Lighting: neon rim light effect to make elements pop. Add small details like tiny coins falling off the spend block. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "When lower spend is good",
+  "cardSubtitle": "If outcomes hold, it’s maturity—not apathy.",
+  "imageType": "card",
+  "published": {}
+}
