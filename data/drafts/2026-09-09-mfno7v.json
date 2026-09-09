@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-09-mfno7v",
+  "createdAt": "2026-09-09T15:43:35.534Z",
+  "topic": "Operating model is the hidden AI lever",
+  "angle": "AI value is an operating-model decision, not a model-performance decision.",
+  "sourceTitle": "The key to AI value is hiding in plain sight: Your operating model",
+  "sourceUrl": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-key-to-ai-value-is-hiding-in-plain-sight-your-operating-model",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Most AI programs don’t stall on technology. They stall on the operating model.\n\nA new McKinsey piece argues there isn’t one “best” AI org design—there are clear choices to make and then execute well. That maps to what I see as a Forward Deployed Engineer: the companies that get value don’t copy a chart; they pick a model and commit.\n\nThree patterns separate the winners I’ve worked with:\n\n- Ownership: a single throat to choke for each use case, from model to metrics.\n- Cadence: a two-week ship rhythm with real business users, not quarterly demos.\n- Interfaces: productized services (APIs, playbooks, guardrails) that any team can consume without a priesthood.\n\nThe tech is often “good enough.” The gaps are handoffs, incentives, and decision rights. When an LLM workflow dies in the last mile, it’s rarely because of accuracy—it’s because nobody owned the rollout, support, and change management.\n\nMy take: Decide if you’re hub-and-spoke, embedded, or platform-led—then lock in ownership, funding, and an operating rhythm for 12 months. Consistency beats brilliance in AI transformation.\n\nWhich operating-model choice tripped you up: ownership, cadence, or interfaces?",
+  "xPost": "AI value is an operating-model decision, not a model-performance decision. Pick a design, assign ownership, set a ship rhythm, productize interfaces—then don’t flinch for 12 months. Consistency beats brilliance. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Create a witty editorial illustration: a factory assembly line turning glowing “AI ideas” into sealed “Business Value” crates. The clever metaphor: value comes from the line (operating model), not the spark. Bold headline inside image: “AI Value Needs Operating Model”. Three short labels integrated as hanging station signs: “Org Design”, “Clear Ownership”, “Ship Rhythm”. Make the scene readable at thumbnail size with simple, bold shapes and a mini-infographic feel showing stations along the line. Art direction: flat editorial illustration with bold shapes. Color palette: cream background with cobalt blue machinery and warm amber accents. Lighting: soft studio lighting. Include small details like checklists at stations to reward a second look. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "AI value needs an operating model",
+  "cardSubtitle": "Pick a design, own it, ship relentlessly.",
+  "imageType": "card",
+  "published": {}
+}
