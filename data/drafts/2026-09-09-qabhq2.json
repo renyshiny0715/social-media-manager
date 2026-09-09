@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-09-qabhq2",
+  "createdAt": "2026-09-09T15:43:36.751Z",
+  "topic": "Why AI-built software isn’t used",
+  "angle": "The bottleneck is organizational adoption, not code generation speed.",
+  "sourceTitle": "AI Is Producing More Software. Why Isn’t It Being Used?",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/article/ai-is-producing-more-software-why-isnt-it-being-used/",
+  "sourceName": "Knowledge at Wharton",
+  "linkedinPost": "AI can help teams ship more software. So why doesn’t customer value go up in lockstep?\n\nWharton’s new study says the gains stall in human bottlenecks—product definition, user onboarding, compliance reviews, change management. As someone who ships AI into customer-facing operations, I can confirm: output isn’t impact.\n\nIn the field, I see the same pattern:\n- A backlog factory generates features; no one measures adoption after release.\n- Legal and risk enter late, forcing months of rework.\n- Training plans assume people have time they don’t.\n\nMy playbook that actually moves the needle:\n- Define “adopted” up front (e.g., 60% of agents using the AI tool daily by week 4) and instrument it.\n- Pull risk/compliance into sprint 0 with pre-approved patterns.\n- Budget for change load: job aids, “brown-bag” sessions, floor support for two cycles.\n\nAI accelerates building. Enterprises must accelerate validating, enabling, and owning the change.\n\nWhere does adoption die most often in your org: definition, governance, or enablement?",
+  "xPost": "AI can flood you with features. Value shows up only when humans adopt. Define “adopted,” instrument it, pull risk in at sprint 0, and budget real change load. Output ≠ impact. #AIAdoption #EnterpriseAI",
+  "imagePrompt": "Design a playful scene: a six-lane highway of brand-new “Features” cars speeding out of a factory, merging into a tiny “User Adoption” tollbooth with a traffic jam. Visual metaphor: building is fast, adoption is the bottleneck. Bold headline in image: “Built ≠ Adopted”. Three short labels as road signs: “User Fit”, “Change Load”, “Ops Handoff”. Make it read at thumbnail size like a mini-infographic with the bottleneck obvious. Art direction: isometric 3D miniature world. Palette: deep navy background with electric coral cars and cyan signage. Lighting: soft studio lighting with gentle shadows. Add humorous touches like cones and a stalled car at the booth. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Built ≠ Adopted",
+  "cardSubtitle": "Output isn’t impact. Fix the bottlenecks.",
+  "imageType": "card",
+  "published": {}
+}
