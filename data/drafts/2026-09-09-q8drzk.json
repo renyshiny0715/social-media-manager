@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-09-q8drzk",
+  "createdAt": "2026-09-09T15:43:39.035Z",
+  "topic": "Limits of agent autonomy in enterprises",
+  "angle": "Autonomous agents need scoped autonomy, guardrails, and a kill switch to create value safely.",
+  "sourceTitle": "Responsible AI Means Knowing the Limits of Agent Autonomy",
+  "sourceUrl": "https://sloanreview.mit.edu/article/responsible-ai-means-knowing-the-limits-of-agent-autonomy/",
+  "sourceName": "MIT Sloan Management Review",
+  "linkedinPost": "“More autonomy” is not a strategy for AI agents in the enterprise.\n\nMIT Sloan and BCG argue that responsible AI means setting clear limits on what agents can decide and do. In production, I’ve learned the hard way: value shows up when autonomy is scoped to the risk and the use case.\n\nWhat works:\n- Clear zones: agent can draft, human must approve; or agent can execute within $X and specific vendors; escalation otherwise.\n- Event fences: agents can’t create accounts, move funds, or email customers without prechecks.\n- Kill switch: one-click rollback and audit to unwind changes.\n\nI’ve seen “free-range” agents rack up support tickets and brand risk fast. I’ve also seen constrained agents cut handle time 25% with zero incidents because the sandbox matched the task.\n\nMy take: Design autonomy like credit limits—earned, expanded with good behavior, and monitored continuously. Start small, measure, then widen the lane.\n\nWhere would scoped autonomy unlock value for you without raising your blood pressure?",
+  "xPost": "Agent autonomy isn’t a virtue by itself. Scope it to risk: zones, event fences, kill switch. Earn bigger limits with measured wins. That’s how agents create value safely. #ResponsibleAI #AIAdoption",
+  "imagePrompt": "Illustrate a cheerful dog-park scene where leashes are adjustable measuring tapes. The dog tags read “AI Agent,” the benches read “Ops,” and fences mark safe zones. Metaphor: scoped autonomy. Bold headline in image: “Autonomy Has Limits”. Three short labels as park signs: “Guardrails”, “Kill Switch”, “Scope”. Mini-infographic vibe with zones clearly marked. Art direction: playful claymation still. Palette: grass green and sky blue with sunny yellow accents. Lighting: warm golden-hour glow. Add a humorous touch like a dog trying to dig under the fence but stopped by the measuring-tape leash. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Autonomy that earns trust",
+  "cardSubtitle": "Scope agents to risk, then widen the lane.",
+  "imageType": "card",
+  "published": {}
+}
