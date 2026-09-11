@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-11-khzr56",
+  "createdAt": "2026-09-11T15:43:41.838Z",
+  "topic": "AI scaling meets energy constraints",
+  "angle": "Power and location strategy are now core to AI ROI, not back-office concerns.",
+  "sourceTitle": "Powering AI is an architecture problem",
+  "sourceUrl": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+  "sourceName": "MIT Technology Review",
+  "linkedinPost": "AI scaling is hitting the power wall.\n\nMIT Technology Review highlights grid incidents and capacity crunches around major data center hubs. That’s not just an infrastructure story—it’s a CFO-level risk to performance, cost, and resilience.\n\nIn practice, AI ROI now hinges on three choices: where you run, when you run, and how efficiently you turn watts into outcomes.\n\nWhat I’m seeing work:\n- Site selection as a portfolio: mix low-cost energy regions with edge for latency-sensitive workloads.\n- Energy procurement is strategy: PPAs, demand response, and scheduling non-urgent training to off-peak windows.\n- Efficiency per outcome: track “cost per resolved ticket” or “kWh per forecast” instead of generic GPU hours.\n- Resilience by design: multi-region fallbacks, graceful degradation plans, and model tiers for brownouts.\n\nTreat power as an input to the business case, not an afterthought. If your AI plan doesn’t have a map, a meter, and a playbook, it’s probably a PowerPoint.\n\nWho owns your AI energy strategy today—the CIO, the COO, or the CFO? #AIStrategy #EnterpriseAI #DigitalTransformation",
+  "xPost": "AI ROI now depends on watts. Optimize where you run, when you run, and kWh-per-outcome—not GPU hours. If your AI plan lacks a map, a meter, and a playbook, it’s a PowerPoint. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Create an isometric 3D miniature world: an oversized AI power plug searching for outlets across a map with zones (cheap energy, high latency, resilient). Prominent headline at top: “Mind the Power Wall”. Three integrated map legend labels: “Site smart”, “Measure watts”, “Shift workloads”. Use cinematic 3D render with soft depth of field. Color palette: charcoal base with neon lime and electric teal highlights. Subtle glow on the plug. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Mind the Power Wall",
+  "cardSubtitle": "Energy is now an AI strategy input",
+  "imageType": "card",
+  "published": {}
+}
