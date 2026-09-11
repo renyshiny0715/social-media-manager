@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-11-1u57ew",
+  "createdAt": "2026-09-11T15:43:39.740Z",
+  "topic": "AI-driven cybersecurity operating model",
+  "angle": "AI attacks move at machine speed; your security operating model needs to as well.",
+  "sourceTitle": "The speed problem: How frontier AI exposes weakness in enterprise cybersecurity",
+  "sourceUrl": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-speed-problem-how-frontier-ai-exposes-weakness-in-enterprise-cybersecurity",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Your security team moves in weeks. Attackers move in seconds.\n\nA McKinsey piece nails it: frontier AI has shifted cyber from a tooling race to an operating-model problem. Offense is automated and fast; defense is committee-based and slow.\n\nWhat closes the gap isn’t another dashboard. It’s decision rights, pre-approved playbooks, and automation wired into incident response.\n\nFrom the FDE trenches, the companies that hold the line do five things:\n- Codify “if X, then Y” playbooks with legal/comms sign-off in advance.\n- Push decisions down: on-call leads can isolate, revoke, or roll keys without a meeting.\n- Automate first response (detect, contain, rotate) and review after.\n- Run red-team drills at machine speed—measure time-to-contain, not slideware readiness.\n- Stand up an exec war-room cadence that can ship policy changes in days, not quarters.\n\nIf your MTTR and key-rotation times still depend on calendars instead of code, you’re not ready for AI-era threats.\n\nWhere does your current operating model slow you down most—policy, people, or plumbing? #EnterpriseAI #AIStrategy #AITransformation",
+  "xPost": "AI changed cyber from a tooling race to an operating-model problem. Decide fast, automate first, pre-approve playbooks. If MTTR relies on calendars instead of code, you’re not ready. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Create a witty editorial illustration: a sleek bullet train labeled by shape as “Attack” flashes by a long, wood-paneled committee table where executives pass a heavy “APPROVAL” stamp like a relay baton. Headline text at top center: “Move at Machine Speed”. Three bold mini-labels integrated as platform signs: “Decide fast”, “Automate first”, “Own risk”. The scene reads as a mini-infographic contrasting speed vs bureaucracy. Flat editorial illustration with bold shapes. Color palette: deep navy background, electric coral and cyan accents. Soft studio lighting feel, crisp vectors. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Move at Machine Speed",
+  "cardSubtitle": "Close the AI–cyber gap with ops",
+  "imageType": "card",
+  "published": {}
+}
