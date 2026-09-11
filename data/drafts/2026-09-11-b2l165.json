@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-11-b2l165",
+  "createdAt": "2026-09-11T15:43:42.664Z",
+  "topic": "Manufacturing AI value capture",
+  "angle": "On the factory floor, AI value shows up as OEE, scrap, and uptime—not slideware.",
+  "sourceTitle": "The future of US manufacturing",
+  "sourceUrl": "https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-us-manufacturing",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Industrial AI’s ROI isn’t a model—it’s a factory.\n\nMcKinsey’s view on US manufacturing is clear: winning will take capital, talent, energy, and resilient suppliers. From the floor, I’d add: AI that actually ships into OT and moves OEE, scrap, and uptime.\n\nPilots are easy in a lab. Plants are noisy, unionized, safety-first, and allergic to downtime. That’s the point: value lives there.\n\nWhat works:\n- Start with line-centric use cases: vision for quality, predictive maintenance, scheduling—not moonshots.\n- Co-design with operators and maintenance. If they won’t use it on a night shift, you built a demo.\n- Integrate with MES/SCADA and honor change-control. “Shadow IT” dies at the gate.\n- Measure like ops: OEE, scrap rate, mean time between failures. Celebrate fewer stoppages, not more dashboards.\n- Commit to uptime SLAs for your AI service, same as any critical equipment vendor.\n\nIf your AI program can’t survive a safety audit or a shutdown drill, it won’t scale in manufacturing.\n\nWhat single metric would convince your plant manager that AI is paying rent? #AITransformation #EnterpriseAI #CustomerExperience",
+  "xPost": "In factories, AI value = OEE up, scrap down, uptime held. Build with operators, integrate with MES/SCADA, and measure like ops—or enjoy pilot purgatory. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Illustrate a factory scene split in two. Left: a shiny vending machine dispensing “AI Pilots” tokens to smiling execs. Right: a humming production line with big counters ticking “OEE↑” and “Scrap↓”. Headline centered across the split: “From Pilot to Plant”. Three integrated labels as machine tags: “OEE up”, “Scrap down”, “Uptime first”. Style: paper-cut diorama with layered depth. Palette: steel gray, safety orange, and mint green. Lighting: warm golden-hour glow through factory windows. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "From Pilot to Plant",
+  "cardSubtitle": "Prove value in OEE, scrap, uptime",
+  "imageType": "card",
+  "published": {}
+}
