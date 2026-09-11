@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-11-dqszlx",
+  "createdAt": "2026-09-11T15:43:40.721Z",
+  "topic": "Building for perpetual AI change",
+  "angle": "Treat AI like a shifting operating environment, not a one-off project—optimize for change velocity.",
+  "sourceTitle": "When AI Disruption Never Ends",
+  "sourceUrl": "https://sloanreview.mit.edu/article/when-ai-disruption-never-ends/",
+  "sourceName": "MIT Sloan Management Review",
+  "linkedinPost": "In enterprise AI, your roadmap now expires every 90 days.\n\nMIT Sloan argues we’ve entered a phase where disruption doesn’t pause. From the field, I see the same: the model, vendor, or cost curve you planned around can flip mid-quarter.\n\nThe answer isn’t chasing every shiny thing. It’s designing for churn.\n\nWhat works in practice:\n- Modular bets: isolate use cases so you can swap models or vendors without ripping out workflows.\n- A kill-switch culture: pre-agree criteria to shut down a path when cost, quality, or risk drifts.\n- Budget the replatform: set aside 10–20% of AI spend for migrations and retraining—on purpose.\n- Measure cycle time to impact and user adoption, not model benchmarks. If no one uses it, it’s not value.\n- Vendor neutrality at the edges: standardize contracts, data schemas, and observability.\n\nAI is becoming an operating environment, not a project. Build muscles for fast learning, graceful exits, and quick integrations.\n\nHow often do you revisit your AI portfolio—and what’s your pre-agreed trigger to kill or double down? #AITransformation #AIStrategy #EnterpriseAI",
+  "xPost": "Stop treating AI as a project. Build for churn: modular bets, kill-switches, budgeted replatforms, and adoption-first metrics. If you can’t swap vendors in a sprint, you can’t win. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Design a playful scene: an office treadmill labeled by shape as “AI Roadmap” speeds up, while sticky notes fly off a melting Gantt chart into neatly labeled bins. Big headline centered: “Roadmaps Expire Fast”. Three integrated labels on the bins: “Modular bets”, “Kill fast”, “Adoption > demos”. Style: retro screen-print poster with bold shapes and grain. Palette: cream background with cobalt blue and warm amber. Lighting: warm, print-like flat tones. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Roadmaps Expire Fast",
+  "cardSubtitle": "Design for churn, not stability",
+  "imageType": "card",
+  "published": {}
+}
