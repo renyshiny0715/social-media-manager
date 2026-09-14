@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-14-svwbeu",
+  "createdAt": "2026-09-14T15:43:32.899Z",
+  "topic": "AI capability mirage in enterprises",
+  "angle": "Most AI “capabilities” look mature on slides but collapse at the handoff to real work.",
+  "sourceTitle": "How AI Creates a Capability Mirage",
+  "sourceUrl": "https://sloanreview.mit.edu/article/how-ai-creates-a-capability-mirage/",
+  "sourceName": "MIT Sloan Management Review",
+  "linkedinPost": "If your AI looks great in a steering-committee deck but invisible to frontline work, you’re staring at a capability mirage.\n\nMIT Sloan Management Review describes how companies overestimate AI capability because surface signals (demos, dashboards, pilots) mask brittle workflows and missing ownership.\n\nThat matches what I see on the ground. The failure isn’t the model — it’s the system around it. No retraining budget. No exception path. No ops owner. A “pilot” running on analyst heroics, then dying when the analyst goes on PTO.\n\nMy playbook: measure capability where value happens. Four boring metrics beat any glossy KPI: adoption-in-workflow (% of cases touched), cycle-time delta, exception/override rate, and model update cadence. If those don’t move, you don’t have capability — you have theater.\n\nAlso, decide who owns break/fix before anything ships. If it’s “the AI team,” it will stall. If it’s the business process owner with SLOs, it will live.\n\nWhere has your org confused AI theater for capability — and how did you fix it? #AITransformation #EnterpriseAI #AIAdoption #DigitalTransformation",
+  "xPost": "Most AI “capability” is theater until it moves 4 metrics: adoption-in-workflow, cycle-time delta, exception rate, and update cadence. If those don’t budge, you don’t have capability—you have a demo. #EnterpriseAI #AITransformation",
+  "imagePrompt": "Create a witty editorial illustration: a glamorous cardboard movie set of a high-tech “AI Control Room” propped up by sticks, with a small real factory line behind it struggling. Headline inside image: “Mirage vs Reality”. Include three integrated labels as signs on the set and factory: “Adoption %”, “Cycle Time”, “Exceptions”. The movie set looks perfect; the factory shows jams and sticky notes. Style: flat editorial illustration with bold shapes. Color palette: cream background with cobalt blue and warm amber accents. Lighting: soft studio lighting. Make the gag read at thumbnail: shiny facade vs messy operations. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "The AI Capability Mirage",
+  "cardSubtitle": "If it doesn’t move work, it’s theater.",
+  "imageType": "card",
+  "published": {}
+}
