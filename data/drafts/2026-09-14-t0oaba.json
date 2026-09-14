@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-14-t0oaba",
+  "createdAt": "2026-09-14T15:43:36.920Z",
+  "topic": "AI reshaping quantitative finance",
+  "angle": "The finance lesson for all industries: tiny, durable edges beat flashy models.",
+  "sourceTitle": "How AI Is Reshaping Quantitative Finance",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/article/how-ai-is-reshaping-quantitative-finance/",
+  "sourceName": "Knowledge at Wharton",
+  "linkedinPost": "Quant finance lives on small, durable edges. That’s the enterprise AI lesson most teams miss.\n\nKnowledge at Wharton highlights how AI is changing quant research — from alternative data to faster signal discovery — with leaders warning about overfitting, signal decay, and compliance.\n\nOutside Wall Street, the pattern holds. A 1–3% improvement in forecast accuracy, churn prediction, or handle time often beats a shiny demo. But only if the signal survives contact with production: shifting data, policy constraints, and human workflows.\n\nWhat works for me: treat data like a product. Define provenance, refresh cadence, and ownership. Run “decay drills” — replay last year’s model on this year’s data to see how fast edges fade. And set business-level stop-losses: if lift drops below X for Y days, auto-roll back.\n\nSmall compounding gains win quarters. Flashy, brittle signals win slide wars.\n\nWhere has a tiny, boring lift produced outsized value in your org? #EnterpriseAI #AITransformation #AIStrategy",
+  "xPost": "Wall Street’s AI lesson for everyone: tiny, durable edges > flashy models. Treat data like a product, test for signal decay, and set business stop-losses to auto-rollback when lift fades. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Design a retro screen-print poster: a small, steady dripping faucet fills a large profit bucket while a flashy firework fizzles out. Headline inside image: “Small Edges Win”. Three short labels integrated as tags: “Data Care”, “Decay Test”, “Stop-loss”. Visual pun contrasts steady compounding vs. flashy bursts. Palette: cream background with deep navy and warm red accents. Lighting: flat print texture. Ensure headline and labels are bold and readable at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Small Edges Beat Flash",
+  "cardSubtitle": "Treat data like a product; test decay.",
+  "imageType": "card",
+  "published": {}
+}
