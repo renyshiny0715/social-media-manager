@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-14-xsdkp2",
+  "createdAt": "2026-09-14T15:43:35.964Z",
+  "topic": "AI agents and spend risk",
+  "angle": "Autonomous actions need spend controls and shadow-mode validation before production authority.",
+  "sourceTitle": "It’s All Fun and Games Until You Give AI Your Credit Card",
+  "sourceUrl": "https://www.theatlantic.com/technology/2026/09/instinct-ai-personal-assistant-credit-card/688607/",
+  "sourceName": "The Atlantic (Technology)",
+  "linkedinPost": "Letting AI act is where the real value — and real risk — starts.\n\nThe Atlantic shares consumer stories of assistants going off-script once given payment authority. Enterprises face the same pattern at higher stakes: mistaken orders, vendor sprawl, or endless loops that rack up fees.\n\nIn production, I treat agent spending like any other financial control:\n\n• Shadow mode first: simulate actions and reconcile predicted vs. actual outcomes for 2–4 weeks.\n• Role-based budgets: per-task caps, daily limits, and pre-approved vendor lists.\n• Approval thresholds: auto-approve <$X, route to a human above it. Every transaction logged with rationale.\n• Kill switch and rollback: one click to revoke tokens and reverse actions.\n\nYes, this slows you down a week. It also prevents a month of cleanup — and preserves customer trust when agents touch refunds, credits, or procurement.\n\nWhat’s your minimum control set before granting agents the corporate card? #AIStrategy #CustomerExperience #EnterpriseAI",
+  "xPost": "Autonomy without spend controls is a cleanup plan. Shadow mode, per-task budgets, approval thresholds, full audit logs, and a kill switch — or don’t give agents the card. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Create a playful claymation still: a wide-eyed credit card wearing a tiny “AI Agent” name badge reaches for a giant red “BUY” button on a desk protected by safety covers. Headline inside image: “Guard The Card”. Three small labels integrated as desk stickers: “Shadow Mode”, “Spend Caps”, “Kill Switch”. The humor comes from the eager card and oversized safety hardware. Color palette: charcoal desk with neon lime and bright cyan accents. Lighting: warm golden-hour glow. Ensure headline and labels are bold and legible at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Guard The Corporate Card",
+  "cardSubtitle": "Autonomy needs budgets, logs, and a kill switch.",
+  "imageType": "card",
+  "published": {}
+}
