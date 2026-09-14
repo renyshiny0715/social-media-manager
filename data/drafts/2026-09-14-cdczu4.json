@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-14-cdczu4",
+  "createdAt": "2026-09-14T15:43:34.803Z",
+  "topic": "Scaling agentic AI safely",
+  "angle": "Agents don’t fail on intelligence; they fail on work design, guardrails, and ownership.",
+  "sourceTitle": "Stacking the odds: A blueprint for successfully scaling agentic AI",
+  "sourceUrl": "https://www.mckinsey.com/capabilities/operations/our-insights/stacking-the-odds-a-blueprint-for-successfully-scaling-agentic-ai",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Agentic AI is racing ahead. The work it’s meant to do is not.\n\nMcKinsey outlines a blueprint for scaling agents, and the key theme resonates: companies deploy agents faster than they redesign the jobs, controls, and metrics around them.\n\nWhat works in production: treat agents like employees with badges. Give each a clear job description (inputs, outputs, success criteria), a supervisor (human or system), and SLOs. Permissions are earned, not assumed — start with read-only, graduate to low-risk writes, then to transactions with approvals.\n\nStage-gate scope based on data: defect rate under X%, time-to-resolution under Y, and clean audit logs for Z weeks before you add a new permission.\n\nFallbacks matter more than prompts. Every action path needs a timeout, a rollback, and an escalation rule. If the agent can’t explain what it did, it didn’t happen.\n\nHow are you redesigning roles, controls, and metrics before you give agents the keys? #AIStrategy #AIAdoption #EnterpriseAI #DigitalTransformation",
+  "xPost": "Scale agents like employees with badges: start read-only, earn permissions via SLOs, log everything, and require fallbacks. Intelligence isn’t the risk; uncontrolled work is. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Design an isometric 3D miniature office. Tiny “AI Agents” are depicted as colorful employee ID badges walking on conveyor belts toward doors labeled with permissions. Headline in image: “Earn The Keys”. Three small labels as door plaques: “Read-only”, “Low-risk”, “Transactions”. A supervisor desk with a clipboard (implies SLOs) overlooks. Visual gag: a giant key ring hangs behind a glass case labeled by shape. Palette: deep navy background with electric coral and cyan accents. Lighting: neon rim light for a tech-ops vibe. Make the mini-infographic clear at thumbnail size. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Scale Agents Like Employees",
+  "cardSubtitle": "Permissions earned, logged, and supervised.",
+  "imageType": "card",
+  "published": {}
+}
