@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-16-7bm9vy",
+  "createdAt": "2026-09-16T15:43:39.039Z",
+  "topic": "Agents as UI and headless enterprise apps",
+  "angle": "If UI is disappearing, adoption shifts from training users to orchestrating agents—design for outcomes, not clicks.",
+  "sourceTitle": "Salesforce AI Force, Agents as UI, The Race to Headless",
+  "sourceUrl": "https://stratechery.com/2026/salesforce-ai-force-agents-as-ui-the-race-to-headless/",
+  "sourceName": "Stratechery — Ben Thompson",
+  "linkedinPost": "If the UI moat is disappearing, your adoption plan needs a rewrite.\n\nStratechery argues Salesforce is leaning into “agents as UI.” I buy it. In enterprises, most CRM pain isn’t page layouts—it’s getting sellers to log data. If the agent logs, nudges, and drafts for them, the screen matters less than the workflow outcome.\n\nWhat changes: you stop optimizing clicks and start optimizing intent capture. You measure adoption by tasks completed and revenue influence, not daily active users in a browser tab.\n\nFrom the front lines: the fastest wins came when we treated the CRM as a headless system. The agent met reps in email, chat, and calendar; it wrote follow-ups, updated fields, and flagged risk without asking for a login.\n\nRisks: hidden automation that confuses accountability, and agents that overstep (spray emails) when guardrails are vague. Solve with explicit playbooks, human-in-loop at key thresholds, and a clear ledger of what the agent touched.\n\nWhere in your stack would a headless agent drive more value than another screen? #AIStrategy #AIAdoption #EnterpriseAI",
+  "xPost": "If UI is disappearing, measure adoption by outcomes—not clicks. Let headless agents meet users in email/chat and do the admin. Guardrails + a clear “agent ledger” keep trust. Where would an agent beat another screen? #AIStrategy #AIAdoption",
+  "imagePrompt": "Illustrate a classic enterprise dashboard melting off a monitor into a helpful paper airplane labeled by shape as an “agent” flying tasks to inboxes. Bold headline centered: “UI Is Disappearing”. Three sticky-note labels on the monitor bezel read: “Headless”, “APIs”, “Adoption”. Retro screen-print poster style, cream background with cobalt blue and warm amber accents. Warm golden-hour glow, subtle halftone texture. Communicate that outcomes matter more than screens. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "When UI Disappears",
+  "cardSubtitle": "Design for agents, not clicks",
+  "imageType": "card",
+  "published": {}
+}
