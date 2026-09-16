@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-16-6c7ao8",
+  "createdAt": "2026-09-16T15:43:38.012Z",
+  "topic": "Agentic transformation offices",
+  "angle": "AI lets you shrink the central team and still accelerate change—if you productize transformation with agents and ruthless prioritization.",
+  "sourceTitle": "The agentic transformation office: Redefining the economics of change",
+  "sourceUrl": "https://www.mckinsey.com/capabilities/transformation/our-insights/the-agentic-transformation-office-redefining-the-economics-of-change",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Big transformations don’t need big central teams anymore.\n\nA recent McKinsey piece argues for an “agentic transformation office” — fewer people at the center, more AI agents driving execution across the org. That matches what I’m seeing on the ground.\n\nIn practice, this works when you treat change like a product: clear backlog, SLAs, usage analytics, and AI agents that own repeatable tasks (status rollups, variance flags, playbook nudges) with humans handling exceptions.\n\nThe win isn’t headcount optics. It’s cycle time and adherence. We’ve cut weekly status prep from 10 hours to 30 minutes, and surfaced risks 3 days earlier — because the agent watches data continuously instead of waiting for meetings.\n\nPitfalls: agent sprawl (too many tools, no owner), vague outcomes (busy dashboards, no behavior change), and no last-mile adoption plan. Start with 2-3 critical rituals to automate and give one leader P&L for the “change product.”\n\nMy take: measure the office by shipped decisions, not slide decks. If agents aren’t changing frontline behavior, they’re just theater.\n\nWhere could an agent replace a standing meeting next quarter? #AITransformation #EnterpriseAI #AIStrategy",
+  "xPost": "Big transformations don’t need big central teams. Productize change with a few AI agents + clear owners, measure shipped decisions—not slide decks. Start by automating 2-3 rituals. Replace one meeting with an agent next quarter. #AITransformation #EnterpriseAI",
+  "imagePrompt": "Create a witty editorial illustration: a vast corporate “war room” table with dozens of empty chairs, replaced by a single, cheerful conveyor-belt robot sliding stamped decision memos into outboxes. Bold headline at top: “Change, Without Center”. Three small desk placards read: “Cost Down”, “Speed Up”, “Agents On”. Flat editorial illustration with bold shapes. Color palette: deep navy background with electric coral and cyan accents. Soft studio lighting, crisp shadows. Convey that fewer people at the center can drive more outcomes via agents. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Agents, Not Armies",
+  "cardSubtitle": "Transform without a bloated central team",
+  "imageType": "card",
+  "published": {}
+}
