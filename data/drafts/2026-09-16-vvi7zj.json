@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-16-vvi7zj",
+  "createdAt": "2026-09-16T15:43:40.842Z",
+  "topic": "AI infrastructure constraints and materials",
+  "angle": "Your AI roadmap is gated by watts, cooling, and supply—treat facilities and procurement as first-class levers of ROI.",
+  "sourceTitle": "Building the materials foundation for AI",
+  "sourceUrl": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+  "sourceName": "MIT Technology Review (AI)",
+  "linkedinPost": "Your AI strategy is probably constrained by physics, not models.\n\nMIT Technology Review highlights the “materials foundation” behind AI—power, thermal management, reliability. We feel this daily: the blocker to scaling an agent isn’t prompt quality; it’s the data center row that’s out of power and the lead time on cooling.\n\nMy take: put Facilities and Procurement at the AI table. Model the ROI in watts: dollars per watt provisioned, cost-to-serve per interaction, and watts per business outcome (tickets resolved, orders taken).\n\nPragmatics that helped: prioritize use cases with high value per GPU-hour, invest in caching and off-peak batch where latency tolerates it, and negotiate power/cooling upgrades as part of the AI portfolio, not a back-office line item.\n\nAlso, build a “capacity runway” view—quarter-by-quarter visibility into power, cooling, and hardware supply. It prevents the classic stall where pilots win but production can’t scale.\n\nIf you track model metrics but not watts per outcome, you’re managing half the P&L.\n\nWhat’s your biggest non-model constraint to scaling AI this year? #AIStrategy #AITransformation #EnterpriseAI",
+  "xPost": "Most AI roadmaps are gated by watts, cooling, and supply—not prompts. Put Facilities/Procurement at the table and track watts per outcome, not just model metrics. Optimize for value per GPU-hour. What’s your biggest non-model constraint? #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Show an iceberg where the tiny visible tip is a shiny “Model,” while the massive underwater base is labeled “Power,” “Cooling,” and “Supply.” Bold headline at top-center: “The Real Bottleneck”. Minimalist flat illustration, charcoal background with neon lime and cyan accents, subtle neon rim light. Communicate that infra/materials drive AI scale. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "The Real Bottleneck",
+  "cardSubtitle": "Infra, not models, limits AI scale",
+  "imageType": "card",
+  "published": {}
+}
