@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-16-xmapx2",
+  "createdAt": "2026-09-16T15:43:39.962Z",
+  "topic": "AI agents in advertising and CX",
+  "angle": "Treat ‘sponsored agents’ as a service channel with incentives and guardrails—or you’ll buy engagement and lose trust.",
+  "sourceTitle": "Reimagining advertising with AI",
+  "sourceUrl": "https://openai.com/index/reimagining-advertising-with-ai",
+  "sourceName": "OpenAI News",
+  "linkedinPost": "“Sponsored agents” blur ads and service—and that’s the point.\n\nOpenAI’s update shows marketers testing AI agents that guide discovery and purchases. For enterprises, this isn’t just a new ad unit; it’s a new service channel customers will judge like support.\n\nMy take from deployments: design for incentive alignment, not clicks. If the agent is paid to push inventory, it will. If it’s rewarded for customer fit and lifetime value, it behaves like your best associate.\n\nThree must-haves: clear guardrails (what the agent won’t say/do), transparent sponsorship (no hidden steering), and measurement beyond CPA—think assisted revenue, NPS post-interaction, and return rate deltas.\n\nPilot with narrow intents (e.g., “find the right plan under $50”), human takeover at friction points, and a feedback loop that retrains off bad outcomes, not just engagement.\n\nIf you wouldn’t train a new rep that way, don’t launch an agent that way. Treat it as a service P&L with a brand risk budget.\n\nHow would you measure an ad-agent’s success beyond clicks? #CustomerExperience #AIStrategy #EnterpriseAI",
+  "xPost": "Sponsored agents aren’t just ads—they’re a service channel. Align incentives to customer fit/LTV, add guardrails, and measure NPS + returns, not just CPA. If you wouldn’t train a rep that way, don’t launch the agent. #CustomerExperience #AIStrategy",
+  "imagePrompt": "Create a mall help kiosk staffed by a friendly mannequin-like assistant wearing a bright sash reading by shape as “sponsored,” guiding shoppers to products. Bold headline across top: “Ads That Do”. Three small sign labels on the kiosk: “Intent Fit”, “Guardrails”, “ROI”. Playful claymation still, cream tiles and vibrant coral/teal accents, soft studio lighting. The scene should instantly convey ad-as-assistant with trust cues. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "When Ads Become Agents",
+  "cardSubtitle": "Measure service, not impressions",
+  "imageType": "card",
+  "published": {}
+}
