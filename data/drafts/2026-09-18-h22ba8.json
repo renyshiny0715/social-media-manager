@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-18-h22ba8",
+  "createdAt": "2026-09-18T15:43:36.038Z",
+  "topic": "AI growth and PFAS cooling risks",
+  "angle": "Chasing AI capacity without a sustainability plan is a future balance-sheet problem, not just a PR one.",
+  "sourceTitle": "Data centers are swapping water for forever chemicals to keep AI cool",
+  "sourceUrl": "https://fortune.com/2026/09/18/data-centers-ai-compute-pfas-forever-chemicals-water/",
+  "sourceName": "Fortune (AI)",
+  "linkedinPost": "AI capacity isn’t free—someone is paying the environmental bill.\n\nFortune reports data centers are turning to PFAS-based cooling to cut water use. Short-term win on one metric; long-term risk on many others: regulation, remediation costs, supply dependency, and brand trust.\n\nFrom the enterprise side, I’ve seen AI roadmaps that meticulously model GPU costs but treat sustainability as a footnote. That’s a CFO mistake. If PFAS becomes your cooling strategy, you’ve effectively taken on contingent liabilities and vendor concentration risk you need to price into TCO.\n\nA practical approach:\n- Add “sustainability-adjusted TCO” to every AI capacity decision—include regulatory scenarios.\n- Plan for dual-path cooling (water-efficient + non-PFAS) to avoid lock-in.\n- Tie model efficiency targets to infra externalities, not just cloud bills.\n\nAI scale can drive real value, but only if you can keep the lights (and the reputation) on.\n\nIs sustainability already in your AI business case model, or is it still a paragraph at the end? #AIStrategy #DigitalTransformation #EnterpriseAI",
+  "xPost": "If your AI cooling plan swaps water for PFAS, you didn’t cut cost—you moved it to the future balance sheet. Model sustainability-adjusted TCO now, or pay later. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Create a retro screen-print poster of a giant data center ice cube melting into two puddles: one labeled as clean water, the other glowing neon labeled as chemicals. Bold headline at top: “Cooling Has a Cost”. Three small integrated labels on warning tags: “PFAS Risk”, “ESG Impact”, “Hidden Opex”. Strong graphic shapes, limited palette: charcoal background with neon lime and electric cyan accents. High-contrast ink texture, poster-like. Keep headline and labels large and legible at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Cooling Has a Cost",
+  "cardSubtitle": "Price sustainability into your AI TCO.",
+  "imageType": "card",
+  "published": {}
+}
