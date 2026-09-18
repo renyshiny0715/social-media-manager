@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-18-ui8b90",
+  "createdAt": "2026-09-18T15:43:33.485Z",
+  "topic": "Agentic AI and the ‘coordination tax’",
+  "angle": "The first ROI from AI often comes between steps, not inside them—redesign handoffs before models.",
+  "sourceTitle": "Cutting the ‘coordination tax’: How agentic AI can reshape workflows",
+  "sourceUrl": "https://www.mckinsey.com/industries/industrials/our-insights/cutting-the-coordination-tax-how-agentic-ai-can-reshape-workflows",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Most AI value is hiding in the handoffs.\n\nMcKinsey’s new piece on agentic AI nails a lesson we see every week: the biggest productivity drag isn’t the work itself, it’s the “coordination tax” between teams and systems.\n\nThink of the places where tickets stall, approvals ping-pong, or data gets copy-pasted across tools. That’s where agent-style automation can quietly pay for itself.\n\nMy take from the FDE trenches: don’t start by “AI-ifying” an entire process. Start by surgically removing two or three high-friction handoffs. Examples we’ve shipped: bots that prep cross-team intake packets, agents that reconcile IDs between CRM and billing, and auto-drafters that assemble 80% of a handoff brief for humans to finalize.\n\nThree rules that separate winners from pilot purgatory:\n- Design the future handoff first; pick the model second.\n- Give the agent a narrow, well-instrumented scope with clear SLAs.\n- Measure cycle time and rework, not just “tasks automated.”\n\nIf you can cut one handoff from 3 days to 3 hours, scaling becomes a budgeting exercise, not a science project.\n\nWhere is your worst handoff—and what would a 10x faster version unlock? #AITransformation #EnterpriseAI #AIAdoption",
+  "xPost": "Your first AI ROI is between steps, not inside them. Start by killing one painful handoff with a narrow agent + clear SLA. Measure cycle time and rework, not “tasks automated.” Then scale. #EnterpriseAI #AITransformation",
+  "imagePrompt": "Create a witty editorial illustration showing an airport baggage carousel jammed with suitcases labeled as workplace handoffs. Bold headline at top: “Cut the Coordination Tax”. A small AI “skybridge” conveyor bypasses the jam, moving bags smoothly. Three integrated labels on signs: “Handoff Hell”, “Agent Assist”, “Faster Flow”. Flat editorial illustration with bold shapes. Color palette: deep navy background with electric coral and cyan accents. Soft studio lighting, crisp shadows. Include playful details like stalled bags with sticky notes, but keep headline and labels legible at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Cut the Coordination Tax",
+  "cardSubtitle": "Value hides in the handoffs, not the model.",
+  "imageType": "card",
+  "published": {}
+}
