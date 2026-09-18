@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-18-t9hzh3",
+  "createdAt": "2026-09-18T15:43:34.930Z",
+  "topic": "Legal ops ROI: Cooley’s GO Public",
+  "angle": "AI that upgrades judgment by clearing the runway of legal busywork is where enterprise value shows up.",
+  "sourceTitle": "How Cooley is accelerating IPO work with ChatGPT",
+  "sourceUrl": "https://openai.com/index/cooley-gopublic",
+  "sourceName": "OpenAI News",
+  "linkedinPost": "AI that ships work product beats AI that ships demos.\n\nOpenAI profiled Cooley’s “GO Public,” which uses AI to surface issues earlier in IPO workflows so lawyers can spend time on judgment, not document spelunking.\n\nThis is the pattern I see in enterprise wins: don’t automate the lawyer—automate the legal rummaging. When the system pre-reads filings, flags inconsistencies, and assembles a first draft checklist, senior reviewers concentrate on risk calls and negotiation strategy. Throughput goes up. Error rates go down. Morale improves because people do actual lawyering.\n\nIf you’re replicating this playbook in your org:\n- Define a measurable “review ready” state. Time-to-ready is the KPI.\n- Treat AI as a routing and prep layer that upgrades human judgment.\n- Build audit trails and redlines into the flow; compliance loves receipts.\n\nI’d rather see a 30% faster “issue surfacing” stage than a flashy chatbot no one trusts. That’s where compounding ROI starts.\n\nWhat’s the heaviest prep step in your process—and how would better “review ready” change outcomes? #AIStrategy #EnterpriseAI #AITransformation",
+  "xPost": "Real legal ROI: don’t automate lawyers—automate the rummaging. Make work “review ready” faster, so humans spend time on judgment. Measure time-to-ready, not chatbot novelty. #EnterpriseAI #AIStrategy",
+  "imagePrompt": "Design a playful isometric 3D miniature world of a legal assembly line stamping crisp “S‑1” pages. Bold headline centered above: “Review Ready, Faster”. Along the line, small AI arms sort documents; at the end, a human gavel approves. Three embedded labels on signboards: “Surface Risks”, “Speed Reviews”, “Human Judgment”. Use cream background with cobalt blue machinery and warm amber accents. Soft studio lighting with gentle depth of field. Include fun details like discarded binder clips, but keep headline and labels big and readable at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Review Ready, Faster",
+  "cardSubtitle": "Automate prep so judgment compounds ROI.",
+  "imageType": "card",
+  "published": {}
+}
