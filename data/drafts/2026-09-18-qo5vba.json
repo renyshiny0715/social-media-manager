@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-18-qo5vba",
+  "createdAt": "2026-09-18T15:43:36.938Z",
+  "topic": "Desktop agents taking actions (Meta Muse)",
+  "angle": "Before you give AI the keys to your desktop, install better locks: scopes, logs, and kill switches.",
+  "sourceTitle": "Meta’s Muse hits Mac, letting the AI take actions on your computer",
+  "sourceUrl": "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/",
+  "sourceName": "TechCrunch AI",
+  "linkedinPost": "AI is getting hands—not just a mouth.\n\nTechCrunch covers Meta’s Muse on Mac: an agent that can act across your files and apps. Powerful idea. Also a governance nightmare if you roll it into the enterprise without controls.\n\nFrom the FDE seat, we treat “action-taking agents” like new employees with probation badges. They get minimal access, everything is logged, and there’s a visible emergency stop.\n\nIf you’re piloting desktop agents, ship these guardrails on day one:\n- Least-privilege scopes tied to business tasks, not apps.\n- Human-in-the-loop for irreversible actions; batch the rest.\n- Full audit trails (who/what/when/why) with easy review.\n- A big red kill switch that any user can hit.\n\nAgents that can click, send, and move files will create value. But the first outage or rogue action will end your program faster than any security review.\n\nWhat’s your “locks before keys” checklist for agentic pilots? #AIAdoption #EnterpriseAI #CustomerExperience",
+  "xPost": "Before giving AI desktop agents the keys, add locks: least privilege, audit trails, and a big red kill switch. Governance is the difference between scale and shutdown. #AIAdoption #EnterpriseAI",
+  "imagePrompt": "Cinematic 3D render of a giant shiny key labeled by shape as “AI” hovering near a corporate laptop. The laptop has three oversized locks attached: “Least Privilege”, “Audit Trail”, “Kill Switch”. Bold headline centered above: “Keys Need Locks”. Dark slate background with neon rim light in cyan and magenta, soft depth of field. Slight humor: the red “kill switch” is a comically huge button on the desk. Keep headline and labels large and readable at thumbnail. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Keys Need Locks",
+  "cardSubtitle": "Govern agents before you scale them.",
+  "imageType": "card",
+  "published": {}
+}
