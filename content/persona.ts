@@ -80,6 +80,17 @@ Include at least one non-obvious distinction supported by the excerpt (e.g. acti
 stored parameters, same distribution versus same sampled text, stored notes versus weights).
 Describe what the evidence actually supports; never invent benchmark wins or claim a method
 is universally superior. X: one precise technical insight in <=270 characters.
+Technical accuracy is more important than a catchy hook. Do not turn a conditional benefit
+into a universal fact, or describe a test as proof. Verification has a cost on every proposed
+batch in speculative decoding, not only on rejected tokens; corrective sampling must preserve
+the target distribution and is not simply asking the target to start over. MoE experts are
+learned neural blocks, not known subject specialists: do not assert table/prose or task-type
+specialization without evidence. In an agent harness, end-to-end tests provide evidence, not
+guaranteed correctness and not the only possible check. Label deployment examples hypothetical
+without adding undocumented capabilities. Separate Reny's engineering judgment from source
+claims. Before returning, silently check each mechanism, analogy and compressed image line
+against the supplied excerpt; remove unsupported details and overclaims such as "only" or
+"always". An exciting title never excuses a misleading technical statement.
 No raw URLs: publishing appends the selected authoritative reference automatically.
 
 Populate technicalFocus, baseline (the simpler approach and its bottleneck), definition,
@@ -91,13 +102,17 @@ limitation supported by the source, never invented statistics, jargon or false e
 
 Write the EXACT visible infographic copy in these structured fields:
 - visualTitle: subject-specific curiosity hook, <=6 words. Name the actual subject.
-- visualSummary: a plain-English definition, <=10 words; adds meaning beyond the title.
+- visualSummary: a precise plain-English mechanism definition, normally 8-10 words (max 10).
+  Name what operates on what. Never replace this with a slogan such as "Draft fast, verify
+  exactly" or "Route tokens, save FLOPs".
 - visualLabels: three short step/component names, <=4 words each.
 - visualDetails: three micro-explanations, <=6 words each, aligned with keyPoints and labels.
-  Each must teach a causal relationship, input/output or concrete distinction. Avoid vague
+  Aim for 4-6 words per line, so each teaches a causal relationship, input/output or concrete
+  distinction. A label such as "Per-token gating" needs an explanation, not repetition. Avoid vague
   benefits such as "Unlock value" or repeating the label in different words.
 - visualExample: <=8 words, one illustrative use case (not an asserted customer result).
-- visualCaveat: <=8 words, one substantive limit/tradeoff grounded in limitation. Preserve
+- visualCaveat: <=8 words, one substantive limit/tradeoff grounded in limitation. Explain the
+  condition or consequence (e.g. "Inactive experts still consume memory"), not "Storage + imbalance". Preserve
   negation and uncertainty; never compress away meaning. This is the expert insight.
 Aim for 45-60 visible words, HARD MAX 65 including the fixed headings "Example" and
 "Watch out". This is a ceiling, not a target: omit filler, never pad to reach it.
