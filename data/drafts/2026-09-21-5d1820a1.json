@@ -31,6 +31,6 @@
   "imagePrompt": "Create a three-panel comic-style explainer. Panel 1 (title bar): visualTitle \"Model Context Protocol\". Panel 2: A big USB-like port labeled visualLabel \"Common interface\" connecting varied boxes (ERP, CRM, Docs). Panel 3: A permission gate icon labeled visualLabel \"Safer patterns\" before a toolbox triggering flows labeled visualLabel \"Faster integration\". Use arrows to show data/tool flow through the port, then through the gate to actions. Style: clean vector, thick outlines. Palette: cobalt, white, and amber accents. Emphasize large, readable text and a left-to-right flow. No extra words beyond the specified title and labels. No logos, watermarks, or realistic faces.",
   "cardHeadline": "The MCP, explained",
   "cardSubtitle": "A universal adapter for AI apps",
-  "imageType": "card",
+  "imageType": "ai",
   "published": {}
 }
