@@ -81,7 +81,17 @@
     "https://www.mckinsey.com/industries/industrials/our-insights/cutting-the-coordination-tax-how-agentic-ai-can-reshape-workflows",
     "https://openai.com/index/cooley-gopublic",
     "https://fortune.com/2026/09/18/data-centers-ai-compute-pfas-forever-chemicals-water/",
-    "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/"
+    "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/",
+    "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/ai-is-changing-jobs-not-eliminating-them/",
+    "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/the-transformer-supercycle-why-demand-is-outrunning-supply",
+    "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+    "https://openai.com/index/astra-for-law",
+    "https://modelcontextprotocol.io/docs/getting-started/intro",
+    "https://www.ibm.com/think/topics/retrieval-augmented-generation"
   ],
-  "lastRunAt": "2026-09-18T15:43:37.899Z"
+  "lastRunAt": "2026-09-21T05:17:04.361Z",
+  "explainedTerms": [
+    "Model Context Protocol (MCP)",
+    "Retrieval-Augmented Generation (RAG)"
+  ]
 }
