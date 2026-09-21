@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-21-68512d97",
+  "createdAt": "2026-09-21T05:16:59.332Z",
+  "kind": "article",
+  "topic": "AI and job redesign",
+  "angle": "Translate \"AI changes jobs\" into task-level redesign, metrics, and reskilling plans leaders can execute",
+  "sourceTitle": "AI Is Changing Jobs, Not Eliminating Them",
+  "sourceUrl": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/ai-is-changing-jobs-not-eliminating-them/",
+  "sourceName": "Knowledge at Wharton",
+  "linkedinPost": "Most AI misses start with the wrong unit of change: jobs instead of tasks.\n\nKnowledge at Wharton highlights a key point: AI is changing jobs by automating slices of work, not erasing entire roles. That matches what I see in the field — value shows up when we redesign workflows task-by-task, metric-by-metric.\n\nMy playbook in enterprises:\n\n- Start with a task inventory, not an org chart. Map 30–50 recurring tasks in a role and score for volume, variability, and risk.\n\n- Automate the boring 20% that blocks throughput, then reinvest the saved minutes into higher-value tasks you’ve already identified (don’t just “give time back” — assign it).\n\n- Measure at the task level: handle time, first-pass yield, rework rate, and deflection. If you can’t move those, you won’t see ROI on the P&L.\n\nA recent Wharton piece frames this shift well. In my experience, teams that ship small task wins weekly compound adoption and trust; teams that chase “AI job replacement” stall.\n\nQuestion: What’s one task in your team you’d confidently automate to 80% — and what would you do with the freed capacity? #AITransformation #AIStrategy #EnterpriseAI",
+  "xPost": "AI changes tasks, not jobs. Inventory 30–50 tasks, automate the boring 20%, and reassign saved minutes to named higher-value work. Measure handle time, first-pass yield, rework. If tasks don’t move, ROI won’t. #AIAdoption",
+  "imagePrompt": "Create a witty editorial illustration showing a Swiss Army knife labeled by shape as a \"Job\" being unfolded into distinct mini-tools labeled as tasks. Headline inside image: \"Automate Tasks, Not Jobs\" at the top. Three tiny hanging tags as labels: \"Map Tasks\", \"Measure\", \"Reinvest\". Visual gag: an executive trying to cut a rope with the whole knife, then succeeding by flipping out the right blade labeled as a task. Style: flat editorial illustration with bold shapes. Palette: cream background with cobalt blue and warm amber accents. Lighting: soft studio lighting. The image should read at a glance like a mini-infographic with the headline and three tags clearly visible. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Automate Tasks, Not Jobs",
+  "cardSubtitle": "Redesign work at task-level for ROI",
+  "imageType": "card",
+  "published": {}
+}
