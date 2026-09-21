@@ -38,6 +38,10 @@ function threeStrings(obj: Record<string, unknown>, key: string): string[] {
   return value.map((v: string) => v.trim());
 }
 
+function wordCount(value: string): number {
+  return value.trim().split(/\s+/).length;
+}
+
 // Bind citations in code. The model selects IDs, never supplies a URL to publish.
 // Validate the complete batch before any draft is saved or an email is sent.
 export function parseDraftBatch(
@@ -79,13 +83,22 @@ export function parseDraftBatch(
             analogy: text(e, "analogy"), keyPoints: threeStrings(e, "keyPoints"),
             example: text(e, "example"), limitation: text(e, "limitation"),
             visualTitle: text(e, "visualTitle"), visualLabels: threeStrings(e, "visualLabels"),
+            visualSummary: text(e, "visualSummary"), visualDetails: threeStrings(e, "visualDetails"),
+            visualExample: text(e, "visualExample"), visualCaveat: text(e, "visualCaveat"),
           };
           const term = normalizeTerm(explainer.term);
           if (!term || seenTerms.has(term) || seenExplainerSources.has(sourceId)) throw new Error("Explainers must cover distinct subjects and sources");
           seenTerms.add(term);
           seenExplainerSources.add(sourceId);
-          if (explainer.visualTitle.split(/\s+/).length > 6 || explainer.visualLabels.some((s) => s.split(/\s+/).length > 4)) {
+          if (wordCount(explainer.visualTitle) > 6 || explainer.visualLabels.some((s) => wordCount(s) > 4)
+            || wordCount(explainer.visualSummary!) > 10 || explainer.visualDetails!.some((s) => wordCount(s) > 6)
+            || wordCount(explainer.visualExample!) > 8 || wordCount(explainer.visualCaveat!) > 8) {
             throw new Error("Explainer image copy is too long for a readable visual");
+          }
+          const visibleCopy = [explainer.visualTitle, explainer.visualSummary!, ...explainer.visualLabels,
+            ...explainer.visualDetails!, "Example", explainer.visualExample!, "Watch out", explainer.visualCaveat!];
+          if (visibleCopy.reduce((total, line) => total + wordCount(line), 0) > 65) {
+            throw new Error("Explainer image exceeds the 65-word visual budget");
           }
           draft.explainer = explainer;
         }
@@ -97,6 +110,27 @@ export function parseDraftBatch(
 export function imagePromptForDraft(draft: Pick<Draft, "imagePrompt" | "explainer">): string {
   const e = draft.explainer;
   if (!e) return draft.imagePrompt;
+  const detailed = e.visualSummary && e.visualDetails?.length === 3 && e.visualExample && e.visualCaveat;
+  const copyContract = detailed ? `
+EXACT VISIBLE COPY, arranged in three reading levels:
+TOP: headline ${JSON.stringify(e.visualTitle)}, definition ${JSON.stringify(e.visualSummary)}.
+MIDDLE: three stages/components, each with an illustration and the following copy:
+${e.visualLabels.map((label, i) => `- Heading ${JSON.stringify(label)}; explanation ${JSON.stringify(e.visualDetails![i])}.`).join("\n")}
+BOTTOM: two callouts: "Example" — ${JSON.stringify(e.visualExample)};
+"Watch out" — ${JSON.stringify(e.visualCaveat)}.
+Render each quoted string exactly once. Maximum 65 words, no additional text.
+Layout: top 20%, main diagram 55%, bottom 25%; 6% outer margins and generous gutters.
+Headline around 80px, headings around 48px, ALL supporting text at least 40px on a
+1536x1024 canvas. Do not shrink copy to fit: simplify decoration and shorten line widths.
+Use neutral space plus two accent colors, consistent icons, clear alignment and one
+unambiguous reading path. Reserve about 25% breathing room. Use connectors only for
+real relationships, never imply that unrelated concepts are causal steps.
+Include one clever visual gag drawn from the analogy; the factual mechanism stays central.
+The viewer should identify the subject in 3 seconds and learn the mechanism, use case
+and limitation in 30 seconds. No wall of text, decorative chart, or crowded mini-panels.` : `
+Render only this title, exactly once: ${JSON.stringify(e.visualTitle)}.
+Render each of the three labels below exactly once beside its corresponding panel/object.
+Use arrows or a comparison to show the real relationship, with a playful visual explanation.`;
   return `${draft.imagePrompt}
 
 EDUCATIONAL CONTENT CONTRACT (takes precedence over any conflicting art direction):
@@ -106,9 +140,7 @@ Teach these three facts visually in reading order:
 ${e.keyPoints.map((p, i) => `${i + 1}. ${p} — label: ${JSON.stringify(e.visualLabels[i])}`).join("\n")}
 Use case (illustrative, not a measured customer result): ${e.example}
 Keep this limitation true in the drawing: ${e.limitation}
-Render only this title, exactly once: ${JSON.stringify(e.visualTitle)}.
-Render each of the three labels above exactly once beside its corresponding panel/object.
-Use arrows or a comparison to show the real relationship, with a playful visual explanation.
+${copyContract}
 Facts above guide the drawing; do NOT print these explanatory paragraphs as text.
 All text must be large and phone-readable. Keep generous margins. No invented numbers,
 charts, capabilities, guarantees, extra captions, branding or tiny footnotes.`;

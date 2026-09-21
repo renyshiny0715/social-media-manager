@@ -8,6 +8,11 @@ export interface Explainer {
   limitation: string;
   visualTitle: string;
   visualLabels: string[];
+  // Explicit infographic copy. Optional only for older saved drafts.
+  visualSummary?: string;
+  visualDetails?: string[];
+  visualExample?: string;
+  visualCaveat?: string;
 }
 
 export interface Draft {

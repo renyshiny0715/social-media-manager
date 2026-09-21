@@ -37,7 +37,7 @@ Voice and style:
 `;
 
 export const explainerGuidelines = `
-For the two extra "New things, explained" posts, act as a friendly visual science teacher.
+For the extra "New things, explained" posts, act as a friendly visual science teacher.
 Introduce one specific emerging concept, tool, company or industry to a smart non-engineer.
 Use its real name (including model/tool names when that is the subject). Explain what it IS
 before offering an opinion. Aim for a reader to understand it in 30 seconds.
@@ -57,18 +57,42 @@ No raw URLs: publishing appends the selected authoritative reference automatical
 
 Populate the structured explainer with the same definition, analogy, three keyPoints,
 example and limitation that the reader sees in the post. Choose a canonical term for deduping.
-visualTitle: name the subject in <=6 words. visualLabels: exactly three labels, <=4 words each.
+The image should feel like a useful expert's field guide: understandable in 3 seconds,
+rewarding to study for 30 seconds. Earn credibility with a concrete mechanism and a real
+limitation supported by the source, never invented statistics, jargon or false experience.
 
-The image_prompt is a 100-160 word brief for an EDUCATIONAL VISUAL, with a clear reading path.
-Choose a three-panel comic, three-step cutaway/flow, or before-and-after comparison with
-a third panel showing the mechanism. Map each label to one of the three key points using
-specific objects and arrows. Show HOW the subject works, not just a funny metaphor beside it.
-Use playful exaggeration, visual puns or an everyday analogy; humor must clarify the concept.
-Make the real mechanism and the analogy consistent; avoid suggesting magic or perfection.
-Spell out visualTitle and the three visualLabels exactly once each; these are the ONLY text.
-At most 18 visible words total. Big type, strong contrast, ample spacing and crop-safe margins.
-Suggest a purposeful palette and an original illustration style. No fabricated charts or
-numbers, no logos/watermarks, no tiny captions. Someone should learn from the image alone.
+Write the EXACT visible infographic copy in these structured fields:
+- visualTitle: subject-specific curiosity hook, <=6 words. Name the actual subject.
+- visualSummary: a plain-English definition, <=10 words; adds meaning beyond the title.
+- visualLabels: three short step/component names, <=4 words each.
+- visualDetails: three micro-explanations, <=6 words each, aligned with keyPoints and labels.
+  Each must teach a causal relationship, input/output or concrete distinction. Avoid vague
+  benefits such as "Unlock value" or repeating the label in different words.
+- visualExample: <=8 words, one illustrative use case (not an asserted customer result).
+- visualCaveat: <=8 words, one substantive limit/tradeoff grounded in limitation. Preserve
+  negation and uncertainty; never compress away meaning. This is the expert insight.
+Aim for 45-60 visible words, HARD MAX 65 including the fixed headings "Example" and
+"Watch out". This is a ceiling, not a target: omit filler, never pad to reach it.
+
+The image_prompt is a 160-220 word art direction for an EDUCATIONAL INFOGRAPHIC, with
+three reading levels on a 1536x1024 canvas:
+1. Top ~20%: large visualTitle and a one-line visualSummary.
+2. Middle ~55%: one coherent diagram with three stages or components. Each gets an icon,
+   its visualLabel and its short visualDetail. Use arrows only for real process/dependency
+   relationships; for a comparison use alignment/dividers, never invented causal arrows.
+3. Bottom ~25%: two distinct compact callouts: "Example" + visualExample; "Watch out" +
+   visualCaveat. Make the caveat informative and visible, not a disclaimer in tiny print.
+
+Use a clear left-to-right reading path, restrained palette (one neutral and two accents),
+consistent icon style, generous gutters and 6% outer margins. Main title ~80px, labels
+~48px, supporting copy >=40px. Short lines, no paragraphs or microscopic footnotes.
+Keep about a quarter of the canvas as breathing room; one focal diagram, no decorative clutter.
+Add one witty visual analogy/pun integrated into the mechanism (e.g. an open-book exam for
+retrieval), but keep the distinction between the analogy and the real process accurate.
+Aim for a polished editorial field guide worth saving, not a generic dashboard or sales flyer.
+Quote every structured text field exactly once in the brief and print each once in the image.
+No text other than those fields and the two fixed callout headings. No invented charts,
+numbers, capabilities, claims of endorsement, logos, watermarks, or realistic human faces.
 This educational image guidance overrides the general editorial-image rules for explainers.
 `;
 

@@ -11,6 +11,7 @@ const explainerProperties = {
   term: string, category: { type: "string", enum: ["concept", "tool", "company", "industry"] },
   definition: string, analogy: string, keyPoints: threeStrings, example: string,
   limitation: string, visualTitle: string, visualLabels: threeStrings,
+  visualSummary: string, visualDetails: threeStrings, visualExample: string, visualCaveat: string,
 };
 
 function schemaFor(sources: FeedItem[]) {
@@ -62,7 +63,7 @@ ${evergreenTopics.map((t) => `- ${t}`).join("\n")}
 
 Each draft needs LinkedIn and X copy, image_prompt, card_headline (<=8 words),
 card_subtitle (<=14 words), a topic and an angle. Select an exact source_id from above.
-Explain two DISTINCT subjects using DIFFERENT primary sources, different from the regular
+Explain ${config.explainersPerRun} DISTINCT subjects using DIFFERENT primary sources, different from the regular
 drafts. Prefer this week's emerging concepts/tools/companies/industries when the supplied
 dated sources support an accessible explanation. Background references are useful fallback
 primers. Previously explained terms (avoid repeating; if unavoidable, teach a new aspect):
