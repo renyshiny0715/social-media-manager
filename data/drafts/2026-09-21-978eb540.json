@@ -39,6 +39,6 @@
   "imagePrompt": "1536x1024 educational infographic. Top: big title “Chatbot attachment” with summary “Bonds form; updates can hurt.” Middle: left-to-right comparison panels with icons: a heart over a chat bubble labeled “Consistency”, a split mask labeled “Update”, and a shield with a toggle labeled “Change plan”. Under each, print details: “Predictable tone builds trust”, “Abrupt shifts break rapport”, “Offer opt-ins, classic mode”. Visual pun: a café loyalty stamp card subtly behind the first panel to echo the barista analogy, without extra text. Bottom: two callouts: “Example” with “Bank bot tone swap backlash”; “Watch out” with “Not all users attach equally.” Palette: soft cream neutral, accents in teal and raspberry. Icon style consistent, clear gutters, 6% margins, title ~80px, labels ~48px, copy >=40px. Keep about 25% breathing room, no clutter, no logos, no watermarks, no realistic human faces.",
   "cardHeadline": "Don’t Break the Bond",
   "cardSubtitle": "Plan personality changes like pricing updates.",
-  "imageType": "card",
+  "imageType": "ai",
   "published": {}
 }
