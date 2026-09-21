@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-21-44e9bad7",
+  "createdAt": "2026-09-21T05:17:00.152Z",
+  "kind": "article",
+  "topic": "AI infrastructure constraints",
+  "angle": "AI roadmaps depend on the physical grid: transformer supply crunch changes timelines and risk",
+  "sourceTitle": "The transformer supercycle: Why demand is outrunning supply",
+  "sourceUrl": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/the-transformer-supercycle-why-demand-is-outrunning-supply",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Your AI roadmap has a hidden dependency: steel, copper, and lead times.\n\nMcKinsey notes we’re in a transformer supercycle — demand up, supply constrained, changing decisions across the value chain. You feel this when the data center you planned for Q2 slips because the substation can’t expand.\n\nMy take: treat power and grid gear like critical-path software dependencies. Bake them into your risk register and stage-gate AI bets around them.\n\nThree tactics I’ve seen work:\n\n- Portfolio thinking: mix \"compute-light\" wins (RAG on existing infra, process automation) with \"compute-heavy\" bets to keep value flowing.\n\n- Location arbitrage: partner with facilities teams early; sometimes the fastest AI value is where power is available, not where the team sits.\n\n- Contract design: tie vendor SLAs and milestones to facilities readiness, not just model delivery.\n\nIf your AI strategy assumes infinite power and instant hookups, it’s not a strategy — it’s a hope.\n\nWhere does your AI plan depend on physical infrastructure you don’t control? #AIStrategy #EnterpriseAI #DigitalTransformation",
+  "xPost": "AI strategy runs on copper. In a transformer supercycle, plan value in “compute-light” + “compute-heavy” portfolios, align SLAs to facilities readiness, and pick locations where power exists. Hope isn’t a dependency. #AIStrategy",
+  "imagePrompt": "Illustrate a giant electrical transformer as a bottleneck on a highway of self-driving data center trucks. Headline inside image: \"Power Limits, Plan Smart\" centered. Three road signs as labels: \"Mix Bets\", \"Pick Sites\", \"Align SLAs\". Visual joke: executives in convertibles waiting at a tiny gate attached to the transformer while a scooter labeled \"RAG\" slips through. Style: isometric 3D miniature world. Palette: deep navy background, electric coral and cyan accents. Lighting: neon rim light for a techy feel. Ensure headline and three labeled signs are bold and readable at thumbnail. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Power Limits, Plan Smart",
+  "cardSubtitle": "Infra constraints reshape AI timelines",
+  "imageType": "card",
+  "published": {}
+}
