@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-21-43c23dae",
+  "createdAt": "2026-09-21T05:17:00.994Z",
+  "kind": "article",
+  "topic": "AI and data privacy UX",
+  "angle": "Consumer AI that nudges for sensitive data is a warning: design enterprise guardrails into UX",
+  "sourceTitle": "Meta's Muse Is Better at Surveilling Than Helping Me",
+  "sourceUrl": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+  "sourceName": "WIRED (AI)",
+  "linkedinPost": "When an app nudges you to share your passport, that’s not a feature — it’s a risk pattern.\n\nWIRED reports Meta’s Muse opts users into data collection for AI training and even nudges sharing bank, email, and passport info. Whether you love or loathe it, there’s a lesson for enterprises: privacy is a UX problem long before it’s a policy problem.\n\nWhat I do with enterprise AI:\n\n- Design “minimum necessary” by default. If the assistant can answer without PII, it shouldn’t even ask.\n\n- Make the safe path the fast path. Two clicks for secure flows; friction only when sensitivity rises.\n\n- Label data state in plain English: “Not stored,” “Stored 30 days,” “Encrypted at rest.” If users can’t see it, they’ll assume the worst.\n\nPolicies and DPIAs won’t save you from opt-in creep. UI choices will.\n\nWhat’s one place your AI asks for data it doesn’t truly need — and how could you redesign that prompt tomorrow? #CustomerExperience #EnterpriseAI #AIAdoption",
+  "xPost": "Privacy is a UX problem before it’s a policy. If an AI can answer without PII, it shouldn’t ask. Make the safe path the fast path; label data states in plain English. UI beats DPIA. #CustomerExperience",
+  "imagePrompt": "Show a sleek digital kiosk labeled by shape as an \"AI Helper\" with two big buttons: a green fast lane marked \"Safe Path\" and a tempting red shortcut marked \"More Data\" guarded by cartoon hazard cones. Headline inside image: \"Design Safety In\" at the top. Three tiny UI stickers as labels: \"Ask Less\", \"Fast = Safe\", \"Plain Labels\". Humor: a user happily choosing the green lane while the red lane is cluttered with passport and bank icons falling into a pit. Style: retro screen-print poster with bold typography. Palette: charcoal with neon lime and hot pink highlights. Lighting: warm golden-hour glow. Keep headline and three labels large and clear. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Design Safety In",
+  "cardSubtitle": "Privacy starts in the interface",
+  "imageType": "card",
+  "published": {}
+}
