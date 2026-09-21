@@ -26,11 +26,16 @@
   "sourceTitle": "What is the Model Context Protocol (MCP)?",
   "sourceUrl": "https://modelcontextprotocol.io/docs/getting-started/intro",
   "sourceName": "Model Context Protocol — official documentation",
-  "linkedinPost": "What is the Model Context Protocol (MCP), in plain English?\n\nDefinition: MCP is an open standard that lets AI apps plug into external systems through a shared connector. Think of it like a universal power adapter for tools, not a magic brain upgrade.\n\nAnalogy: It’s the corporate USB port for AI — same plug, different devices.\n\nHow it works / value:\n- Common interface: One way to connect to data sources, tools, and workflows.\n- Safer patterns: It centralizes permissions, but doesn’t guarantee safe actions.\n- Faster integration: Build once, reuse across apps to cut integration toil.\n\nHypothetical: A support assistant uses MCP to fetch order status from ERP, open a ticket in Zendesk, and trigger a refund workflow — all via standard connectors.\n\nLimitation: MCP doesn’t decide who can do what; your permission model and testing do. A bad connector still does bad things, just more consistently.\n\nMy take: Standards speed value when paired with clear guardrails and owner teams. Who owns your connectors — platform, security, or the app squads?\n\n#EnterpriseAI #AIAdoption",
+  "linkedinPost": "What is the Model Context Protocol (MCP), in plain English?\r\n\r\nDefinition: MCP is an open standard that lets AI apps plug into external systems through a shared connector. Think of it like a universal power adapter for tools, not a magic brain upgrade.\r\n\r\nAnalogy: It’s the corporate USB port for AI — same plug, different devices.\r\n\r\nHow it works / value:\r\n- Common interface: One way to connect to data sources, tools, and workflows.\r\n- Safer patterns: It centralizes permissions, but doesn’t guarantee safe actions.\r\n- Faster integration: Build once, reuse across apps to cut integration toil.\r\n\r\nHypothetical: A support assistant uses MCP to fetch order status from ERP, open a ticket in Zendesk, and trigger a refund workflow — all via standard connectors.\r\n\r\nLimitation: MCP doesn’t decide who can do what; your permission model and testing do. A bad connector still does bad things, just more consistently.\r\n\r\nMy take: Standards speed value when paired with clear guardrails and owner teams. Who owns your connectors — platform, security, or the app squads?\r\n\r\n#EnterpriseAI #AIAdoption\n\n🔗 Full article: https://modelcontextprotocol.io/docs/getting-started/intro",
   "xPost": "MCP = a universal adapter for AI apps to talk to tools and data. It speeds integrations but doesn’t solve permissions by itself. Guardrails + ownership still matter. #EnterpriseAI",
   "imagePrompt": "Create a three-panel comic-style explainer. Panel 1 (title bar): visualTitle \"Model Context Protocol\". Panel 2: A big USB-like port labeled visualLabel \"Common interface\" connecting varied boxes (ERP, CRM, Docs). Panel 3: A permission gate icon labeled visualLabel \"Safer patterns\" before a toolbox triggering flows labeled visualLabel \"Faster integration\". Use arrows to show data/tool flow through the port, then through the gate to actions. Style: clean vector, thick outlines. Palette: cobalt, white, and amber accents. Emphasize large, readable text and a left-to-right flow. No extra words beyond the specified title and labels. No logos, watermarks, or realistic faces.",
   "cardHeadline": "The MCP, explained",
   "cardSubtitle": "A universal adapter for AI apps",
   "imageType": "ai",
-  "published": {}
+  "published": {
+    "linkedin": {
+      "at": "2026-09-21T05:25:03.390Z",
+      "postId": "urn:li:share:7507671211288686592"
+    }
+  }
 }
