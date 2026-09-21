@@ -24,6 +24,8 @@ export const config = {
   appSecret: process.env.APP_SECRET ?? "",
   cronSecret: process.env.CRON_SECRET ?? "",
   draftsPerRun: Number(process.env.DRAFTS_PER_RUN ?? "4"),
+  // Extra educational posts, in addition to the regular article drafts.
+  explainersPerRun: Number(process.env.EXPLAINERS_PER_RUN ?? "2"),
 
   // X (Twitter) — OAuth 1.0a user context from the developer portal
   xApiKey: process.env.X_API_KEY ?? "",

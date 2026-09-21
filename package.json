@@ -2,11 +2,12 @@
   "name": "social-media-manager",
   "version": "1.0.0",
   "private": true,
-  "description": "Automated social media assistant: drafts AI/FDE posts with Claude, emails you candidates, one-click publish to LinkedIn and X",
+  "description": "Weekly AI/FDE post drafts and visual explainers, emailed for review and publishing to LinkedIn and X",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs"
   },
   "dependencies": {
     "next": "^15.3.3",

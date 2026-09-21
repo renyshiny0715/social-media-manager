@@ -2,11 +2,11 @@
 
 An automated social media assistant for building a personal brand around **AI and Forward Deployed Engineering**.
 
-Every **Monday / Wednesday / Friday** it:
+Every **Saturday at 15:00 UTC** (4pm UK during BST, 3pm during GMT) it:
 
 1. 📡 Pulls fresh articles from reputable sources — MIT, Wharton, DeepMind, Microsoft Research, McKinsey, OpenAI, MIT Tech Review, Simon Willison, Latent Space, and more (see [content/sources.ts](content/sources.ts))
-2. ✍️ Uses **GPT-5** to draft 3 candidate posts in your voice — each with a LinkedIn version, an X version, and your personal take baked in (voice defined in [content/persona.ts](content/persona.ts))
-3. 🎨 Generates a post image — AI-generated (gpt-image-1) with a branded template card as fallback
+2. ✍️ Uses **GPT-5** to draft **4 article posts + 2 visual explainers** — each with LinkedIn and X versions. Explainers teach an emerging concept, tool, company or industry using a definition, an analogy, three key points, an example and a limitation.
+3. 🎨 Uses free preview cards in the email. Generates a **gpt-image-1 high** image only when you click image preview or publish, then reuses it. Explainer images use comics, diagrams or comparisons that teach the subject visually.
 4. 📧 Emails the drafts to your Gmail
 5. 🚀 One click in the email → review page → **publish now** or **schedule for 10pm UK time**, to LinkedIn and/or X (with optional last-minute text edits)
 
@@ -15,12 +15,12 @@ Drafts, images, and state are stored **in this GitHub repo itself** (`data/` dir
 ## Architecture
 
 ```
-Vercel Cron (Mon/Wed/Fri 15:00 UTC)
+Vercel Cron (Saturday 15:00 UTC)
         │
         ▼
-/api/cron/generate ──► RSS feeds ──► Claude (drafts) ──► OpenAI image / template card
+/api/cron/generate ──► RSS + official primers ──► GPT-5 (4 posts + 2 explainers)
         │                                                        │
-        ├──► commits drafts + images to data/ in this repo ◄─────┘
+        ├──► commits drafts to data/ with free preview cards
         │
         └──► Gmail email with drafts + "Review & Publish" buttons
                      │
@@ -28,7 +28,7 @@ Vercel Cron (Mon/Wed/Fri 15:00 UTC)
              /publish/[id]  review page (edit text if you want)
                      │  POST
                      ▼
-             /api/publish ──► LinkedIn REST API  /  X API v2
+             /api/publish ──► generate/reuse AI image ──► LinkedIn / X
 ```
 
 > **Why is publishing a two-step click?** The email links to a review page and publishing is a POST from that page. Email providers prefetch GET links for spam scanning — a true one-click GET publish link could be "clicked" by a robot. This design keeps it to one human click while staying scanner-safe.
@@ -62,11 +62,11 @@ Then set the environment variables from [.env.example](.env.example) in **Vercel
 curl "https://YOUR-APP.vercel.app/api/cron/generate?secret=YOUR_CRON_SECRET"
 ```
 
-You should get an email with 3 drafts within a minute. (Publish buttons will report "not configured" until step 4/5.)
+You should get an email with 4 article drafts and 2 visual explainers within a few minutes. (Publish buttons will report "not configured" until step 4/5.)
 
 ### 4. Connect X (Twitter)
 
-1. Apply at [developer.x.com](https://developer.x.com) (free tier is enough — ~500 posts/month)
+1. Apply at [developer.x.com](https://developer.x.com) and ensure your API account has the required credits for publishing
 2. Create a Project + App → **User authentication settings** → set app permissions to **Read and write**
 3. Keys & Tokens page → copy **API Key & Secret** and generate **Access Token & Secret**
 4. Set `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET` in Vercel and redeploy
@@ -90,7 +90,9 @@ You should get an email with 3 drafts within a minute. (Publish buttons will rep
 
 ### 6. Images
 
-AI illustrations (~$0.04/image) are generated with the same OpenAI key. Set `OPENAI_IMAGES=off` to skip them and always use the built-in branded template card instead.
+AI illustrations use `gpt-image-1`, high quality, 1536×1024, with the same OpenAI key. They are generated on preview/publish, not for every emailed candidate. Set `OPENAI_IMAGES=off` to always use a template card instead. The review page can generate and show the final image before publishing.
+
+Explainers use current primary sources (official company releases, university articles and consulting research), with source-backed background primers in [content/explainers.ts](content/explainers.ts) for quieter weeks. Background primers are never presented as breaking news. Citation URLs are bound to supplied source IDs in code. Recent explained terms are retained in `data/state.json` to guide topic variety. The visual brief embeds the definition, three facts and the limitation to keep the diagram aligned with the post.
 
 ## Scheduled publishing
 
@@ -105,8 +107,8 @@ Queued posts are published by a GitHub Actions workflow ([.github/workflows/publ
 
 - **Your voice / topics**: edit [content/persona.ts](content/persona.ts) — this is the highest-leverage file
 - **Sources**: edit [content/sources.ts](content/sources.ts)
-- **Schedule**: edit the cron expression in [vercel.json](vercel.json) (UTC; `0 15 * * 1,3,5` = Mon/Wed/Fri 15:00 UTC ≈ 8am PT / 11am ET)
-- **Drafts per email**: `DRAFTS_PER_RUN` env var
+- **Schedule**: edit [vercel.json](vercel.json) (`0 15 * * 6` = Saturday 15:00 UTC). The separate scheduled-publish worker still runs every 10 minutes for approved posts.
+- **Drafts per email**: `DRAFTS_PER_RUN=4` regular posts plus `EXPLAINERS_PER_RUN=2` educational posts
 - **Card design**: [app/api/card/route.tsx](app/api/card/route.tsx)
 
 ## Local development
@@ -119,11 +121,10 @@ npm run dev
 curl "http://localhost:3000/api/cron/generate?secret=YOUR_CRON_SECRET"
 ```
 
-## Cost estimate
+## Usage and costs
 
-| Item | Cost |
-|---|---|
-| Vercel Hobby | free |
-| Claude (3 drafts × 3 runs/week) | ≈ $1–3/month |
-| OpenAI images (optional, 9/week) | ≈ $1.5/month |
-| X API free tier, LinkedIn API, GitHub, Gmail | free |
+One text-generation batch runs per week. Images are charged only for drafts you preview or publish and are reused across platforms. X publishing/replies require API credits. Actual charges depend on model usage, image settings and provider pricing; check your provider dashboards.
+
+## Checks
+
+Run `npm test` for batch validation, citation binding, educational image content and legacy-draft compatibility; `npm run build` checks types and the production build.

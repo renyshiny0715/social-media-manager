@@ -1,6 +1,7 @@
 import Parser from "rss-parser";
 import { sources, maxArticleAgeDays } from "@/content/sources";
 import type { FeedItem } from "./types";
+import { primarySourceNames } from "@/content/explainers";
 
 const parser = new Parser({ timeout: 15000 });
 
@@ -19,9 +20,10 @@ export async function fetchFreshArticles(excludeUrls: Set<string>): Promise<Feed
         .map<FeedItem>((item) => ({
           title: item.title!,
           link: item.link!,
-          snippet: (item.contentSnippet ?? item.content ?? "").slice(0, 400),
+          snippet: (item.contentSnippet ?? item.content ?? "").slice(0, 1600),
           isoDate: item.isoDate,
           sourceName: source.name,
+          authority: primarySourceNames.has(source.name) ? "primary" : "editorial",
         }));
     }),
   );
@@ -33,5 +35,12 @@ export async function fetchFreshArticles(excludeUrls: Set<string>): Promise<Feed
 
   // Newest first, cap the list so the prompt stays reasonable.
   items.sort((a, b) => (b.isoDate ?? "").localeCompare(a.isoDate ?? ""));
-  return items.slice(0, 30);
+  // Preserve source diversity so prolific news sites cannot crowd out official
+  // releases and university explainers. Keep publication dates in the prompt.
+  const counts = new Map<string, number>();
+  return items.filter((item) => {
+    const count = counts.get(item.sourceName) ?? 0;
+    counts.set(item.sourceName, count + 1);
+    return count < 3;
+  }).slice(0, 40);
 }

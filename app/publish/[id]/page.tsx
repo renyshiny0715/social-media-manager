@@ -53,6 +53,7 @@ export default async function PublishPage({
           💬 Engage helper (comment/repost someone&apos;s post) →
         </a>
       </div>
+      {draft.kind === "explainer" && <p style={{ color: "#0a66c2", fontSize: 13 }}>🔎 New things, explained · {draft.explainer?.category}</p>}
       <h1 style={{ fontSize: 22 }}>{draft.topic}</h1>
       <p style={{ color: "#555", fontStyle: "italic" }}>{draft.angle}</p>
       {draft.sourceUrl && (
@@ -62,6 +63,16 @@ export default async function PublishPage({
           <a href={draft.sourceUrl}>{draft.sourceTitle}</a>{" "}
           <span style={{ color: "#aaa" }}>({domainOf(draft.sourceUrl)})</span>
         </p>
+      )}
+      {draft.explainer && (
+        <details style={{ background: "#eef6ff", padding: 16, borderRadius: 8, marginBottom: 16, color: "#17324d", lineHeight: 1.5 }}>
+          <summary style={{ cursor: "pointer", fontWeight: 600 }}>What the illustration will explain</summary>
+          <p><b>In plain English:</b> {draft.explainer.definition}</p>
+          <p><b>Think of it like:</b> {draft.explainer.analogy}</p>
+          <ol>{draft.explainer.keyPoints.map((point, i) => <li key={i}>{point}</li>)}</ol>
+          <p><b>Example:</b> {draft.explainer.example}</p>
+          <p><b>Keep in mind:</b> {draft.explainer.limitation}</p>
+        </details>
       )}
       {notice && (
         <p
@@ -77,7 +88,7 @@ export default async function PublishPage({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={imageUrlForDraft(draft.id, draft.imageType)}
-        alt=""
+        alt={draft.explainer?.visualTitle ?? draft.cardHeadline}
         style={{ width: "100%", maxWidth: 520, borderRadius: 8, margin: "8px 0 4px" }}
       />
       {draft.imageType === "card" && (

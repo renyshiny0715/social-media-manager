@@ -1,8 +1,23 @@
+export interface Explainer {
+  term: string;
+  category: "concept" | "tool" | "company" | "industry";
+  definition: string;
+  analogy: string;
+  keyPoints: string[];
+  example: string;
+  limitation: string;
+  visualTitle: string;
+  visualLabels: string[];
+}
+
 export interface Draft {
   id: string;
   createdAt: string; // ISO
   topic: string;
   angle: string;
+  // Optional for compatibility with older saved drafts.
+  kind?: "article" | "explainer";
+  explainer?: Explainer;
   sourceTitle: string;
   sourceUrl: string;
   sourceName?: string; // publication/author, e.g. "McKinsey Insights"
@@ -26,6 +41,7 @@ export interface Draft {
 
 export interface State {
   usedUrls: string[]; // source article URLs already used in past drafts
+  explainedTerms?: string[]; // recent glossary subjects, oldest first
   lastRunAt?: string;
 }
 
@@ -35,4 +51,5 @@ export interface FeedItem {
   snippet: string;
   isoDate?: string;
   sourceName: string;
+  authority?: "primary" | "editorial";
 }

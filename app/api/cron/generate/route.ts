@@ -10,7 +10,7 @@ import type { Draft } from "@/lib/types";
 export const maxDuration = 300;
 export const dynamic = "force-dynamic";
 
-// Triggered by Vercel Cron (Mon/Wed/Fri, see vercel.json) or manually:
+// Triggered by Vercel Cron (Saturday 15:00 UTC, see vercel.json) or manually:
 //   curl -H "Authorization: Bearer $CRON_SECRET" https://<app>/api/cron/generate
 
 export async function GET(req: NextRequest) {
@@ -41,9 +41,15 @@ export async function GET(req: NextRequest) {
     const articles = await fetchFreshArticles(used);
     log.push(`fetched ${articles.length} fresh articles`);
 
-    // 3. Claude drafts the posts.
-    const generated = await generateDrafts(articles);
-    log.push(`generated ${generated.length} drafts`);
+    // 3. GPT drafts the regular posts plus the educational visual explainers.
+    const generated = await generateDrafts(articles, state.explainedTerms);
+    log.push(`generated ${generated.filter((d) => d.kind === "article").length} article drafts + ${generated.filter((d) => d.kind === "explainer").length} visual explainers`);
+
+    // Authenticated validation: no email, image spend, datastore writes or dedupe
+    // changes. Useful for checking a new weekly edition outside its schedule.
+    if (req.nextUrl.searchParams.get("dryRun") === "1") {
+      return NextResponse.json({ ok: true, dryRun: true, log, drafts: generated.map((g) => toDraft(g, "card")) });
+    }
 
     // 4. Save drafts with free template-card previews. The real AI illustration
     //    is generated lazily at publish time (high quality, only for posts that ship).
@@ -57,7 +63,10 @@ export async function GET(req: NextRequest) {
     log.push(`saved ${drafts.length} drafts (AI images deferred to publish time)`);
 
     // 5. Remember which articles were used.
-    await saveState({ usedUrls: [...used], lastRunAt: new Date().toISOString() });
+    await saveState({
+      ...state, usedUrls: [...used], lastRunAt: new Date().toISOString(),
+      explainedTerms: [...(state.explainedTerms ?? []), ...drafts.flatMap((d) => d.explainer ? [d.explainer.term] : [])].slice(-40),
+    });
 
     // 6. Email the drafts for one-click review & publish, with token-expiry warnings.
     const warnings: string[] = [];

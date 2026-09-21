@@ -5,6 +5,7 @@
 import { config } from "./config";
 import { loadImage, saveImage, saveDraft } from "./github";
 import type { Draft } from "./types";
+import { imagePromptForDraft } from "./draft-batch";
 
 export async function generateAiImage(
   prompt: string,
@@ -57,7 +58,7 @@ export async function ensureAiImage(draft: Draft): Promise<Buffer | null> {
     if (existing) return existing;
   }
 
-  const generated = await generateAiImage(draft.imagePrompt, "high");
+  const generated = await generateAiImage(imagePromptForDraft(draft), "high");
   if (generated) {
     await saveImage(draft.id, generated);
     if (draft.imageType !== "ai") {

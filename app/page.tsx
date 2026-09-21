@@ -21,8 +21,9 @@ export default async function Dashboard() {
     <main style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
       <h1 style={{ fontSize: 26 }}>Social Media Manager</h1>
       <p style={{ color: "#555" }}>
-        Drafts are generated Mon/Wed/Fri and emailed to you. This dashboard lists everything
-        generated so far.
+        Your weekly email is prepared every Saturday at 15:00 UTC (4pm BST / 3pm GMT):
+        {" "}{config.draftsPerRun} article drafts plus {config.explainersPerRun} visual explainers.
+        This dashboard lists everything generated so far.
       </p>
       {error && (
         <p style={{ background: "#fff3cd", padding: 12, borderRadius: 8 }}>{error}</p>
@@ -39,7 +40,7 @@ export default async function Dashboard() {
           }}
         >
           <div style={{ fontSize: 12, color: "#888" }}>
-            {new Date(d.createdAt).toLocaleString()}
+            {new Date(d.createdAt).toLocaleString()} · {d.kind === "explainer" ? "Visual explainer" : "Article draft"}
           </div>
           <h2 style={{ margin: "6px 0", fontSize: 18 }}>{d.topic}</h2>
           <p style={{ color: "#555", fontStyle: "italic", margin: "0 0 10px" }}>{d.angle}</p>
