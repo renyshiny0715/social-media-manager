@@ -5,7 +5,7 @@ An automated social media assistant for building a personal brand around **AI an
 Every **Saturday at 15:00 UTC** (4pm UK during BST, 3pm during GMT) it:
 
 1. 📡 Pulls fresh articles from reputable sources — MIT, Wharton, DeepMind, Microsoft Research, McKinsey, OpenAI, MIT Tech Review, Simon Willison, Latent Space, and more (see [content/sources.ts](content/sources.ts))
-2. ✍️ Uses **GPT-5** to draft **3 post ideas + 3 visual explainers** — each with LinkedIn and X versions. Explainers teach an emerging concept, tool, company or industry using a definition, an analogy, three key points, an example and a limitation.
+2. ✍️ Uses **GPT-5** to draft **3 post ideas + 3 technical visual explainers** — each with LinkedIn and X versions. Explainers teach advanced AI mechanisms: the baseline/bottleneck, how it works, a deployment example and an engineering tradeoff, illustrated clearly.
 3. 🎨 Uses free preview cards in the email. Generates a **gpt-image-1 high** image only when you click image preview or publish, then reuses it. Explainer images use comics, diagrams or comparisons that teach the subject visually.
 4. 📧 Emails the drafts to your Gmail
 5. 🚀 One click in the email → review page → **publish now** or **schedule for 10pm UK time**, to LinkedIn and/or X (with optional last-minute text edits)
@@ -18,7 +18,7 @@ Drafts, images, and state are stored **in this GitHub repo itself** (`data/` dir
 Vercel Cron (Saturday 15:00 UTC)
         │
         ▼
-/api/cron/generate ──► RSS + official primers ──► GPT-5 (3 posts + 3 explainers)
+/api/cron/generate ──► RSS + technical references ──► GPT-5 (3 posts + 3 explainers)
         │                                                        │
         ├──► commits drafts to data/ with free preview cards
         │
@@ -92,7 +92,9 @@ You should get an email with 3 post ideas and 3 visual explainers within a few m
 
 AI illustrations use `gpt-image-1`, high quality, 1536×1024, with the same OpenAI key. They are generated on preview/publish, not for every emailed candidate. Set `OPENAI_IMAGES=off` to always use a template card instead. The review page can generate and show the final image before publishing.
 
-Explainers use current primary sources (official company releases, university articles and consulting research), with source-backed background primers in [content/explainers.ts](content/explainers.ts) for quieter weeks. Background primers are never presented as breaking news. Citation URLs are bound to supplied source IDs in code. Recent explained terms are retained in `data/state.json` to guide topic variety. The visual brief embeds the definition, three facts and the limitation to keep the diagram aligned with the post.
+Explainers target AI engineers, FDEs, architects and technical leaders who already know LLM/RAG/agent basics. Current primary-source excerpts qualify only when they match advanced topic patterns and contain mechanism evidence; this conservative filter is in `lib/explainer-sources.ts`. Google Research and Microsoft Research feeds supplement the existing source mix. Quiet weeks use verified technical background references in [content/explainers.ts](content/explainers.ts), never presented as breaking news. Topics include adaptive test-time compute, speculative decoding, GraphRAG, PagedAttention, MoE routing, verifiable rewards, selective state spaces, agent state management and latent world models. Keep the discovery patterns and reference pool up to date as new techniques emerge.
+
+The model can select only eligible source IDs, and each explainer must name a supported technical focus plus its baseline/bottleneck. Workshops, company profiles, generic trends and introductory glossary topics cannot fill these slots. The prompt asks for three different technical domains, source-backed causal detail and a real tradeoff, with readable diagrams. Citation URLs are bound in code, and recent terms in `data/state.json` guide variety. The image brief includes the baseline, definition, three mechanism facts and limitation so the drawing teaches the same material as the post. Older saved drafts keep working without the new technical fields.
 
 New explainer images use three reading levels: a title and one-line definition, a central diagram with three labelled micro-explanations, and two short callouts for an example and a limitation. Explicit copy fields are validated against per-line limits and a 65-word total ceiling. Large type, two accent colors and generous spacing keep the image readable. Older saved drafts and already-generated images remain compatible and are reused without regeneration charges.
 

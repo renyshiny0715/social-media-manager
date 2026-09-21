@@ -53,7 +53,7 @@ export default async function PublishPage({
           💬 Engage helper (comment/repost someone&apos;s post) →
         </a>
       </div>
-      {draft.kind === "explainer" && <p style={{ color: "#0a66c2", fontSize: 13 }}>🔎 New things, explained · {draft.explainer?.category}</p>}
+      {draft.kind === "explainer" && <p style={{ color: "#0a66c2", fontSize: 13 }}>🔎 {draft.explainer?.technicalFocus ? "Frontier AI, explained" : "New things, explained"} · {draft.explainer?.category}</p>}
       <h1 style={{ fontSize: 22 }}>{draft.topic}</h1>
       <p style={{ color: "#555", fontStyle: "italic" }}>{draft.angle}</p>
       {draft.sourceUrl && (
@@ -68,6 +68,7 @@ export default async function PublishPage({
         <details style={{ background: "#eef6ff", padding: 16, borderRadius: 8, marginBottom: 16, color: "#17324d", lineHeight: 1.5 }}>
           <summary style={{ cursor: "pointer", fontWeight: 600 }}>What the illustration will explain</summary>
           <p><b>In plain English:</b> {draft.explainer.definition}</p>
+          {draft.explainer.baseline && <p><b>The technical problem:</b> {draft.explainer.baseline}</p>}
           <p><b>Think of it like:</b> {draft.explainer.analogy}</p>
           <ol>{draft.explainer.keyPoints.map((point, i) => <li key={i}>{point}</li>)}</ol>
           <p><b>Example:</b> {draft.explainer.example}</p>

@@ -6,6 +6,9 @@ export interface Explainer {
   keyPoints: string[];
   example: string;
   limitation: string;
+  // Required for new technical explainers; optional for previously saved drafts.
+  technicalFocus?: string;
+  baseline?: string;
   visualTitle: string;
   visualLabels: string[];
   // Explicit infographic copy. Optional only for older saved drafts.
@@ -57,4 +60,6 @@ export interface FeedItem {
   isoDate?: string;
   sourceName: string;
   authority?: "primary" | "editorial";
+  // Only evidence-backed advanced topics are eligible for the explainer slots.
+  technicalTopics?: string[];
 }

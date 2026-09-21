@@ -39,6 +39,7 @@ function draftBlock(draft: Draft, index: number): string {
     }
     ${draft.explainer ? `<div style="background:#eef6ff;padding:14px;border-radius:8px;margin-bottom:16px;color:#17324d;font-size:14px;line-height:1.5;">
       <b>In plain English:</b> ${esc(draft.explainer.definition)}<br/>
+      ${draft.explainer.baseline ? `<b>The technical problem:</b> ${esc(draft.explainer.baseline)}<br/>` : ""}
       <b>Think of it like:</b> ${esc(draft.explainer.analogy)}<br/>
       <b>The visual will explain:</b> ${draft.explainer.keyPoints.map(esc).join(" · ")}
     </div>` : ""}
@@ -85,7 +86,7 @@ export async function sendDraftEmail(drafts: Draft[], warnings: string[] = []): 
       .join("")}
     <p style="color:#555;">Pick a draft, review it, and publish with one click. You can edit the text on the review page before it goes out.</p>
     ${regular.length ? `<h2 style="font-size:18px;color:#111;margin-top:28px;">${regular.length} perspectives on enterprise AI</h2>${regular.map((d, i) => draftBlock(d, i)).join("")}` : ""}
-    ${explainers.length ? `<h2 style="font-size:18px;color:#0a66c2;margin-top:32px;">🔎 ${explainers.length} new things, explained</h2><p style="color:#555;">Emerging concepts, tools, companies and industries — in plain English, with authoritative reading and a playful visual explanation.</p>${explainers.map((d, i) => draftBlock(d, i)).join("")}` : ""}
+    ${explainers.length ? `<h2 style="font-size:18px;color:#0a66c2;margin-top:32px;">🔎 ${explainers.length} technical visual explainers</h2><p style="color:#555;">Frontier AI, explained: mechanisms, architecture and engineering tradeoffs — with primary research and clear visual diagrams.</p>${explainers.map((d, i) => draftBlock(d, i)).join("")}` : ""}
     <p style="font-size:12px;color:#999;margin-top:24px;">
       Sent by your Social Media Manager · <a href="${config.appUrl}">dashboard</a> ·
       <a href="${config.appUrl}/engage?secret=${config.appSecret}">💬 engage helper</a>

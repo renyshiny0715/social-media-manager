@@ -60,7 +60,7 @@ export function parseDraftBatch(
         const raw = object(entry);
         const sourceId = text(raw, "source_id");
         const source = sources.find((_, i) => sourceId === `S${i + 1}`);
-        if ((!source && sourceId !== "evergreen") || (kind === "explainer" && source?.authority !== "primary")) {
+        if ((!source && sourceId !== "evergreen") || (kind === "explainer" && (source?.authority !== "primary" || !source.technicalTopics?.length))) {
           throw new Error(`Invalid ${kind} source: ${sourceId}`);
         }
         if (source && !/^https?:\/\//.test(source.link)) throw new Error("Invalid source URL");
@@ -77,11 +77,12 @@ export function parseDraftBatch(
         if (kind === "explainer") {
           const e = object(raw.explainer);
           const category = text(e, "category") as Explainer["category"];
-          if (!["concept", "tool", "company", "industry"].includes(category)) throw new Error("Invalid explainer category");
+          if (category !== "concept") throw new Error("New explainers must teach a technical concept");
           const explainer: Explainer = {
             term: text(e, "term"), category, definition: text(e, "definition"),
             analogy: text(e, "analogy"), keyPoints: threeStrings(e, "keyPoints"),
             example: text(e, "example"), limitation: text(e, "limitation"),
+            technicalFocus: text(e, "technicalFocus"), baseline: text(e, "baseline"),
             visualTitle: text(e, "visualTitle"), visualLabels: threeStrings(e, "visualLabels"),
             visualSummary: text(e, "visualSummary"), visualDetails: threeStrings(e, "visualDetails"),
             visualExample: text(e, "visualExample"), visualCaveat: text(e, "visualCaveat"),
@@ -90,6 +91,9 @@ export function parseDraftBatch(
           if (!term || seenTerms.has(term) || seenExplainerSources.has(sourceId)) throw new Error("Explainers must cover distinct subjects and sources");
           seenTerms.add(term);
           seenExplainerSources.add(sourceId);
+          if (!source!.technicalTopics!.includes(explainer.technicalFocus!)) {
+            throw new Error("Explainer technical focus must match its source evidence");
+          }
           if (wordCount(explainer.visualTitle) > 6 || explainer.visualLabels.some((s) => wordCount(s) > 4)
             || wordCount(explainer.visualSummary!) > 10 || explainer.visualDetails!.some((s) => wordCount(s) > 6)
             || wordCount(explainer.visualExample!) > 8 || wordCount(explainer.visualCaveat!) > 8) {
@@ -135,6 +139,7 @@ Use arrows or a comparison to show the real relationship, with a playful visual 
 
 EDUCATIONAL CONTENT CONTRACT (takes precedence over any conflicting art direction):
 Subject: ${e.term}. Plain-English meaning: ${e.definition}
+${e.baseline ? `Technical baseline/bottleneck: ${e.baseline}\nShow the actual data flow, routing, state change or verification; never replace the mechanism with generic benefit icons.` : ""}
 Everyday analogy: ${e.analogy}
 Teach these three facts visually in reading order:
 ${e.keyPoints.map((p, i) => `${i + 1}. ${p} — label: ${JSON.stringify(e.visualLabels[i])}`).join("\n")}

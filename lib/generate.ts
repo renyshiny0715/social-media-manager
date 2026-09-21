@@ -2,13 +2,15 @@ import { randomUUID } from "node:crypto";
 import { persona, postGuidelines, evergreenTopics, explainerGuidelines } from "@/content/persona";
 import { explainerReferences } from "@/content/explainers";
 import { config } from "./config";
+import { prepareExplainerSources } from "./explainer-sources";
 import { parseDraftBatch, type GeneratedDraft } from "./draft-batch";
 import type { Draft, FeedItem } from "./types";
 
 const string = { type: "string" };
 const threeStrings = { type: "array", items: string, minItems: 3, maxItems: 3 };
 const explainerProperties = {
-  term: string, category: { type: "string", enum: ["concept", "tool", "company", "industry"] },
+  term: string, category: { type: "string", enum: ["concept"] },
+  technicalFocus: string, baseline: string,
   definition: string, analogy: string, keyPoints: threeStrings, example: string,
   limitation: string, visualTitle: string, visualLabels: threeStrings,
   visualSummary: string, visualDetails: threeStrings, visualExample: string, visualCaveat: string,
@@ -23,7 +25,7 @@ function schemaFor(sources: FeedItem[]) {
   };
   const explainerDraftProperties = {
     ...properties,
-    source_id: { type: "string", enum: sources.flatMap((s, i) => s.authority === "primary" ? [`S${i + 1}`] : []) },
+    source_id: { type: "string", enum: sources.flatMap((s, i) => s.authority === "primary" && s.technicalTopics?.length ? [`S${i + 1}`] : []) },
     explainer: { type: "object", properties: explainerProperties, required: Object.keys(explainerProperties), additionalProperties: false },
   };
   return {
@@ -42,11 +44,11 @@ function schemaFor(sources: FeedItem[]) {
 }
 
 export async function generateDrafts(articles: FeedItem[], explainedTerms: string[] = []): Promise<GeneratedDraft[]> {
-  // Current primary reporting plus source-backed primers for quiet news weeks.
-  const sources = [...articles, ...explainerReferences.filter((r) => !articles.some((a) => a.link === r.link))];
+  const sources = prepareExplainerSources(articles, explainerReferences);
   const articleList = sources.map((a, i) =>
     `S${i + 1}. [${a.sourceName}] [${a.authority ?? "editorial"}] ${a.title}\n` +
-    `Published: ${a.isoDate ?? "background reference; not breaking news"}\nExcerpt: ${a.snippet}`,
+    `Published: ${a.isoDate ?? "background reference; not breaking news"}\n` +
+    `Explainer eligibility: ${a.technicalTopics?.length ? `TECHNICAL EXPLAINER ELIGIBLE; supported topics: ${JSON.stringify(a.technicalTopics)}` : "regular articles only"}\nExcerpt: ${a.snippet}`,
   ).join("\n\n");
 
   const userPrompt = `Prepare the Saturday weekly edition. Today is ${new Date().toISOString().slice(0, 10)}.
@@ -63,10 +65,11 @@ ${evergreenTopics.map((t) => `- ${t}`).join("\n")}
 
 Each draft needs LinkedIn and X copy, image_prompt, card_headline (<=8 words),
 card_subtitle (<=14 words), a topic and an angle. Select an exact source_id from above.
-Explain ${config.explainersPerRun} DISTINCT subjects using DIFFERENT primary sources, different from the regular
-drafts. Prefer this week's emerging concepts/tools/companies/industries when the supplied
-dated sources support an accessible explanation. Background references are useful fallback
-primers. Previously explained terms (avoid repeating; if unavoidable, teach a new aspect):
+Explain ${config.explainersPerRun} DISTINCT ADVANCED TECHNICAL CONCEPTS using DIFFERENT eligible
+primary-source articles, different from the regular drafts. Prefer a mix of technical domains.
+Freshness never excuses an introductory or business-only subject. Use a substantive technical
+background reference if fresh excerpts lack sufficient mechanism detail.
+Previously explained terms (avoid repeating; if unavoidable, teach a new technical aspect):
 ${explainedTerms.slice(-40).join(", ") || "none yet"}
 
 ${postGuidelines}
