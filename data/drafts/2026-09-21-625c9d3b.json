@@ -1,0 +1,36 @@
+{
+  "id": "2026-09-21-625c9d3b",
+  "createdAt": "2026-09-21T05:17:03.576Z",
+  "kind": "explainer",
+  "explainer": {
+    "term": "Retrieval-Augmented Generation (RAG)",
+    "category": "concept",
+    "definition": "A technique where relevant information is retrieved from a knowledge base and provided as context to a language model to produce more grounded answers.",
+    "analogy": "Like a librarian handing sources to a writer before they draft a response.",
+    "keyPoints": [
+      "Retrieve",
+      "Ground",
+      "Generate"
+    ],
+    "example": "A field technician portal uses RAG to fetch the latest service bulletin for a device and location, then drafts a fix using that bulletin.",
+    "limitation": "Poor retrieval quality or outdated documents will still yield incorrect, confident answers.",
+    "visualTitle": "Retrieval-Augmented Generation",
+    "visualLabels": [
+      "Retrieve",
+      "Ground",
+      "Generate"
+    ]
+  },
+  "topic": "Retrieval-Augmented Generation (RAG)",
+  "angle": "Grounding AI answers in your documents—how it works and where it fails",
+  "sourceTitle": "What is retrieval augmented generation (RAG)?",
+  "sourceUrl": "https://www.ibm.com/think/topics/retrieval-augmented-generation",
+  "sourceName": "IBM Think",
+  "linkedinPost": "What is Retrieval-Augmented Generation (RAG)?\n\nDefinition: RAG fetches relevant info from your knowledge base and feeds it to an AI to answer questions. It’s like an open-book exam: the model can “look up” facts before writing.\n\nAnalogy: Think librarian + writer. The librarian pulls sources; the writer crafts the answer.\n\nHow it works / value:\n- Retrieval step: Finds snippets from approved docs at question-time.\n- Grounding: Those snippets become context, reducing hallucinations.\n- Control: You can update answers by updating documents.\n\nHypothetical: A field tech portal uses RAG to surface the latest service bulletin for a specific device and location, then drafts a step-by-step fix using that bulletin.\n\nLimitation: Bad retrieval or stale docs = confident wrong answers. RAG helps, but it’s only as good as your index and content hygiene.\n\nMy take: Treat RAG as information plumbing. Invest in doc freshness, chunking, and relevance metrics before you chase fancy prompts. What one source would you clean first to raise answer quality? #AIAdoption #EnterpriseAI",
+  "xPost": "RAG = librarian + writer: retrieve approved snippets, then generate. It grounds answers, but bad retrieval or stale docs still produce confident nonsense. Fix content hygiene first. #AIAdoption",
+  "imagePrompt": "Design a three-step cutaway. Title bar reads visualTitle \"Retrieval-Augmented Generation\". Step 1: Shelves of documents with a magnifying glass icon labeled visualLabel \"Retrieve\". Arrow to Step 2: a clipboard showing highlighted snippets labeled visualLabel \"Ground\". Arrow to Step 3: a response page emerging from a typewriter labeled visualLabel \"Generate\". Use bold icons and clear arrows to show flow. Palette: deep teal, cream, and amber accents. Style: paper-cut diorama with layered depth and soft shadows for clarity. Keep text large and minimal as specified. No extra words, logos, watermarks, or realistic faces.",
+  "cardHeadline": "How RAG works",
+  "cardSubtitle": "Librarian first, writer second",
+  "imageType": "card",
+  "published": {}
+}
