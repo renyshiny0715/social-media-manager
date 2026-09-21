@@ -1,0 +1,44 @@
+{
+  "id": "2026-09-21-978eb540",
+  "createdAt": "2026-09-21T05:38:52.012Z",
+  "kind": "explainer",
+  "explainer": {
+    "term": "Chatbot attachment",
+    "category": "concept",
+    "definition": "Users form bonds with AI companions; sudden updates can trigger grief.",
+    "analogy": "Favorite barista replaced overnight—the coffee’s fine, the ritual isn’t.",
+    "keyPoints": [
+      "Consistency breeds expectations and trust",
+      "Abrupt changes damage rapport",
+      "Change management reduces churn"
+    ],
+    "example": "Bank bot tone update causes complaints; toggle averts backlash.",
+    "limitation": "Effects vary by user and context; test before broad changes.",
+    "visualTitle": "Chatbot attachment",
+    "visualLabels": [
+      "Consistency",
+      "Update",
+      "Change plan"
+    ],
+    "visualSummary": "Bonds form; updates can hurt",
+    "visualDetails": [
+      "Predictable tone builds trust",
+      "Abrupt shifts break rapport",
+      "Offer opt-ins, classic mode"
+    ],
+    "visualExample": "Bank bot tone swap backlash",
+    "visualCaveat": "Not all users attach equally."
+  },
+  "topic": "Chatbot attachment (personality updates)",
+  "angle": "What ‘chatbot attachment’ means for product, risk, and change management",
+  "sourceTitle": "Chatbot attachment issues",
+  "sourceUrl": "https://news.harvard.edu/gazette/story/2026/09/chatbot-attachment-issues/",
+  "sourceName": "Harvard Gazette (Sci & Tech)",
+  "linkedinPost": "Why do some users grieve when a chatbot’s tone changes?\n\nDefinition: Harvard research highlights “chatbot attachment”—users form bonds with AI companions, and sudden personality updates can trigger real feelings of loss.\n\nAnalogy: Your favorite barista is replaced overnight; the coffee’s fine, but the ritual and rapport are gone.\n\nMechanics that matter for enterprises:\n- Consistency builds attachment: Long-term, predictable interactions create trust (and expectations).\n- Sudden shifts break trust: Abrupt tone or persona changes can spark backlash and churn.\n- Manage change like UX: Communicate updates, offer opt-ins, and keep a “classic mode.”\n\nHypothetical example: A bank’s assistant switches from warm to terse. Users feel brushed off, complaints spike. A phased rollout with a toggle could have preserved trust.\n\nLimitation: Not every user bonds the same way; context and population matter, so test before broad changes (the study observes grief in some users following updates).\n\nMy take: Personality is a product surface. Treat it with the same rigor as pricing changes.\n\nWhat’s your playbook for changing an AI assistant’s tone without breaking customer trust?",
+  "xPost": "Users can attach to chatbot personalities. Sudden tone updates = trust shock. Communicate, offer opt-ins, and keep a “classic mode” to avoid churn. Personality is a product surface. #CustomerExperience #AIStrategy",
+  "imagePrompt": "1536x1024 educational infographic. Top: big title “Chatbot attachment” with summary “Bonds form; updates can hurt.” Middle: left-to-right comparison panels with icons: a heart over a chat bubble labeled “Consistency”, a split mask labeled “Update”, and a shield with a toggle labeled “Change plan”. Under each, print details: “Predictable tone builds trust”, “Abrupt shifts break rapport”, “Offer opt-ins, classic mode”. Visual pun: a café loyalty stamp card subtly behind the first panel to echo the barista analogy, without extra text. Bottom: two callouts: “Example” with “Bank bot tone swap backlash”; “Watch out” with “Not all users attach equally.” Palette: soft cream neutral, accents in teal and raspberry. Icon style consistent, clear gutters, 6% margins, title ~80px, labels ~48px, copy >=40px. Keep about 25% breathing room, no clutter, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Don’t Break the Bond",
+  "cardSubtitle": "Plan personality changes like pricing updates.",
+  "imageType": "card",
+  "published": {}
+}
