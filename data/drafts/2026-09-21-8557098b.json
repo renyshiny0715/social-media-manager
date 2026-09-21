@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-21-8557098b",
+  "createdAt": "2026-09-21T05:17:01.825Z",
+  "kind": "article",
+  "topic": "AI in legal workflows",
+  "angle": "What to ask vendors offering ‘legal-grade controls’ before piloting AI in law-heavy processes",
+  "sourceTitle": "Introducing Astra for Law",
+  "sourceUrl": "https://openai.com/index/astra-for-law",
+  "sourceName": "OpenAI News",
+  "linkedinPost": "“Legal-grade controls” sound great — until they meet discovery, conflict checks, and client consent.\n\nOpenAI announced Astra for Law, touting frontier intelligence, custom firm workflows, connected legal data sources, and controls for confidential client work. That’s promising. It’s also the moment buyers must get specific.\n\nMy checklist for law-heavy AI pilots:\n\n- Scope: Which tasks? Drafting, cite checks, intake triage? Define success per task, not per tool.\n\n- Data boundaries: How are client matters isolated? What logs exist for audit — and who can see them?\n\n- Confidentiality flows: How do you prevent accidental cross-matter contamination when contexts are long?\n\n- Human review: Where are mandatory checkpoints, and how are they enforced in the UI?\n\n- Remediation: If something slips, how fast can we trace, redact, and notify?\n\nA vendor’s claim isn’t a control. A tested workflow is.\n\nIf you’re evaluating legal AI, what’s the one question that would make you walk away if unanswered? #AIStrategy #EnterpriseAI #ForwardDeployedEngineer",
+  "xPost": "“Legal-grade controls” isn’t a feature—it’s a workflow. Ask: task scope, data isolation, audit logs, human checkpoints, and remediation paths. If they can’t demo these on your matters, pass. #AIStrategy",
+  "imagePrompt": "Depict a courtroom file conveyor belt feeding into an AI machine with gated lanes and stampers. Headline inside image: \"Trust = Tested Controls\" centered. Three hanging tags as labels: \"Isolate Data\", \"Audit Trails\", \"Human Checks\". Visual twist: a red “Contamination” file tries to sneak across lanes and is diverted by a flap. Style: cinematic 3D render with soft depth of field. Palette: steel gray with legal green and warning red accents. Lighting: soft studio with crisp highlights. Ensure headline and three labels are bold and legible at thumbnail. no other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Trust = Tested Controls",
+  "cardSubtitle": "Buy workflows, not promises",
+  "imageType": "card",
+  "published": {}
+}
