@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-26-95a8da9e",
+  "createdAt": "2026-09-26T15:59:13.058Z",
+  "kind": "article",
+  "topic": "Turning AI experiments into revenue",
+  "angle": "How marketing-led teams move from tinkering to growth with governance and measurement",
+  "sourceTitle": "The new growth mandate: A conversation with LinkedIn CMO Jessica Jensen",
+  "sourceUrl": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-growth-mandate-a-conversation-with-linkedin-cmo-jessica-jensen",
+  "sourceName": "McKinsey Insights",
+  "linkedinPost": "Most AI pilots die of unclear ownership, not bad models.\n\nA McKinsey conversation with LinkedIn’s CMO highlights moving AI from experimentation to growth. Marketing leaders want lift, but only what’s measured and owned survives the quarter.\n\nMy take from FDE engagements: set a single commercial KPI per use case, a budgeted ops owner, and a weekly quality gate. If you can’t name the person who will fix drifted prompts or retrain audiences on Tuesday at 3 p.m., it’s not ready for scale.\n\nPractical playbook I’ve seen work: pick one funnel stage, automate the boring 60%, and reinvest the saved time into higher-touch experiments you also measure. Tie every model change to an A/B with a rollback path. Governance sounds slow; it’s how you go faster without redoing work.\n\nExecutives: resist vanity dashboards. Ask for impact per seat, time-to-iteration, and the cost of keeping humans-in-the-loop. If these trend the right way, revenue follows.\n\nWhat’s the one KPI you’d defend to finance as the reason your AI program should exist? #AITransformation #EnterpriseAI #AIAdoption #AIStrategy",
+  "xPost": "AI growth = one KPI, one owner, one weekly quality gate. If no one is named to fix drift on Tuesday at 3 p.m., it’s not ready to scale. #AIAdoption #AIStrategy",
+  "imagePrompt": "Design a witty editorial mini-infographic. Metaphor: a Rube Goldberg “growth machine” where only one lever actually connects to revenue; the rest are flashy but disconnected. A bold tag hangs on the working lever: “One KPI”. Headline in image top center: “From Tinker to Growth”. Add two more tiny labels as machine placards: “Owner”, “Quality Gate”. Style: isometric 3D miniature world with clean edges. Palette: deep navy background, electric coral highlights, cyan accents. Lighting: soft, slightly glossy product-shot feel. The scene should convey that focus and ownership power growth while flash does nothing. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "From Tinker to Growth",
+  "cardSubtitle": "Focus, ownership, measured iteration.",
+  "imageType": "card",
+  "published": {}
+}
