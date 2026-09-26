@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-26-1f275564",
+  "createdAt": "2026-09-26T15:59:14.060Z",
+  "kind": "article",
+  "topic": "High-stakes AI detection claims",
+  "angle": "Why ‘AI lie detectors’ should raise red flags for enterprises",
+  "sourceTitle": "The Pentagon wants $30 million to build an AI-powered lie detector",
+  "sourceUrl": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+  "sourceName": "MIT Technology Review (AI)",
+  "linkedinPost": "When a tool claims to detect intent or truth, assume it’s a compliance project first and a model second.\n\nMIT Technology Review reports a Pentagon request to fund an AI-powered lie detector program. However you feel about the goal, it spotlights a broader enterprise trap: deploying AI where validity is shaky but consequences are real.\n\nMy take: before piloting anything that scores people—risk, fraud, sentiment—require a pre-mortem on face validity, construct validity, and decision cost. Who is harmed by false positives? Who pays for appeals? What’s the rollback if the signal drifts?\n\nI’ve seen teams celebrate AUC while ignoring the workflow it drives: alert queues that no one clears, denials that create support volume, and auditors asking for evidence the model can’t supply. If your governance can’t explain the basis of a decision, customer trust and brand equity take the hit.\n\nLeaders: treat “AI truth meters” as high-regret bets. Start with narrow, auditable claims and keep a human veto with documented rationale.\n\nWhat rule would you write today to keep a high-stakes scoring model from harming customers tomorrow? #AIStrategy #CustomerExperience #EnterpriseAI",
+  "xPost": "If an AI claims to detect truth, treat it as a compliance program with a model attached: validate the construct, price false positives, and design an appeal path before you ship. #AIStrategy #CustomerExperience",
+  "imagePrompt": "Create a witty editorial illustration as a mini-infographic. Metaphor: an oversized carnival ‘truth-o-meter’ hammer game. The needle swings wildly while a compliance clipboard tries to pin it down. Headline in image, top center: “High-Stakes Scores”. Three small integrated labels on the base and meter: “Validity”, “Cost”, “Appeals”. Style: retro screen-print poster with bold textures and limited inks. Palette: charcoal background with neon lime and hot pink accents. Lighting: flat, graphic poster feel. The message should instantly read: impressive claims need controls. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "High-Stakes Scores",
+  "cardSubtitle": "Controls before claims in production.",
+  "imageType": "card",
+  "published": {}
+}
