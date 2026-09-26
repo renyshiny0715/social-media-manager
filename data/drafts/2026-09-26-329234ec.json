@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-26-329234ec",
+  "createdAt": "2026-09-26T15:59:12.175Z",
+  "kind": "article",
+  "topic": "External model evaluators and enterprise assurance",
+  "angle": "What third-party evaluation inside AI labs should change for enterprise buyers",
+  "sourceTitle": "AI Companies’ New Plan to Keep Themselves From Destroying Everything",
+  "sourceUrl": "https://www.theatlantic.com/technology/2026/09/ai-companies-evaluators-risk/688785/?utm_source=feed",
+  "sourceName": "The Atlantic (Technology)",
+  "linkedinPost": "“Independent oversight” of AI models sounds reassuring—until you read the fine print.\n\nA piece in The Atlantic examines AI companies inviting third-party evaluators inside. The open question: how much access, and what influence, do they really have over models and deployment decisions?\n\nFrom the enterprise seat, external audits only matter if they change buyer behavior. My take from FDE work: ask vendors for evidence you can operationalize—reproducible evals on your data, risk reports mapped to your use cases, and remediation SLAs tied to incidents.\n\nI’ve watched too many pilots wave at generic benchmarks while production fails on edge cases no one measured. “We were evaluated” isn’t an assurance statement; a signed, scoped test plan with acceptance criteria is.\n\nIf third-party evaluators become a norm, buyers should align them to procurement gates: pre-award model fitness, pre-go-live controls, and post-incident reviews. Otherwise, audits drift into theater and your team carries the risk anyway.\n\nQuestion to leaders: If a vendor claims independent oversight, what exact artifacts would let you approve go-live with confidence—and which would still be nice-to-have? #AIStrategy #EnterpriseAI #AIAdoption",
+  "xPost": "“We were evaluated” ≠ enterprise assurance. Ask for scoped tests on your data, risk maps to your use case, and remediation SLAs you can enforce. Independent oversight only matters if it changes go-live decisions. #AIStrategy #EnterpriseAI",
+  "imagePrompt": "Create a witty editorial illustration as a mini-infographic. Visual metaphor: a security “inspection” sticker slapped on a complex machine made of gears and levers, but the sticker only covers a tiny, irrelevant corner; a magnifying glass reveals unchecked, smoking gears labeled as risks. Headline text in image: “Audit or Theater?” Place top center in bold sans-serif. Integrate three labels as parts tags on the machine: “Your Data”, “Controls”, “SLAs”. Color palette: cream background with cobalt blue machine lines and warm amber accents. Art style: flat editorial illustration with bold shapes, clean vector lines. Lighting: soft studio lighting. The scene should instantly read as: superficial audit vs operational assurance. Keep the gag readable at thumbnail size. No other text, no logos, no watermarks, no realistic human faces.",
+  "cardHeadline": "Audit or Theater?",
+  "cardSubtitle": "Turn oversight into go-live evidence.",
+  "imageType": "card",
+  "published": {}
+}
