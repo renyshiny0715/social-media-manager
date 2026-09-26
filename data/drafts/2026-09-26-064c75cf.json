@@ -1,0 +1,46 @@
+{
+  "id": "2026-09-26-064c75cf",
+  "createdAt": "2026-09-26T15:59:16.533Z",
+  "kind": "explainer",
+  "explainer": {
+    "term": "Reinforcement learning with verifiable rewards",
+    "category": "concept",
+    "definition": "Optimize a model with RL using automatic checks—deterministic answers or tests—as rewards instead of human demonstrations.",
+    "analogy": "Automated grading: score correctness without showing every solution path.",
+    "keyPoints": [
+      "Rule-based rewards score outputs automatically.",
+      "Policy shifts toward passing checked cases.",
+      "Cold-start on tasks with reliable checks."
+    ],
+    "example": "Hypothetical: train a code assistant against unit tests for internal APIs.",
+    "limitation": "Finite tests don’t prove general correctness; subjective tasks lack verifiable signals.",
+    "technicalFocus": "Reinforcement learning with verifiable rewards",
+    "baseline": "Supervised demonstrations are costly and don’t optimize for correct outcomes on reasoning tasks.",
+    "visualTitle": "Verifiable rewards",
+    "visualLabels": [
+      "Auto-checker",
+      "Reward signal",
+      "Updated policy"
+    ],
+    "visualSummary": "Train by checks: grade answers automatically.",
+    "visualDetails": [
+      "Deterministic checks score outputs",
+      "Feedback optimizes behavior",
+      "Policy improves on scored tasks"
+    ],
+    "visualExample": "Unit-tested coding tasks",
+    "visualCaveat": "Finite tests aren’t general proof"
+  },
+  "topic": "Reinforcement learning with verifiable rewards",
+  "angle": "Training reasoning without human demos using automatic checks",
+  "sourceTitle": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+  "sourceUrl": "https://arxiv.org/html/2501.12948v1",
+  "sourceName": "DeepSeek-AI — original research paper (arXiv)",
+  "linkedinPost": "Can you train better reasoning without piles of human explanations? One path: reward what you can verify.\n\nDefinition: reinforcement learning with verifiable rewards optimizes models using automatic checks—e.g., math answers against deterministic solutions or code against unit tests—rather than human-written chains of thought.\n\nBaseline bottleneck: supervised fine-tuning on demonstrations doesn’t provide outcome-based signals and is expensive to scale for reasoning tasks.\n\nMechanism:\n- Rule-based rewards: scoring by exact answer or format compliance.\n- Policy optimization: adjust the model toward behaviors that pass checks.\n- No demonstrations required: cold-start with verifiable tasks (e.g., math, coding tests).\n\nAnalogy: like teaching by grading problem sets automatically—instructors don’t show every solution path; they grade correctness.\n\nHypothetical deployment: improve an internal code assistant on a verified subset of APIs by training against a test suite, while leaving subjective tasks to other methods.\n\nTradeoff: passing finite tests isn’t general correctness; subjective tasks lack reliable automatic rewards. Keep claims scoped to what is checked.\n\nMy take: use verifiable rewards where ground truth is cheap and certain; don’t overextend to tasks you can’t score.\n\nWhere in your stack do you have verifiable labels you’re not using for training? #ForwardDeployedEngineer #EnterpriseAI",
+  "xPost": "Verifiable rewards ≠ magic reasoning. If you can check answers (math, unit tests), you can train via RL without demos. But passing finite tests isn’t general correctness—scope claims to what you can score. #ForwardDeployedEngineer",
+  "imagePrompt": "Canvas 1536x1024 educational infographic. Title: “Verifiable rewards”. Summary: “Train by checks: grade answers automatically.” Middle diagram with three stages: 1) Task with Auto-Checker (calculator or test icon), 2) Reward Signal to Policy (arrow feeding back), 3) Updated Policy outputs. Show baseline contrast subtly as a ghosted “human demos” lane without reward signals. Labels and short details exactly as provided. Bottom callouts: “Example” using code unit tests; “Watch out” warning about finite tests not implying general correctness. Style: restrained palette with light background, accents in indigo and gold. Clean flat icons, left-to-right flow, generous gutters, readable text sizes, and a subtle witty touch—a red grading stamp icon on the checker. No extra text, logos, or realistic faces.",
+  "cardHeadline": "Verifiable rewards",
+  "cardSubtitle": "Grade outcomes, train policies.",
+  "imageType": "card",
+  "published": {}
+}
