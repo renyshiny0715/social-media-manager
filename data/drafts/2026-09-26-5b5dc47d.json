@@ -1,0 +1,46 @@
+{
+  "id": "2026-09-26-5b5dc47d",
+  "createdAt": "2026-09-26T15:59:14.851Z",
+  "kind": "explainer",
+  "explainer": {
+    "term": "Speculative decoding",
+    "category": "concept",
+    "definition": "A cheap draft model proposes several next tokens, the target model verifies them in parallel, accepting matches and correcting rejections while preserving the target distribution.",
+    "analogy": "A quick apprentice writes ahead; an exacting editor approves chunks or issues specific corrections.",
+    "keyPoints": [
+      "Draft proposals: small model rolls out multiple tokens.",
+      "Parallel verification: target scores proposals at once.",
+      "Corrective sampling preserves target distribution."
+    ],
+    "example": "Hypothetical: accelerate email drafting latency on existing GPUs without changing target behavior.",
+    "limitation": "Net gain depends on proposal acceptance and verification overhead on every batch.",
+    "technicalFocus": "Speculative decoding",
+    "baseline": "Plain autoregressive decoding: one target step per token; memory-bound, underuses parallel compute.",
+    "visualTitle": "Speculative decoding",
+    "visualLabels": [
+      "Draft proposals",
+      "Parallel verify",
+      "Corrective sampling"
+    ],
+    "visualSummary": "Cheap model drafts; target verifies proposals.",
+    "visualDetails": [
+      "Small model rolls ahead",
+      "Target scores proposed tokens",
+      "Resample to match target"
+    ],
+    "visualExample": "Faster email generation",
+    "visualCaveat": "Speedup needs high acceptance"
+  },
+  "topic": "Speculative decoding for faster inference",
+  "angle": "How draft-and-verify makes LLMs cheaper without changing outputs",
+  "sourceTitle": "Looking back at speculative decoding",
+  "sourceUrl": "https://research.google/blog/looking-back-at-speculative-decoding/",
+  "sourceName": "Google Research",
+  "linkedinPost": "Speeding up generation without changing what the target model would have said sounds like magic. It isn’t—it’s speculative decoding.\n\nDefinition: use a cheaper draft model to propose multiple next tokens; have the target model verify them in parallel, accepting matches and correcting when needed. Output distribution stays that of the target.\n\nBaseline bottleneck: plain autoregressive decoding burns one target step per token and is often memory-bound, leaving parallel compute underused.\n\nMechanism:\n- Draft proposals: a small model rolls out several candidate tokens ahead.\n- Parallel verification: the target scores the proposed tokens at once, accepting matches.\n- Corrective sampling: when a proposal fails, resample so the final text follows the target distribution.\n\nAnalogy: a fast apprentice writes ahead; a meticulous editor approves chunks or sends back specific fixes—final prose still reflects the editor’s taste.\n\nHypothetical deployment: speed up customer-email generation by 2-3x wall-clock on existing GPUs while preserving your approved target model’s behavior.\n\nTradeoff: verification costs apply to every proposed batch, not just rejects; net gain depends on acceptance rates and overhead.\n\nMy take: use it where outputs tolerate small stochastic variation but must reflect the same model. Measure acceptance, not just tokens/sec.\n\nWhat’s your rule for turning speculative decoding on or off per endpoint? #ForwardDeployedEngineer #EnterpriseAI",
+  "xPost": "Speculative decoding ≠ a new model. It drafts with a cheap model, then the target verifies every proposed token. Net speedup depends on acceptance rate and overhead, not hype. Preserve the target distribution or don’t ship. #ForwardDeployedEngineer",
+  "imagePrompt": "Canvas 1536x1024 educational infographic. Title top: “Speculative decoding”. One-line summary under title: “Cheap model drafts; target verifies proposals.” Center diagram shows three stages left-to-right with icons: 1) Draft Model proposes tokens ahead, 2) Target Model verifies in parallel, 3) Corrective Sampling fixes rejections. Use a subtle apprentice-and-editor metaphor: a small quill icon for drafting, a stamp icon for verification, and a recycle icon for correction. Distinguish baseline vs mechanism by ghosting a single-token-per-step lane behind the main flow. Labels (48px) and details (40px) exactly as provided. Bottom has two callouts boxes: “Example” with a short use case; “Watch out” with the key caveat. Palette: light gray background, accents in cobalt blue and amber. Consistent flat icon style, clear arrows only where data flows. Generous gutters, 6% margins, ~80px title. No extra text beyond fields. No logos or watermarks, no realistic faces.",
+  "cardHeadline": "Speculative decoding",
+  "cardSubtitle": "Draft fast, verify exactly.",
+  "imageType": "card",
+  "published": {}
+}
