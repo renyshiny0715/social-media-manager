@@ -2,7 +2,7 @@
 
 An automated social media assistant for building a personal brand around **AI and Forward Deployed Engineering**.
 
-Every **Saturday at 15:00 UTC** (4pm UK during BST, 3pm during GMT) it:
+**Weekly generation is paused as of 1 October 2026.** The Saturday Vercel cron has been removed, so no weekly drafts or emails are generated automatically. Manual generation remains available. When triggered, it:
 
 1. 📡 Pulls fresh articles from reputable sources — MIT, Wharton, DeepMind, Microsoft Research, McKinsey, OpenAI, MIT Tech Review, Simon Willison, Latent Space, and more (see [content/sources.ts](content/sources.ts))
 2. ✍️ Uses **GPT-5** to draft **3 post ideas + 3 technical visual explainers** — each with LinkedIn and X versions. Explainers teach advanced AI mechanisms: the baseline/bottleneck, how it works, a deployment example and an engineering tradeoff, illustrated clearly.
@@ -15,7 +15,7 @@ Drafts, images, and state are stored **in this GitHub repo itself** (`data/` dir
 ## Architecture
 
 ```
-Vercel Cron (Saturday 15:00 UTC)
+Manual trigger (weekly Vercel cron paused)
         │
         ▼
 /api/cron/generate ──► RSS + technical references ──► GPT-5 (3 posts + 3 explainers)
@@ -111,7 +111,7 @@ Queued posts are published by a GitHub Actions workflow ([.github/workflows/publ
 
 - **Your voice / topics**: edit [content/persona.ts](content/persona.ts) — this is the highest-leverage file
 - **Sources**: edit [content/sources.ts](content/sources.ts)
-- **Schedule**: edit [vercel.json](vercel.json) (`0 15 * * 6` = Saturday 15:00 UTC). The separate scheduled-publish worker still runs every 10 minutes for approved posts.
+- **Schedule**: currently paused (`crons: []` in [vercel.json](vercel.json)). To resume, restore `/api/cron/generate` with `0 15 * * 6` (Saturday 15:00 UTC) and redeploy. The separate scheduled-publish worker still runs every 10 minutes for approved posts.
 - **Drafts per email**: `DRAFTS_PER_RUN=3` regular posts plus `EXPLAINERS_PER_RUN=3` educational posts
 - **Card design**: [app/api/card/route.tsx](app/api/card/route.tsx)
 
